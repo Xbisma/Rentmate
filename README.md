@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RentMate
+
+Property rental management system built using Next.js, Node.js, MongoDB.
+
 
 ## Getting Started
 
