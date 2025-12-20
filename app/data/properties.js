@@ -1,0 +1,154 @@
+// data/properties.js
+export const properties = [
+  {
+    id: "1",
+    type: "Flat",
+    purpose: "For Rent",
+    price: 60000,
+    currency: "PKR",
+    bedrooms: 1,
+    bathrooms: 1,
+    area: 2.2,
+    areaUnit: "Marla",
+    location: "Bahria Enclave - Sector G, Bahria Town, Islamabad",
+    added: "2 days ago",
+    description: "This charming and fully furnished 500 Sq-Ft apartment in Sector G of Bahria Enclave offers a perfect, low-maintenance lifestyle. Ideal for singles, couples, or students, this move-in-ready home provides all the essentials for comfortable living in a prime location.",
+    features: ["Fully Furnished", "Prime Location", "Low Maintenance", "Security", "Parking"],
+    images: [
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80",
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1984&q=80",
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=2065&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+    ]
+  },
+  {
+    id: "2",
+    type: "House",
+    purpose: "For Rent",
+    price: 85000,
+    currency: "PKR",
+    bedrooms: 3,
+    bathrooms: 2,
+    area: 5,
+    areaUnit: "Marla",
+    location: "DHA Phase 6, Karachi",
+    added: "5 days ago",
+    description: "Spacious 3-bedroom house with modern amenities and beautiful garden. Perfect for families looking for comfort and security in a premium location.",
+    features: ["Garden", "Modern Kitchen", "Security", "Parking", "Near Market"],
+    images: [
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1984&q=80",
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80",
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=2065&q=80"
+    ]
+  },
+  {
+    id: "3",
+    type: "Flat",
+    purpose: "For Rent",
+    price: 45000,
+    currency: "PKR",
+    bedrooms: 2,
+    bathrooms: 1,
+    area: 3.5,
+    areaUnit: "Marla",
+    location: "Gulberg, Lahore",
+    added: "1 day ago",
+    description: "Cozy 2-bedroom flat in the heart of Gulberg with great connectivity to major commercial areas and entertainment spots.",
+    features: ["Central Location", "Furnished", "Elevator", "Security"],
+    images: [
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=2065&q=80",
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80"
+    ]
+  },
+  // Add more properties here
+  {
+    id: "4",
+    type: "House",
+    purpose: "For Rent",
+    price: 120000,
+    currency: "PKR",
+    bedrooms: 4,
+    bathrooms: 3,
+    area: 8,
+    areaUnit: "Marla",
+    location: "Sector F-10, Islamabad",
+    added: "1 day ago",
+    description: "Spacious 4-bedroom house in prime location of Islamabad with modern amenities and beautiful garden.",
+    features: ["Garden", "Modern Kitchen", "Security", "Parking", "Near Market"],
+    images: [
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1984&q=80"
+    ]
+  },
+  {
+    id: "5",
+    type: "Flat",
+    purpose: "For Rent",
+    price: 35000,
+    currency: "PKR",
+    bedrooms: 1,
+    bathrooms: 1,
+    area: 2,
+    areaUnit: "Marla",
+    location: "Blue Area, Islamabad",
+    added: "3 days ago",
+    description: "Cozy 1-bedroom flat in the heart of Blue Area with great connectivity to commercial areas.",
+    features: ["Central Location", "Furnished", "Elevator", "Security"],
+    images: [
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=2065&q=80"
+    ]
+  },
+  {
+    id: "6",
+    type: "Apartment",
+    purpose: "For Rent",
+    price: 75000,
+    currency: "PKR",
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 4,
+    areaUnit: "Marla",
+    location: "DHA Phase 2, Islamabad",
+    added: "1 week ago",
+    description: "Modern 2-bedroom apartment with premium finishes in DHA Phase 2.",
+    features: ["Modern Design", "Parking", "Security", "Balcony"],
+    images: [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+    ]
+  },
+  {
+    id: "7",
+    type: "House",
+    purpose: "For Rent",
+    price: 95000,
+    currency: "PKR",
+    bedrooms: 3,
+    bathrooms: 2,
+    area: 6,
+    areaUnit: "Marla",
+    location: "Bahria Town Phase 7, Islamabad",
+    added: "2 days ago",
+    description: "Beautiful 3-bedroom house in Bahria Town with modern amenities.",
+    features: ["Garden", "Modern Kitchen", "Security", "Parking"],
+    images: [
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80"
+    ]
+  },
+  {
+    id: "8",
+    type: "Flat",
+    purpose: "For Rent",
+    price: 55000,
+    currency: "PKR",
+    bedrooms: 2,
+    bathrooms: 1,
+    area: 3,
+    areaUnit: "Marla",
+    location: "G-11 Markaz, Islamabad",
+    added: "4 days ago",
+    description: "Well-maintained 2-bedroom flat near G-11 Markaz with all basic amenities.",
+    features: ["Near Market", "Security", "Parking"],
+    images: [
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1984&q=80"
+    ]
+  }
+];
