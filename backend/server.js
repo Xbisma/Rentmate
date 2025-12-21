@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import userRoutes from "./routes/userRoutes.js";
 import rentalApplicationRoutes from "./routes/rentalApplicationRoutes.js";
-
+import dashboardRoutes from "./routes/dashboardRoutes.js";
 
 dotenv.config();
 
@@ -14,6 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/users", userRoutes);
 app.use("/api/applications", rentalApplicationRoutes);
+app.use("/api/dashboard", dashboardRoutes);
 
 // connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
