@@ -6,6 +6,8 @@ import rentalApplicationRoutes from "./routes/rentalApplicationRoutes.js";
 import dashboardRoutes from "./routes/dashboardRoutes.js";
 import propertyRoutes from "./routes/propertyRoutes.js";
 import notificationRoutes from "./routes/notificationRoutes.js";
+import maintenanceRoutes from "./routes/maintenanceRoutes.js";
+import paymentRoutes from "./routes/paymentRoutes.js";
 
 dotenv.config();
 
@@ -19,6 +21,9 @@ app.use("/api/applications", rentalApplicationRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/properties", propertyRoutes);
 app.use("/api/notifications", notificationRoutes);
+app.use("/api/maintenance", maintenanceRoutes);
+app.use("/api/payments", paymentRoutes);
+
 
 // connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
