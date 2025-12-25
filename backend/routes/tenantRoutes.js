@@ -9,12 +9,12 @@ import {
 const router = express.Router();
 
 // Tenant view all properties
-router.get("/properties", verifyToken, verifyRole(["tenant"]), getAllProperties);
+router.get("/properties", verifyToken, getAllProperties);
 
 // Tenant search / filter
-router.get("/properties/filter", verifyToken, verifyRole(["tenant"]), filterProperties);
+router.get("/properties/filter", verifyToken, filterProperties);
 
 // Tenant view single property
-router.get("/properties/:id", verifyToken, verifyRole(["tenant"]), getPropertyById);
+router.get("/properties/:id", verifyToken, getPropertyById);
 
 export default router;

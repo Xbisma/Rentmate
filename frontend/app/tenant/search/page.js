@@ -1,9 +1,18 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { filterProperties } from "../../../services/propertyService";
+import PropertyCard from "../../components/PropertyCard";
 
 export default function SearchProperties() {
   const [city, setCity] = useState("");
+  const [propertyType, setPropertyType] = useState("");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
+  const [bedrooms, setBedrooms] = useState("");
+  const [status, setStatus] = useState("Available");
+  const [properties, setProperties] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const cities = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Peshawar"];
   const filteredCities = cities.filter((c) =>
@@ -13,6 +22,38 @@ export default function SearchProperties() {
   const handleSelectCity = (selectedCity) => {
     setCity(selectedCity);
     setShowDropdown(false);
+  };
+
+  const handleSearch = async () => {
+    setLoading(true);
+    try {
+      const filters = {};
+      if (city) filters.city = city;
+      if (propertyType && propertyType !== "All Types") filters.type = propertyType;
+      if (minPrice) filters.price = { $gte: parseInt(minPrice) };
+      if (maxPrice) {
+        filters.price = { ...filters.price, $lte: parseInt(maxPrice) };
+      }
+      if (bedrooms && bedrooms !== "Any") filters.bedrooms = parseInt(bedrooms);
+      if (status) filters.availability = status.toLowerCase();
+
+      const result = await filterProperties(filters);
+      setProperties(result);
+    } catch (error) {
+      console.error("Error searching properties:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const clearFilters = () => {
+    setCity("");
+    setPropertyType("");
+    setMinPrice("");
+    setMaxPrice("");
+    setBedrooms("");
+    setStatus("Available");
+    setProperties([]);
   };
 
   return (
@@ -79,7 +120,11 @@ export default function SearchProperties() {
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 Property Type
               </label>
-              <select className="input-field">
+              <select 
+                className="input-field"
+                value={propertyType}
+                onChange={(e) => setPropertyType(e.target.value)}
+              >
                 <option className="text-gray-500">All Types</option>
                 <option>House</option>
                 <option>Apartment</option>
@@ -96,6 +141,8 @@ export default function SearchProperties() {
                 type="number"
                 placeholder="0"
                 className="input-field"
+                value={minPrice}
+                onChange={(e) => setMinPrice(e.target.value)}
               />
             </div>
           </div>
@@ -108,9 +155,11 @@ export default function SearchProperties() {
                 Max Price
               </label>
               <input
-                type="text"
+                type="number"
                 placeholder="Any"
                 className="input-field"
+                value={maxPrice}
+                onChange={(e) => setMaxPrice(e.target.value)}
               />
             </div>
 
@@ -119,7 +168,11 @@ export default function SearchProperties() {
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 Bedrooms
               </label>
-              <select className="input-field">
+              <select 
+                className="input-field"
+                value={bedrooms}
+                onChange={(e) => setBedrooms(e.target.value)}
+              >
                 <option className="text-gray-500">Any</option>
                 <option>1</option>
                 <option>2</option>
@@ -133,23 +186,62 @@ export default function SearchProperties() {
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 Status
               </label>
-              <select className="input-field">
-                <option className="text-gray-500">Available</option>
+              <select 
+                className="input-field"
+                value={status}
+                onChange={(e) => setStatus(e.target.value)}
+              >
+                <option>Available</option>
                 <option>Rented</option>
               </select>
             </div>
           </div>
 
           {/* Clear Filters Button */}
-          <button className="btn-secondary">
-            Clear Filters
-          </button>
+          <div className="flex gap-4">
+            <button 
+              className="btn-secondary"
+              onClick={clearFilters}
+            >
+              Clear Filters
+            </button>
+            <button 
+              className="btn-primary"
+              onClick={handleSearch}
+              disabled={loading}
+            >
+              {loading ? "Searching..." : "Search Properties"}
+            </button>
+          </div>
         </div>
 
         {/* Properties Found */}
-        <p className="text-lg text-gray-900 font-medium animate-fade-in">
-          2 properties found
-        </p>
+        <div className="animate-fade-in">
+          <p className="text-lg text-gray-900 font-medium mb-6">
+            {properties.length} {properties.length === 1 ? "property" : "properties"} found
+          </p>
+          
+          {/* Properties Grid */}
+          {properties.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {properties.map((property) => (
+                <PropertyCard key={property._id} property={property} />
+              ))}
+            </div>
+          ) : (
+            !loading && (
+              <div className="text-center py-12">
+                <div className="text-6xl mb-4">🏠</div>
+                <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                  No properties found
+                </h3>
+                <p className="text-gray-500">
+                  Try adjusting your search filters to find more properties.
+                </p>
+              </div>
+            )
+          )}
+        </div>
       </div>
     </div>
   );

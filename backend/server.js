@@ -12,6 +12,7 @@ import paymentRoutes from "./routes/paymentRoutes.js";
 import alertRoutes from "./routes/alertRoutes.js";
 import { startCronJobs } from "./utils/cronJobs.js";
 import dashboardRoutes from "./routes/dashboardRoutes.js";
+import tenancyRoutes from "./routes/tenancyRoutes.js";
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ app.use("/api/notifications", notificationRoutes);
 app.use("/api/alerts", alertRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/dashboard", dashboardRoutes);
+app.use("/api/tenancies", tenancyRoutes);
 
 // connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)

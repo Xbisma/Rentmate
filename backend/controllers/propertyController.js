@@ -101,8 +101,24 @@ export const deleteProperty = async (req, res) => {
 
 export const filterProperties = async (req, res) => {
   try {
-    const filters = req.query;
-    const properties = await Property.find(filters);
+    const filters = {};
+
+    // Handle basic filters
+    if (req.query.city) filters.city = req.query.city;
+    if (req.query.location) filters.location = req.query.location;
+    if (req.query.type) filters.type = req.query.type;
+    if (req.query.availability) filters.availability = req.query.availability;
+    if (req.query.bedrooms) filters.bedrooms = parseInt(req.query.bedrooms);
+    if (req.query.bathrooms) filters.bathrooms = parseInt(req.query.bathrooms);
+
+    // Handle price range
+    if (req.query.minPrice || req.query.maxPrice) {
+      filters.price = {};
+      if (req.query.minPrice) filters.price.$gte = parseInt(req.query.minPrice);
+      if (req.query.maxPrice) filters.price.$lte = parseInt(req.query.maxPrice);
+    }
+
+    const properties = await Property.find(filters).populate("owner", "name email");
 
     res.json(properties);
 

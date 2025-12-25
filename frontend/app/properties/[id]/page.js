@@ -1,28 +1,53 @@
 // app/properties/[id]/page.js
-//import PropertyDetails from '../../components/PropertyDetails';
-//import { properties } from '../../data/properties';
-
+'use client';
+import { useState, useEffect } from 'react';
 import PropertyDetails from '../../components/PropertyDetails';
-import { properties } from '../../data/properties';
+import { getPropertyById } from '../../../services/propertyService';
 
-export default async function PropertyPage({ params }) {
-  // Await the params promise
-  const { id } = await params;
-  
-  console.log('Property ID from URL:', id);
-  
-  const property = properties.find(p => p.id === id);
+export default function PropertyPage({ params }) {
+  const [property, setProperty] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  if (!property) {
+  useEffect(() => {
+    const fetchProperty = async () => {
+      try {
+        const { id } = await params;
+        const data = await getPropertyById(id);
+        setProperty(data);
+      } catch (err) {
+        setError('Failed to load property');
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProperty();
+  }, [params]);
+
+  if (loading) {
+    return (
+      <div className="page-container">
+        <div className="content-container">
+          <div className="card text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+            <p className="text-gray-600">Loading property details...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error || !property) {
     return (
       <div className="page-container">
         <div className="content-container">
           <div className="card text-center">
             <h1 className="text-2xl font-bold text-red-600 mb-4">Property Not Found</h1>
-            <p className="text-gray-600 mb-2">
-              The property with ID "{id}" doesn't exist.
+            <p className="text-gray-600 mb-4">
+              {error || "The property you're looking for doesn't exist."}
             </p>
-            <p className="text-sm text-gray-500 mb-4">Available IDs: {properties.map(p => p.id).join(', ')}</p>
             <a 
               href="/" 
               className="btn-primary"

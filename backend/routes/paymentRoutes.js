@@ -11,6 +11,6 @@ const router = express.Router();
 
 router.post("/pay", verifyToken, verifyRole(["tenant"]), payRent);
 router.get("/tenant", verifyToken, verifyRole(["tenant"]), getTenantPayments);
-router.get("/owner", verifyToken, verifyRole(["owner"]), getOwnerPayments);
+router.get("/owner", verifyToken, getOwnerPayments);
 
 export default router;

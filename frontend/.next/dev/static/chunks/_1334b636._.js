@@ -817,6 +817,12 @@ function OwnerDashboard() {
                     value: data.maintenanceRequests || 0,
                     icon: "🔧",
                     color: "purple"
+                },
+                {
+                    title: "Total Earnings",
+                    value: `$${data.totalEarnings?.toLocaleString() || '0'}`,
+                    icon: "💰",
+                    color: "emerald"
                 }
             ];
             setDashboardData({
@@ -855,6 +861,12 @@ function OwnerDashboard() {
             value: 0,
             icon: "🔧",
             color: "purple"
+        },
+        {
+            title: "Total Earnings",
+            value: "$0",
+            icon: "💰",
+            color: "emerald"
         }
     ];
     const quickActions = [
@@ -873,12 +885,12 @@ function OwnerDashboard() {
                     d: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                 }, void 0, false, {
                     fileName: "[project]/app/owner/dashboard/page.js",
-                    lineNumber: 91,
+                    lineNumber: 103,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/owner/dashboard/page.js",
-                lineNumber: 90,
+                lineNumber: 102,
                 columnNumber: 9
             }, this),
             link: "/owner/properties",
@@ -899,12 +911,12 @@ function OwnerDashboard() {
                     d: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                 }, void 0, false, {
                     fileName: "[project]/app/owner/dashboard/page.js",
-                    lineNumber: 102,
+                    lineNumber: 114,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/owner/dashboard/page.js",
-                lineNumber: 101,
+                lineNumber: 113,
                 columnNumber: 9
             }, this),
             link: "/owner/tenancies",
@@ -926,7 +938,7 @@ function OwnerDashboard() {
                         d: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
                     }, void 0, false, {
                         fileName: "[project]/app/owner/dashboard/page.js",
-                        lineNumber: 113,
+                        lineNumber: 125,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -935,13 +947,13 @@ function OwnerDashboard() {
                         r: "3"
                     }, void 0, false, {
                         fileName: "[project]/app/owner/dashboard/page.js",
-                        lineNumber: 114,
+                        lineNumber: 126,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/owner/dashboard/page.js",
-                lineNumber: 112,
+                lineNumber: 124,
                 columnNumber: 9
             }, this),
             link: "/owner/maintenance",
@@ -953,7 +965,7 @@ function OwnerDashboard() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$owner$2f$Header$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/owner/dashboard/page.js",
-                lineNumber: 124,
+                lineNumber: 136,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -971,13 +983,13 @@ function OwnerDashboard() {
                                         children: "Property Owner"
                                     }, void 0, false, {
                                         fileName: "[project]/app/owner/dashboard/page.js",
-                                        lineNumber: 130,
+                                        lineNumber: 142,
                                         columnNumber: 27
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                lineNumber: 129,
+                                lineNumber: 141,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -985,84 +997,20 @@ function OwnerDashboard() {
                                 children: "Manage your properties, track maintenance requests, and grow your rental business"
                             }, void 0, false, {
                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                lineNumber: 132,
+                                lineNumber: 144,
                                 columnNumber: 11
-                            }, this),
-                            !loading && !error && dashboardData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "inline-flex items-center bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl px-6 py-4 shadow-sm",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-left",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-sm font-medium text-green-700 mb-1",
-                                                children: "Total Earnings"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 138,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-2xl font-bold text-green-800",
-                                                children: [
-                                                    "$",
-                                                    dashboardData.totalEarnings?.toLocaleString() || '0'
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 139,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/owner/dashboard/page.js",
-                                        lineNumber: 137,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "ml-4 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                            className: "w-6 h-6 text-green-600",
-                                            fill: "none",
-                                            stroke: "currentColor",
-                                            viewBox: "0 0 24 24",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                strokeLinecap: "round",
-                                                strokeLinejoin: "round",
-                                                strokeWidth: 2,
-                                                d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 143,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/owner/dashboard/page.js",
-                                            lineNumber: 142,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/owner/dashboard/page.js",
-                                        lineNumber: 141,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/owner/dashboard/page.js",
-                                lineNumber: 136,
-                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/owner/dashboard/page.js",
-                        lineNumber: 128,
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12",
+                        className: "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 mb-12",
                         children: loading ? // Loading skeleton
                         Array.from({
-                            length: 4
+                            length: 5
                         }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "card animate-pulse",
                                 style: {
@@ -1075,12 +1023,12 @@ function OwnerDashboard() {
                                             className: "w-12 h-12 bg-gray-200 rounded-xl"
                                         }, void 0, false, {
                                             fileName: "[project]/app/owner/dashboard/page.js",
-                                            lineNumber: 161,
+                                            lineNumber: 160,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/owner/dashboard/page.js",
-                                        lineNumber: 160,
+                                        lineNumber: 159,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1090,26 +1038,26 @@ function OwnerDashboard() {
                                                 className: "h-8 bg-gray-200 rounded mb-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 164,
+                                                lineNumber: 163,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "h-4 bg-gray-200 rounded w-3/4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 165,
+                                                lineNumber: 164,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/owner/dashboard/page.js",
-                                        lineNumber: 163,
+                                        lineNumber: 162,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                lineNumber: 155,
+                                lineNumber: 154,
                                 columnNumber: 15
                             }, this)) : error ? // Error state
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1131,12 +1079,12 @@ function OwnerDashboard() {
                                                 d: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 175,
+                                                lineNumber: 174,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/owner/dashboard/page.js",
-                                            lineNumber: 174,
+                                            lineNumber: 173,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1144,7 +1092,7 @@ function OwnerDashboard() {
                                             children: "Failed to load dashboard data"
                                         }, void 0, false, {
                                             fileName: "[project]/app/owner/dashboard/page.js",
-                                            lineNumber: 177,
+                                            lineNumber: 176,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1152,7 +1100,7 @@ function OwnerDashboard() {
                                             children: error
                                         }, void 0, false, {
                                             fileName: "[project]/app/owner/dashboard/page.js",
-                                            lineNumber: 178,
+                                            lineNumber: 177,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1161,23 +1109,23 @@ function OwnerDashboard() {
                                             children: "Try Again"
                                         }, void 0, false, {
                                             fileName: "[project]/app/owner/dashboard/page.js",
-                                            lineNumber: 179,
+                                            lineNumber: 178,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/owner/dashboard/page.js",
-                                    lineNumber: 173,
+                                    lineNumber: 172,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                lineNumber: 172,
+                                lineNumber: 171,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/owner/dashboard/page.js",
-                            lineNumber: 171,
+                            lineNumber: 170,
                             columnNumber: 13
                         }, this) : // Data loaded
                         (dashboardData?.stats || defaultStats).map((stat, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1195,17 +1143,17 @@ function OwnerDashboard() {
                                                 children: stat.icon
                                             }, void 0, false, {
                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 198,
+                                                lineNumber: 197,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/owner/dashboard/page.js",
-                                            lineNumber: 197,
+                                            lineNumber: 196,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/owner/dashboard/page.js",
-                                        lineNumber: 196,
+                                        lineNumber: 195,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1216,7 +1164,7 @@ function OwnerDashboard() {
                                                 children: stat.value
                                             }, void 0, false, {
                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 202,
+                                                lineNumber: 201,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1224,24 +1172,24 @@ function OwnerDashboard() {
                                                 children: stat.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 203,
+                                                lineNumber: 202,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/owner/dashboard/page.js",
-                                        lineNumber: 201,
+                                        lineNumber: 200,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, stat.title, true, {
                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                lineNumber: 191,
+                                lineNumber: 190,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/owner/dashboard/page.js",
-                        lineNumber: 151,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1252,7 +1200,7 @@ function OwnerDashboard() {
                                 children: "Quick Actions"
                             }, void 0, false, {
                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                lineNumber: 212,
+                                lineNumber: 211,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1274,12 +1222,12 @@ function OwnerDashboard() {
                                                             children: action.icon
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/owner/dashboard/page.js",
-                                                            lineNumber: 223,
+                                                            lineNumber: 222,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/owner/dashboard/page.js",
-                                                        lineNumber: 222,
+                                                        lineNumber: 221,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1289,7 +1237,7 @@ function OwnerDashboard() {
                                                                 children: action.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                                lineNumber: 228,
+                                                                lineNumber: 227,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1297,19 +1245,19 @@ function OwnerDashboard() {
                                                                 children: action.description
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                                lineNumber: 229,
+                                                                lineNumber: 228,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/owner/dashboard/page.js",
-                                                        lineNumber: 227,
+                                                        lineNumber: 226,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 221,
+                                                lineNumber: 220,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1329,52 +1277,52 @@ function OwnerDashboard() {
                                                             d: "M9 5l7 7-7 7"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/owner/dashboard/page.js",
-                                                            lineNumber: 235,
+                                                            lineNumber: 234,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/owner/dashboard/page.js",
-                                                        lineNumber: 234,
+                                                        lineNumber: 233,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                                lineNumber: 232,
+                                                lineNumber: 231,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, action.title, true, {
                                         fileName: "[project]/app/owner/dashboard/page.js",
-                                        lineNumber: 215,
+                                        lineNumber: 214,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/owner/dashboard/page.js",
-                                lineNumber: 213,
+                                lineNumber: 212,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/owner/dashboard/page.js",
-                        lineNumber: 211,
+                        lineNumber: 210,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/owner/dashboard/page.js",
-                lineNumber: 126,
+                lineNumber: 138,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/owner/dashboard/page.js",
-                lineNumber: 244,
+                lineNumber: 243,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/owner/dashboard/page.js",
-        lineNumber: 123,
+        lineNumber: 135,
         columnNumber: 5
     }, this);
 }

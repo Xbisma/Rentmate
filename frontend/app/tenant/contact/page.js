@@ -1,5 +1,5 @@
 'use client';
-import Navbar from '../../components/Navbar';
+import Header from '../Header';
 import { Phone, Copy } from 'lucide-react';
 
 export default function ContactPage() {
@@ -10,7 +10,7 @@ export default function ContactPage() {
 
   return (
     <div className="page-container">
-      <Navbar />
+      <Header />
       
       <div className="content-container">
         <h1 className="text-3xl font-bold text-gray-800 mb-8 animate-fade-in">Contact Us</h1>

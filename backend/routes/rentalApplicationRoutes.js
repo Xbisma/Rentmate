@@ -29,14 +29,12 @@ router.get(
 router.get(
   "/owner",
   verifyToken,
-  verifyRole(["owner"]),
   getOwnerApplications
 );
 
 router.put(
   "/:id",
   verifyToken,
-  verifyRole(["owner"]),
   updateApplicationStatus
 );
 

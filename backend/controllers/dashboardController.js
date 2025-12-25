@@ -15,11 +15,19 @@ export const tenantDashboard = async (req, res) => {
     const maintenanceRequests = await MaintenanceRequest.countDocuments({ tenant: tenantId });
     const payments = await Payment.countDocuments({ tenant: tenantId });
 
+    // Get pending rent payments (tenancies where rent is not paid for current month)
+    const currentMonth = new Date().toLocaleString("default", { month: "long", year: "numeric" });
+    const pendingPayments = await Tenancy.countDocuments({
+      tenant: tenantId,
+      rentPaid: false
+    });
+
     res.json({
       activeTenancies,
       applications,
       maintenanceRequests,
-      payments
+      payments,
+      pendingPayments
     });
   } catch (err) {
     res.status(500).json({ message: err.message });

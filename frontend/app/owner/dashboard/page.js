@@ -42,6 +42,12 @@ export default function OwnerDashboard() {
           value: data.maintenanceRequests || 0,
           icon: "🔧",
           color: "purple"
+        },
+        {
+          title: "Total Earnings",
+          value: `$${data.totalEarnings?.toLocaleString() || '0'}`,
+          icon: "💰",
+          color: "emerald"
         }
       ];
       setDashboardData({ ...data, stats: transformedStats });
@@ -78,6 +84,12 @@ export default function OwnerDashboard() {
       value: 0,
       icon: "🔧",
       color: "purple"
+    },
+    {
+      title: "Total Earnings",
+      value: "$0",
+      icon: "💰",
+      color: "emerald"
     }
   ];
     
@@ -132,26 +144,13 @@ export default function OwnerDashboard() {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
             Manage your properties, track maintenance requests, and grow your rental business
           </p>
-          {!loading && !error && dashboardData && (
-            <div className="inline-flex items-center bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl px-6 py-4 shadow-sm">
-              <div className="text-left">
-                <p className="text-sm font-medium text-green-700 mb-1">Total Earnings</p>
-                <p className="text-2xl font-bold text-green-800">${dashboardData.totalEarnings?.toLocaleString() || '0'}</p>
-              </div>
-              <div className="ml-4 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                </svg>
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 mb-12">
           {loading ? (
             // Loading skeleton
-            Array.from({ length: 4 }).map((_, index) => (
+            Array.from({ length: 5 }).map((_, index) => (
               <div
                 key={index}
                 className="card animate-pulse"

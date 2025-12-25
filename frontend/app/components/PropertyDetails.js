@@ -3,13 +3,39 @@ import React, { useState } from 'react';
 import { Bed, Bath, Square, Home, User } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { applyForProperty } from '../../services/rentalApplicationService';
 
 export default function PropertyDetails({ property }) {
   const router = useRouter();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showApplicationModal, setShowApplicationModal] = useState(false);
+  const [applicationMessage, setApplicationMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleContactOwner = () => {
-    router.push('/auth/login');
+    // Check if user is logged in (you might want to check auth state here)
+    const token = localStorage.getItem('token');
+    if (!token) {
+      router.push('/auth/login');
+      return;
+    }
+    setShowApplicationModal(true);
+  };
+
+  const handleSubmitApplication = async () => {
+    setIsSubmitting(true);
+    try {
+      await applyForProperty({ propertyId: property._id });
+      setApplicationMessage('Application submitted successfully!');
+      setTimeout(() => {
+        setShowApplicationModal(false);
+        setApplicationMessage('');
+      }, 2000);
+    } catch (error) {
+      setApplicationMessage('Failed to submit application. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const nextImage = () => {
@@ -237,12 +263,51 @@ export default function PropertyDetails({ property }) {
                 onClick={handleContactOwner}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-16 rounded-lg transition-colors duration-300 text-lg shadow-lg"
               >
-                Contact Owner
+                Apply for Property
               </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Application Modal */}
+      {showApplicationModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Apply for Property</h3>
+            <p className="text-gray-600 mb-6">
+              Are you sure you want to apply for this property? The owner will be notified of your application.
+            </p>
+            
+            {applicationMessage && (
+              <div className={`mb-4 p-3 rounded-lg ${
+                applicationMessage.includes('successfully') 
+                  ? 'bg-green-100 text-green-800' 
+                  : 'bg-red-100 text-red-800'
+              }`}>
+                {applicationMessage}
+              </div>
+            )}
+            
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowApplicationModal(false)}
+                className="flex-1 btn-secondary"
+                disabled={isSubmitting}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSubmitApplication}
+                className="flex-1 btn-primary"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Submitting...' : 'Submit Application'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

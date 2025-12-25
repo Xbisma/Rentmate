@@ -50,35 +50,35 @@ const PropertyCard = ({ property }) => {
       <div className="p-6">
         {/* Price */}
         <div className="text-2xl font-bold text-blue-600 mb-2">
-          {property.currency} {property.price.toLocaleString()}
+          PKR {property.price?.toLocaleString() || 'N/A'}
         </div>
         
         {/* Location */}
         <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">
-          {property.location}
+          {property.location || property.city || 'Location not specified'}
         </h3>
         
         {/* Property Type */}
         <div className="text-gray-600 text-sm mb-4">
-          {property.type} • {property.purpose}
+          {property.type || 'Property'} • {property.availability || 'Available'}
         </div>
         
         {/* Features */}
         <div className="flex items-center gap-4 text-sm text-gray-600 mb-6">
           <span className="flex items-center gap-1">
-            🛏️ {property.bedrooms} Bed
+            🛏️ {property.bedrooms || 0} Bed
           </span>
           <span className="flex items-center gap-1">
-            🚿 {property.bathrooms} Bath
+            🚿 {property.bathrooms || 0} Bath
           </span>
           <span className="flex items-center gap-1">
-            📐 {property.area} {property.areaUnit}
+            📐 {property.area || 'N/A'} sqft
           </span>
         </div>
         
         {/* Added Date */}
         <div className="text-xs text-gray-500 mb-4">
-          Added {property.added}
+          Added {property.createdAt ? new Date(property.createdAt).toLocaleDateString() : 'Recently'}
         </div>
         
         {/* Image URLs (for debugging) */}
@@ -98,7 +98,7 @@ const PropertyCard = ({ property }) => {
         )}
         
         {/* View Details Button */}
-        <Link href={`/properties/${property.id}`}>
+        <Link href={`/properties/${property._id}`}>
           <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-300">
             View Details
           </button>

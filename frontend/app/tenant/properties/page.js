@@ -1,14 +1,14 @@
 'use client';
 
-import Navbar from '../../components/Navbar';
+import Header from '../Header';
 import { Search, Filter } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { getAllProperties } from '../../../services/propertyService';
 
 export default function PropertiesPage() {
-  const [properties] = useState([
-    { id: 1, status: 'Available', type: 'House', price: 'PKR 1.25 Lakh', beds: 5, baths: 6 },
-    { id: 2, status: 'Available', type: 'Apartment', price: 'PKR 85,000', beds: 3, baths: 2 },
-  ]);
+  const [properties, setProperties] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const [filters, setFilters] = useState({
     city: '',
@@ -19,10 +19,26 @@ export default function PropertiesPage() {
     status: 'Available'
   });
 
+  useEffect(() => {
+    fetchProperties();
+  }, []);
+
+  const fetchProperties = async () => {
+    try {
+      const data = await getAllProperties();
+      setProperties(data);
+    } catch (err) {
+      setError('Failed to load properties');
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="page-container">
-      <Navbar />
-      
+      <Header />
+
       <div className="content-container">
         <div className="animate-fade-in">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">Search Properties</h1>
@@ -125,34 +141,59 @@ export default function PropertiesPage() {
 
         {/* Results */}
         <div className="mb-4 animate-fade-in">
-          <p className="text-gray-700">{properties.length} properties found</p>
+          {loading ? (
+            <p className="text-gray-700">Loading properties...</p>
+          ) : error ? (
+            <p className="text-red-600">{error}</p>
+          ) : (
+            <p className="text-gray-700">{properties.length} properties found</p>
+          )}
         </div>
 
         {/* Properties List */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {properties.map((property) => (
-            <div key={property.id} className="card card-hover animate-fade-in">
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">{property.type}</h3>
-                  <p className="text-gray-600">{property.price}</p>
+        {loading ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {Array.from({ length: 4 }).map((_, index) => (
+              <div key={index} className="card animate-pulse">
+                <div className="h-32 bg-gray-200 rounded mb-4"></div>
+                <div className="h-4 bg-gray-200 rounded mb-2"></div>
+                <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+              </div>
+            ))}
+          </div>
+        ) : error ? (
+          <div className="text-center py-8">
+            <p className="text-red-600 mb-4">{error}</p>
+            <button onClick={fetchProperties} className="btn-primary">
+              Try Again
+            </button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {properties.map((property) => (
+              <div key={property._id} className="card card-hover animate-fade-in">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">{property.title}</h3>
+                    <p className="text-gray-600">PKR {property.price?.toLocaleString()}</p>
+                  </div>
+                  <span className={`status-badge ${property.availability === 'available' ? 'status-available' : 'status-rented'}`}>
+                    {property.availability}
+                  </span>
                 </div>
-                <span className="status-badge status-available">
-                  {property.status}
-                </span>
+
+                <div className="flex space-x-4 text-gray-600 mb-4">
+                  <span>Beds: {property.bedrooms || 'N/A'}</span>
+                  <span>Baths: {property.bathrooms || 'N/A'}</span>
+                </div>
+
+                <button className="btn-primary w-full">
+                  View Details
+                </button>
               </div>
-              
-              <div className="flex space-x-4 text-gray-600 mb-4">
-                <span>Beds: {property.beds}</span>
-                <span>Baths: {property.baths}</span>
-              </div>
-              
-              <button className="btn-primary w-full">
-                View Details
-              </button>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
