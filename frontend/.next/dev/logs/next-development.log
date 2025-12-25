@@ -1,0 +1,357 @@
+[00:00:04.573] Server  LOG      ✓ Ready in 2.7s
+[00:00:13.991] Server  LOG      ○ Compiling /_not-found/page ...
+[00:00:17.354] Server  ERROR    ⨯ ./app/layout.js:3:1
+Module not found: Can't resolve './provider'
+  1 | // app/layout.js
+  2 | import "./globals.css";
+> 3 | import { Providers } from './provider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | export const metadata = {
+  5 |   title: "RentMate",
+  6 |   description: "Property Rental Management System",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:20.365] Server  LOG      ○ Compiling /_error ...
+[00:00:27.454] Browser ERROR   uncaughtError: Error: ./app/layout.js:3:1
+Module not found: Can't resolve './provider'
+  1 | // app/layout.js
+  2 | import "./globals.css";
+> 3 | import { Providers } from './provider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | export const metadata = {
+  5 |   title: "RentMate",
+  6 |   description: "Property Rental Management System",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:27.895] Browser ERROR   ./app/layout.js:3:1
+Module not found: Can't resolve './provider'
+  1 | // app/layout.js
+  2 | import "./globals.css";
+> 3 | import { Providers } from './provider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | export const metadata = {
+  5 |   title: "RentMate",
+  6 |   description: "Property Rental Management System",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:28.388] Browser ERROR   ./app/layout.js:3:1
+Module not found: Can't resolve './provider'
+  1 | // app/layout.js
+  2 | import "./globals.css";
+> 3 | import { Providers } from './provider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | export const metadata = {
+  5 |   title: "RentMate",
+  6 |   description: "Property Rental Management System",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:04.586] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:04.671] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:04.719] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:04.763] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:05.031] Server  LOG      ✓ Compiled in 900ms
+[00:02:09.789] Server  LOG      ○ Compiling / ...
+[00:02:14.933] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:15.013] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:15.072] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:15.137] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:15.192] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:15.291] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:15.346] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:15.433] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:15.488] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:16.120] Server  ERROR    ⨯ ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.859] Browser ERROR   uncaughtError: Error: ./app/provider.js:4:1
+Module not found: Can't resolve './context/PropertyContext'
+  2 | "use client"; // This makes it a client component
+  3 |
+> 4 | import { PropertyProvider } from './context/PropertyContext';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }) {
+  7 |   return <PropertyProvider>{children}</PropertyProvider>;
+
+
+
+Import trace:
+  Server Component:
+    ./app/provider.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
