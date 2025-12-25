@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 
 function PropertyDetailDashboard() {
   const images = [
@@ -21,8 +21,8 @@ function PropertyDetailDashboard() {
     setCurrent((current - 1 + images.length) % images.length);
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 sm:p-6">
-      <div className="max-w-6xl mx-auto">
+    <div className="page-container">
+      <div className="content-container">
         <h1 className="text-3xl font-bold mb-8 text-gray-900">
           Welcome to Tenant Portal
         </h1>
@@ -55,7 +55,7 @@ function PropertyDetailDashboard() {
 
         {/* DETAILS */}
         <div className="grid lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+          <div className="lg:col-span-2 card">
             <h2 className="text-xl font-semibold mb-4 text-gray-900">Overview</h2>
             <ul className="space-y-2 text-gray-700">
               <li><span className="font-medium">Type:</span> House</li>
@@ -65,20 +65,20 @@ function PropertyDetailDashboard() {
           </div>
 
           <div className="space-y-3">
-            <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3 rounded-xl font-medium transition shadow hover:shadow-md">
+            <button className="btn-success w-full">
               WhatsApp
             </button>
 
             <button
               onClick={() => setShowCallModal(true)}
-              className="w-full bg-teal-600 hover:bg-teal-700 text-white py-3 rounded-xl font-medium transition shadow hover:shadow-md"
+              className="btn-primary w-full"
             >
               Call
             </button>
 
             <button
               onClick={() => setShowRequestModal(true)}
-              className="w-full bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-xl font-medium transition shadow hover:shadow-md"
+              className="btn-secondary w-full"
             >
               Send Request
             </button>
@@ -171,20 +171,22 @@ function PropertyDetailDashboard() {
 
 function TenantHomeDashboard() {
   return (
-    <div className="bg-gray-50 min-h-screen p-4 sm:p-6">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3 text-gray-900">
-          Welcome to Tenant Portal
-        </h2>
+    <div className="page-container">
+      <div className="content-container">
+        <div className="animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-gray-900">
+            Welcome to Tenant Portal
+          </h2>
 
-        <p className="text-gray-700 mb-10 text-lg max-w-3xl">
-          Search for properties, view details, and communicate with property owners.
-        </p>
+          <p className="text-gray-700 mb-10 text-lg max-w-3xl">
+            Search for properties, view details, and communicate with property owners.
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           <Link
             href="/tenant/search"
-            className="bg-white border border-gray-200 rounded-2xl p-6 flex gap-4 items-start hover:shadow-md transition-all duration-200 hover:-translate-y-0.5"
+            className="card card-hover animate-fade-in flex gap-4 items-start"
           >
             <span className="text-2xl mt-1">🔍</span>
             <div>
@@ -195,7 +197,7 @@ function TenantHomeDashboard() {
 
           <Link
             href="/tenant/requests"
-            className="bg-white border border-gray-200 rounded-2xl p-6 flex gap-4 items-start hover:shadow-md transition-all duration-200 hover:-translate-y-0.5"
+            className="card card-hover animate-fade-in flex gap-4 items-start"
           >
             <span className="text-2xl mt-1">💬</span>
             <div>
@@ -205,7 +207,7 @@ function TenantHomeDashboard() {
           </Link>
         </div>
 
-        <div className="flex justify-between items-center mb-5">
+        <div className="flex justify-between items-center mb-5 animate-fade-in">
           <h3 className="text-lg font-semibold text-gray-900">Featured Properties</h3>
           <Link
             href="/tenant/search"
@@ -216,7 +218,7 @@ function TenantHomeDashboard() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition">
+          <div className="card card-hover animate-fade-in">
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <span className="text-4xl">🏠</span>
             </div>
@@ -226,7 +228,7 @@ function TenantHomeDashboard() {
                 <span className="text-emerald-600 font-bold">Rs 85,000/mo</span>
                 <Link
                   href="/tenant/dashboard?from=property"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                  className="btn-primary text-sm"
                 >
                   View Details
                 </Link>
@@ -240,6 +242,25 @@ function TenantHomeDashboard() {
 }
 
 export default function DashboardPage() {
+  return (
+    <Suspense fallback={
+      <div className="page-container">
+        <div className="content-container">
+          <div className="flex justify-center items-center h-64">
+            <div className="text-center">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+              <div className="text-lg text-gray-600">Loading...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }>
+      <DashboardPageContent />
+    </Suspense>
+  );
+}
+
+function DashboardPageContent() {
   const params = useSearchParams();
   const fromProperty = params.get("from") === "property";
 

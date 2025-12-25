@@ -3,6 +3,8 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { loginUser } from "../../../../services/authService";
+
 
 export default function LoginPage() {
   const router = useRouter();
@@ -31,28 +33,119 @@ export default function LoginPage() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    if (isLogin) {
-      // Login logic
-      console.log('Login attempted:', { 
-        email: formData.email, 
-        password: formData.password,
-        userType: formData.userType 
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (isLogin) {
+    // LOGIN LOGIC
+    try {
+      console.log('Attempting login with:', {
+        email: formData.email,
+        password: formData.password
       });
-      router.back();
-    } else {
-      // Signup logic
-      if (formData.password !== formData.confirmPassword) {
-        alert("Passwords don't match!");
-        return;
+
+      const data = await loginUser({
+        email: formData.email,
+        password: formData.password,
+        userType: formData.userType  // Add userType to login request if needed
+      });
+
+      console.log('Login response:', data);
+
+      // Store user data
+      if (data.token) {
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("userType", formData.userType);
+        
+        // If your backend returns user info
+        if (data.user) {
+          localStorage.setItem("userId", data.user._id || data.user.id);
+          localStorage.setItem("userName", data.user.name || data.user.email);
+        }
+
+        // Redirect based on user type
+        if (formData.userType === 'tenant') {
+          router.push("/tenant/dashboard");
+        } else if (formData.userType === 'owner') {
+          router.push("/owner/dashboard");
+        } else {
+          router.push("/dashboard");
+        }
+      } else {
+        alert("Login successful but no token received");
       }
-      console.log('Signup attempted:', formData);
-      // After successful signup, you might want to automatically log them in
-      router.back();
+
+    } catch (err) {
+      console.error('Login error:', err);
+      const errorMessage = err.response?.data?.message || 
+                          err.message || 
+                          "Login failed. Please check your credentials.";
+      alert(errorMessage);
     }
-  };
+  } else {
+    // SIGNUP LOGIC
+    // Check if passwords match
+    if (formData.password !== formData.confirmPassword) {
+      alert("Passwords do not match!");
+      return;
+    }
+
+    // Check required fields
+    if (!formData.name || !formData.email || !formData.phone || !formData.password) {
+      alert("Please fill in all required fields!");
+      return;
+    }
+
+    try {
+      console.log('Attempting registration with:', {
+        name: formData.name,
+        email: formData.email,
+        password: formData.password,
+        phone: formData.phone,
+        userType: formData.userType
+      });
+
+      // Use registerUser from your authService
+      const data = await registerUser({
+        name: formData.name,
+        email: formData.email,
+        password: formData.password,
+        phone: formData.phone,
+        role: formData.userType  // Use 'role' if that's what your backend expects
+      });
+
+      console.log('Registration response:', data);
+
+      // Store user data
+      if (data.token) {
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("userType", formData.userType);
+        
+        if (data.user) {
+          localStorage.setItem("userId", data.user._id || data.user.id);
+          localStorage.setItem("userName", data.user.name);
+        }
+
+        // Redirect based on user type
+        if (formData.userType === 'tenant') {
+          router.push("/tenant/dashboard");
+        } else {
+          router.push("/owner/dashboard");
+        }
+      } else {
+        alert("Registration successful but no token received");
+      }
+
+    } catch (err) {
+      console.error('Registration error:', err);
+      const errorMessage = err.response?.data?.message || 
+                          err.message || 
+                          "Registration failed. Please try again.";
+      alert(errorMessage);
+    }
+  }
+};
+
 
   const switchToSignup = () => {
     setIsLogin(false);
@@ -63,7 +156,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 pt-20 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 pt-20 flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -90,7 +183,7 @@ export default function LoginPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="input-field"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -103,7 +196,7 @@ export default function LoginPage() {
                     value={formData.password}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="input-field"
                     placeholder="Enter your password"
                   />
                 </div>
@@ -141,7 +234,7 @@ export default function LoginPage() {
                   type="submit"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="w-full bg-linear-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   Login to Continue
                 </motion.button>
@@ -179,7 +272,7 @@ export default function LoginPage() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="input-field"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -192,7 +285,7 @@ export default function LoginPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="input-field"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -205,7 +298,7 @@ export default function LoginPage() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="input-field"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -251,7 +344,7 @@ export default function LoginPage() {
                     value={formData.password}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="input-field"
                     placeholder="Create a password"
                   />
                 </div>
@@ -264,7 +357,7 @@ export default function LoginPage() {
                     value={formData.confirmPassword}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="input-field"
                     placeholder="Confirm your password"
                   />
                 </div>
@@ -273,7 +366,7 @@ export default function LoginPage() {
                   type="submit"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="w-full bg-linear-to-r from-green-600 to-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   Create Account
                 </motion.button>

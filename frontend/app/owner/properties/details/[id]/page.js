@@ -2,8 +2,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-// import Header from '../../../components/Header';
-// import { useProperty } from '../../../context/PropertyContext';
 import { useProperty } from '../../../../context/PropertyContext';
 import Header from '../../../Header';
 
@@ -171,15 +169,15 @@ export default function PropertyDetails({ params }) {
 
           {/* Amenities */}
           <div className="bg-white rounded-lg shadow p-6 mb-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">Amenities</h2>
-            <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-              {property.amenities.split(', ').map((amenity, index) => (
-                <li key={index} className="flex items-center text-gray-600">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                  {amenity}
-                </li>
-              ))}
-            </ul>
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">Amenities</h2>
+          <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
+            {property.amenities && property.amenities.split(', ').map((amenity, index) => (
+            <li key={index} className="flex items-center text-gray-600">
+              <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+            {amenity}
+            </li>
+  ))}
+          </ul>
           </div>
 
           {/* Available From */}

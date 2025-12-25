@@ -2,11 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-// import Header from '../../../../components/Header';
-// import ImageUpload from '../../../../components/ImageUpload';
-// import { useProperty } from '../../../../context/PropertyContext';
 import Header from '../../../Header';
-
 import ImageUpload from '../../../../components/ImageUpload';
 import { useProperty } from '../../../../context/PropertyContext';
 

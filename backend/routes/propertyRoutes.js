@@ -2,6 +2,7 @@ import express from "express";
 import {
   addProperty,
   getAllProperties,
+  getOwnerProperties,
   getPropertyById,
   updateProperty,
   deleteProperty,
@@ -15,6 +16,7 @@ const router = express.Router();
 
 router.post("/", verifyToken, verifyRole(["owner"]), upload.array("images", 5), addProperty);
 router.get("/", getAllProperties);
+router.get("/owner", verifyToken, verifyRole(["owner"]), getOwnerProperties);
 router.get("/filter", filterProperties);
 router.get("/:id", getPropertyById);
 router.put("/:id", verifyToken, verifyRole(["owner"]), updateProperty);

@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-// import Header from '../../components/Header';
 import ImageUpload from '../../../components/ImageUpload';
 import { useProperty } from '../../../context/PropertyContext';
 import Header from '../../Header';
@@ -77,15 +76,15 @@ export default function AddProperty() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="page-container">
       <Header />
       
-      <main className="container mx-auto px-4 py-8">
+      <main className="content-container">
         <div className="max-w-2xl mx-auto">
           {/* Back Button */}
           <Link 
             href="/owner/properties" 
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6"
+            className="btn-outline inline-flex items-center mb-6"
           >
             ← Back to Properties
           </Link>
@@ -93,7 +92,7 @@ export default function AddProperty() {
           <h1 className="text-2xl font-bold text-gray-900 mb-2">Add New Property</h1>
           <p className="text-gray-700 mb-6">Fill in the details to list a new property</p>
 
-          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6 space-y-6">
+          <form onSubmit={handleSubmit} className="card space-y-6">
             {/* Property Title */}
             <div>
               <label className="block text-sm font-medium text-gray-900 mb-2">
@@ -105,7 +104,7 @@ export default function AddProperty() {
                 value={formData.title}
                 onChange={handleChange}
                 placeholder="e.g., Modern 3BR Apartment in DHA"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                className="input-field"
                 required
               />
             </div>
@@ -121,7 +120,7 @@ export default function AddProperty() {
                 onChange={handleChange}
                 placeholder="Describe your property..."
                 rows="4"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                className="input-field"
                 required
               />
             </div>

@@ -33,6 +33,18 @@ export const getAllProperties = async (req, res) => {
   }
 };
 
+export const getOwnerProperties = async (req, res) => {
+  try {
+    const ownerId = req.user.id;
+    const properties = await Property.find({ owner: ownerId }).populate("owner", "name email");
+
+    res.json(properties);
+
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
 export const getPropertyById = async (req, res) => {
   try {
     const property = await Property.findById(req.params.id).populate("owner", "name email");

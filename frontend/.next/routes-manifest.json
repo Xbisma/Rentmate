@@ -1,0 +1,159 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/owner/properties/details/[id]",
+      "regex": "^/owner/properties/details/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/owner/properties/details/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/owner/properties/edit/[id]",
+      "regex": "^/owner/properties/edit/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/owner/properties/edit/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/properties/[id]",
+      "regex": "^/properties/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/properties/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/auth/login",
+      "regex": "^/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/login(?:/)?$"
+    },
+    {
+      "page": "/owner/dashboard",
+      "regex": "^/owner/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner/dashboard(?:/)?$"
+    },
+    {
+      "page": "/owner/maintenance",
+      "regex": "^/owner/maintenance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner/maintenance(?:/)?$"
+    },
+    {
+      "page": "/owner/properties",
+      "regex": "^/owner/properties(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner/properties(?:/)?$"
+    },
+    {
+      "page": "/owner/properties/add",
+      "regex": "^/owner/properties/add(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner/properties/add(?:/)?$"
+    },
+    {
+      "page": "/owner/tenancies",
+      "regex": "^/owner/tenancies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner/tenancies(?:/)?$"
+    },
+    {
+      "page": "/properties/search",
+      "regex": "^/properties/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/properties/search(?:/)?$"
+    },
+    {
+      "page": "/tenant/contact",
+      "regex": "^/tenant/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tenant/contact(?:/)?$"
+    },
+    {
+      "page": "/tenant/dashboard",
+      "regex": "^/tenant/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tenant/dashboard(?:/)?$"
+    },
+    {
+      "page": "/tenant/properties",
+      "regex": "^/tenant/properties(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tenant/properties(?:/)?$"
+    },
+    {
+      "page": "/tenant/requests",
+      "regex": "^/tenant/requests(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tenant/requests(?:/)?$"
+    },
+    {
+      "page": "/tenant/search",
+      "regex": "^/tenant/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tenant/search(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

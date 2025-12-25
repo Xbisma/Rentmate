@@ -1,4 +1,5 @@
-import Navbar from '../components/Navbar';
+'use client';
+import Navbar from '../../components/Navbar';
 import { Phone, Copy } from 'lucide-react';
 
 export default function ContactPage() {
@@ -8,13 +9,13 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="page-container">
       <Navbar />
       
-      <div className="max-w-6xl mx-auto p-6">
-        <h1 className="text-3xl font-bold text-gray-800 mb-8">Contact Us</h1>
+      <div className="content-container">
+        <h1 className="text-3xl font-bold text-gray-800 mb-8 animate-fade-in">Contact Us</h1>
         
-        <div className="bg-white border rounded-lg p-8 max-w-md">
+        <div className="card max-w-md animate-fade-in">
           <div className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">Muhammad Zulqarnain</h2>
           </div>

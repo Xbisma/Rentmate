@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Bed, Bath, Square, Calendar, Heart, Share2, Home, User } from 'lucide-react';
+import { Bed, Bath, Square, Home, User } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
@@ -25,7 +25,7 @@ export default function PropertyDetails({ property }) {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="page-container">
       {/* Navbar */}
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

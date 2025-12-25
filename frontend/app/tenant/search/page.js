@@ -16,18 +16,18 @@ export default function SearchProperties() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="page-container">
+      <div className="content-container">
         {/* Back to Home Button */}
         <Link 
           href="/tenant/dashboard" 
-          className="inline-flex items-center gap-2 bg-white text-gray-900 px-4 py-2.5 rounded-lg border border-gray-300 text-sm font-medium shadow-sm hover:bg-gray-50 transition-colors mb-6"
+          className="btn-secondary inline-flex items-center gap-2 mb-6 animate-fade-in"
         >
           ← Back to Home
         </Link>
 
         {/* Header Section */}
-        <div className="mb-8">
+        <div className="animate-fade-in">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Search Properties
           </h1>
@@ -37,7 +37,7 @@ export default function SearchProperties() {
         </div>
 
         {/* Filter Box */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-8">
+        <div className="card mb-8 animate-fade-in">
           {/* First Row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             {/* City Field */}
@@ -56,7 +56,7 @@ export default function SearchProperties() {
                   }}
                   onFocus={() => setShowDropdown(true)}
                   onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-gray-900 placeholder:text-gray-500"
+                  className="input-field"
                 />
                 {showDropdown && filteredCities.length > 0 && (
                   <ul className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto">
@@ -79,7 +79,7 @@ export default function SearchProperties() {
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 Property Type
               </label>
-              <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white text-gray-900">
+              <select className="input-field">
                 <option className="text-gray-500">All Types</option>
                 <option>House</option>
                 <option>Apartment</option>
@@ -95,7 +95,7 @@ export default function SearchProperties() {
               <input
                 type="number"
                 placeholder="0"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-gray-900 placeholder:text-gray-500"
+                className="input-field"
               />
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function SearchProperties() {
               <input
                 type="text"
                 placeholder="Any"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-gray-900 placeholder:text-gray-500"
+                className="input-field"
               />
             </div>
 
@@ -119,7 +119,7 @@ export default function SearchProperties() {
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 Bedrooms
               </label>
-              <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white text-gray-900">
+              <select className="input-field">
                 <option className="text-gray-500">Any</option>
                 <option>1</option>
                 <option>2</option>
@@ -133,7 +133,7 @@ export default function SearchProperties() {
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 Status
               </label>
-              <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white text-gray-900">
+              <select className="input-field">
                 <option className="text-gray-500">Available</option>
                 <option>Rented</option>
               </select>
@@ -141,13 +141,13 @@ export default function SearchProperties() {
           </div>
 
           {/* Clear Filters Button */}
-          <button className="px-6 py-3 bg-gray-100 text-gray-800 font-semibold rounded-lg hover:bg-gray-200 transition-colors">
+          <button className="btn-secondary">
             Clear Filters
           </button>
         </div>
 
         {/* Properties Found */}
-        <p className="text-lg text-gray-900 font-medium">
+        <p className="text-lg text-gray-900 font-medium animate-fade-in">
           2 properties found
         </p>
       </div>

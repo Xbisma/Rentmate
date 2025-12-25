@@ -147,7 +147,7 @@ export default function Home() {
           </motion.div>
           <Link href="/auth/login">
             <motion.button 
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+              className="btn-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

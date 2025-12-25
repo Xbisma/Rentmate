@@ -30,7 +30,7 @@ const PropertyCard = ({ property }) => {
           
           {/* Fallback gradient - shown if no image or image fails to load */}
           <div 
-            className={`h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center ${
+            className={`h-48 bg-linear-to-br from-blue-400 to-purple-500 flex items-center justify-center ${
               property.images && property.images.length > 0 ? 'hidden' : 'flex'
             }`}
           >
