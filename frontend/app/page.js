@@ -154,6 +154,15 @@ export default function Home() {
               Login
             </motion.button>
           </Link>
+          <Link href="/auth/signup">
+            <motion.button 
+              className="btn-secondary ml-4"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Sign Up
+            </motion.button>
+          </Link>
         </div>
       </motion.nav>
 

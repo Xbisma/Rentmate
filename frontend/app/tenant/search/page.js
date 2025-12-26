@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { filterProperties } from "../../../services/propertyService";
+import { filterTenantProperties } from "../../../services/propertyService";
 import PropertyCard from "../../components/PropertyCard";
 
 export default function SearchProperties() {
@@ -37,7 +37,7 @@ export default function SearchProperties() {
       if (bedrooms && bedrooms !== "Any") filters.bedrooms = parseInt(bedrooms);
       if (status) filters.availability = status.toLowerCase();
 
-      const result = await filterProperties(filters);
+      const result = await filterTenantProperties(filters);
       setProperties(result);
     } catch (error) {
       console.error("Error searching properties:", error);

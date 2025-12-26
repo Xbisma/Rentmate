@@ -115,12 +115,18 @@ __turbopack_context__.s([
     ()=>deleteProperty,
     "filterProperties",
     ()=>filterProperties,
+    "filterTenantProperties",
+    ()=>filterTenantProperties,
     "getAllProperties",
     ()=>getAllProperties,
     "getOwnerProperties",
     ()=>getOwnerProperties,
     "getPropertyById",
     ()=>getPropertyById,
+    "getTenantProperties",
+    ()=>getTenantProperties,
+    "getTenantPropertyById",
+    ()=>getTenantPropertyById,
     "updateProperty",
     ()=>updateProperty
 ]);
@@ -161,6 +167,27 @@ const filterProperties = async (filters)=>{
     if (filters.price?.$gte) queryParams.append('minPrice', filters.price.$gte);
     if (filters.price?.$lte) queryParams.append('maxPrice', filters.price.$lte);
     const res = await __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get(`/properties/filter?${queryParams.toString()}`);
+    return res.data;
+};
+const getTenantProperties = async ()=>{
+    const res = await __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get("/tenant/properties");
+    return res.data;
+};
+const getTenantPropertyById = async (id)=>{
+    const res = await __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get(`/tenant/properties/${id}`);
+    return res.data;
+};
+const filterTenantProperties = async (filters)=>{
+    const queryParams = new URLSearchParams();
+    if (filters.city) queryParams.append('city', filters.city);
+    if (filters.location) queryParams.append('location', filters.location);
+    if (filters.type) queryParams.append('type', filters.type);
+    if (filters.availability) queryParams.append('availability', filters.availability);
+    if (filters.bedrooms) queryParams.append('bedrooms', filters.bedrooms);
+    if (filters.bathrooms) queryParams.append('bathrooms', filters.bathrooms);
+    if (filters.price?.$gte) queryParams.append('minPrice', filters.price.$gte);
+    if (filters.price?.$lte) queryParams.append('maxPrice', filters.price.$lte);
+    const res = await __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get(`/tenant/properties/filter?${queryParams.toString()}`);
     return res.data;
 };
 }),
@@ -491,7 +518,7 @@ function SearchProperties() {
             }
             if (bedrooms && bedrooms !== "Any") filters.bedrooms = parseInt(bedrooms);
             if (status) filters.availability = status.toLowerCase();
-            const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$propertyService$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterProperties"])(filters);
+            const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$propertyService$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterTenantProperties"])(filters);
             setProperties(result);
         } catch (error) {
             console.error("Error searching properties:", error);

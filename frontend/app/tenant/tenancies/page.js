@@ -12,6 +12,14 @@ export default function MyTenanciesPage() {
   const [payingTenancy, setPayingTenancy] = useState(null);
 
   useEffect(() => {
+    // Check if user is logged in
+    const token = localStorage.getItem('token');
+    if (!token) {
+      setError('Please log in to view your tenancies');
+      setLoading(false);
+      return;
+    }
+
     fetchTenancies();
   }, []);
 
@@ -101,10 +109,10 @@ export default function MyTenanciesPage() {
         {/* Header */}
         <div className="animate-fade-in">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-2">
-            My Tenancies
+            My Rental
           </h1>
           <p className="text-gray-600 text-base">
-            Manage your rental agreements and payments
+            Manage your current rental agreement and payments
           </p>
         </div>
 
@@ -176,13 +184,13 @@ export default function MyTenanciesPage() {
           <div className="mt-12 card animate-fade-in text-center">
             <div className="text-6xl text-gray-400 mb-4">🏠</div>
             <h2 className="text-xl font-semibold text-gray-900 mb-2">
-              No Active Tenancies
+              No Active Rental
             </h2>
             <p className="text-gray-600 text-base mb-6">
-              You don't have any active rental agreements yet.
+              You don't have an active rental agreement yet.
             </p>
             <Link href="/tenant/search" className="btn-primary">
-              Search Properties
+              Find a Property
             </Link>
           </div>
         )}

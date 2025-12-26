@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 
 export const registerUser = async (req, res) => {
   try {
-    const { name, email, password, role } = req.body;
+    const { name, email, password, phone, role } = req.body;
 
     const userExists = await User.findOne({ email });
     if (userExists) {
@@ -17,6 +17,7 @@ export const registerUser = async (req, res) => {
       name,
       email,
       password: hashedPassword,
+      phone,
       role
     });
 
@@ -26,6 +27,7 @@ export const registerUser = async (req, res) => {
         id: user._id,
         name: user.name,
         email: user.email,
+        phone: user.phone,
         role: user.role
       }
     });
@@ -63,5 +65,25 @@ export const loginUser = async (req, res) => {
 
   } catch (err) {
     res.status(500).json({ message: "Server error." });
+  }
+};
+
+export const resetPassword = async (req, res) => {
+  try {
+    const { email, newPassword } = req.body;
+
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(404).json({ message: "User not found." });
+    }
+
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    user.password = hashedPassword;
+    await user.save();
+
+    res.json({ message: "Password reset successful." });
+  } catch (err) {
+    res.status(500).json({ message: "Server error.", error: err.message });
   }
 };

@@ -2,7 +2,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import PropertyDetails from '../../components/PropertyDetails';
-import { getPropertyById } from '../../../services/propertyService';
+import { getTenantPropertyById } from '../../../services/propertyService';
 
 export default function PropertyPage({ params }) {
   const [property, setProperty] = useState(null);
@@ -13,7 +13,7 @@ export default function PropertyPage({ params }) {
     const fetchProperty = async () => {
       try {
         const { id } = await params;
-        const data = await getPropertyById(id);
+        const data = await getTenantPropertyById(id);
         setProperty(data);
       } catch (err) {
         setError('Failed to load property');

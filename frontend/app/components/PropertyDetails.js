@@ -1,3 +1,4 @@
+// frontend/app/components/PropertyDetails.js
 'use client';
 import React, { useState } from 'react';
 import { Bed, Bath, Square, Home, User } from 'lucide-react';
@@ -25,7 +26,10 @@ export default function PropertyDetails({ property }) {
   const handleSubmitApplication = async () => {
     setIsSubmitting(true);
     try {
-      await applyForProperty({ propertyId: property._id });
+      await applyForProperty({
+        propertyId: property._id,
+        message: applicationMessage || "Interested in renting this property"
+      });
       setApplicationMessage('Application submitted successfully!');
       setTimeout(() => {
         setShowApplicationModal(false);

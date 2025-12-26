@@ -20,7 +20,14 @@ export const registerUser = async (userData) => {
   }
 };
 
-// Optional helper functions
+export const resetPassword = async (resetData) => {
+  try {
+    const response = await API.post("/users/reset-password", resetData);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
 export const logoutUser = () => {
   localStorage.removeItem("token");
   localStorage.removeItem("userType");

@@ -1,12 +1,15 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getTenantMaintenanceRequests } from "../../../services/maintenanceService";
+import { getTenantMaintenanceRequests, createMaintenanceRequest } from "../../../services/maintenanceService";
 
 export default function MyRequestsPage() {
   const [requests, setRequests] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showRequestModal, setShowRequestModal] = useState(false);
+  const [message, setMessage] = useState("");
+
 
   useEffect(() => {
     fetchRequests();
@@ -21,6 +24,19 @@ export default function MyRequestsPage() {
       console.error(err);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleSubmit = async () => {
+  try {
+    await createMaintenanceRequest({
+      title: "Maintenance",
+      description: message,
+    });
+    alert("Request submitted");
+    setShowRequestModal(false);
+  } catch (err) {
+      alert("Failed to submit request");
     }
   };
 
@@ -100,6 +116,46 @@ export default function MyRequestsPage() {
             View and track all your requests to property owners
           </p>
         </div>
+
+        {/* New Request Button */}
+        <div className="flex justify-end mt-6">
+          <button
+            onClick={() => setShowRequestModal(true)}
+            className="btn-primary"
+          >
+              Send Request
+          </button>
+          {showRequestModal && (
+            <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
+              <div className="bg-white rounded-lg p-6 w-full max-w-md">
+                <h2 className="text-xl font-bold mb-4">New Maintenance Request</h2>
+
+                <textarea
+                  className="input-field w-full mb-4"
+                  rows={4}
+                  placeholder="Describe the issue..."
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+                <div className="flex justify-end gap-3">
+                <button
+                  className="btn-secondary"
+                  onClick={() => setShowRequestModal(false)}
+                >
+                  Cancel
+                </button>
+                <button
+                  className="btn-primary"
+                  onClick={handleSubmit}
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+        </div>
+
 
         {/* Status cards */}
         <section className="flex flex-col md:flex-row gap-5 my-6">

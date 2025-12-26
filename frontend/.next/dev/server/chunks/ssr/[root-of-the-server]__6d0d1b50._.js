@@ -175,6 +175,8 @@ function MyRequestsPage() {
     const [requests, setRequests] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [showRequestModal, setShowRequestModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [message, setMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         fetchRequests();
     }, []);
@@ -187,6 +189,18 @@ function MyRequestsPage() {
             console.error(err);
         } finally{
             setLoading(false);
+        }
+    };
+    const handleSubmit = async ()=>{
+        try {
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$maintenanceService$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createMaintenanceRequest"])({
+                title: "Maintenance",
+                description: message
+            });
+            alert("Request submitted");
+            setShowRequestModal(false);
+        } catch (err) {
+            alert("Failed to submit request");
         }
     };
     const getStatusCounts = ()=>{
@@ -237,7 +251,7 @@ function MyRequestsPage() {
                             className: "animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 60,
+                            lineNumber: 76,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -245,23 +259,23 @@ function MyRequestsPage() {
                             children: "Loading your requests..."
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 61,
+                            lineNumber: 77,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/tenant/requests/page.js",
-                    lineNumber: 59,
+                    lineNumber: 75,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/tenant/requests/page.js",
-                lineNumber: 58,
+                lineNumber: 74,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/tenant/requests/page.js",
-            lineNumber: 57,
+            lineNumber: 73,
             columnNumber: 7
         }, this);
     }
@@ -278,7 +292,7 @@ function MyRequestsPage() {
                             children: "Error"
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 73,
+                            lineNumber: 89,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -286,7 +300,7 @@ function MyRequestsPage() {
                             children: error
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 74,
+                            lineNumber: 90,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -295,23 +309,23 @@ function MyRequestsPage() {
                             children: "Try Again"
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 75,
+                            lineNumber: 91,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/tenant/requests/page.js",
-                    lineNumber: 72,
+                    lineNumber: 88,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/tenant/requests/page.js",
-                lineNumber: 71,
+                lineNumber: 87,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/tenant/requests/page.js",
-            lineNumber: 70,
+            lineNumber: 86,
             columnNumber: 7
         }, this);
     }
@@ -326,7 +340,7 @@ function MyRequestsPage() {
                     children: "← Back to Home"
                 }, void 0, false, {
                     fileName: "[project]/app/tenant/requests/page.js",
-                    lineNumber: 87,
+                    lineNumber: 103,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -337,7 +351,7 @@ function MyRequestsPage() {
                             children: "My Requests"
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 96,
+                            lineNumber: 112,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -345,13 +359,93 @@ function MyRequestsPage() {
                             children: "View and track all your requests to property owners"
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 99,
+                            lineNumber: 115,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/tenant/requests/page.js",
-                    lineNumber: 95,
+                    lineNumber: 111,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex justify-end mt-6",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>setShowRequestModal(true),
+                            className: "btn-primary",
+                            children: "Send Request"
+                        }, void 0, false, {
+                            fileName: "[project]/app/tenant/requests/page.js",
+                            lineNumber: 122,
+                            columnNumber: 11
+                        }, this),
+                        showRequestModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-white rounded-lg p-6 w-full max-w-md",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-xl font-bold mb-4",
+                                        children: "New Maintenance Request"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/tenant/requests/page.js",
+                                        lineNumber: 131,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                        className: "input-field w-full mb-4",
+                                        rows: 4,
+                                        placeholder: "Describe the issue...",
+                                        value: message,
+                                        onChange: (e)=>setMessage(e.target.value)
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/tenant/requests/page.js",
+                                        lineNumber: 133,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex justify-end gap-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                className: "btn-secondary",
+                                                onClick: ()=>setShowRequestModal(false),
+                                                children: "Cancel"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/tenant/requests/page.js",
+                                                lineNumber: 141,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                className: "btn-primary",
+                                                onClick: handleSubmit,
+                                                children: "Send"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/tenant/requests/page.js",
+                                                lineNumber: 147,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/tenant/requests/page.js",
+                                        lineNumber: 140,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/tenant/requests/page.js",
+                                lineNumber: 130,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/app/tenant/requests/page.js",
+                            lineNumber: 129,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/tenant/requests/page.js",
+                    lineNumber: 121,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -367,7 +461,7 @@ function MyRequestsPage() {
                                             children: "Pending"
                                         }, void 0, false, {
                                             fileName: "[project]/app/tenant/requests/page.js",
-                                            lineNumber: 109,
+                                            lineNumber: 165,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -375,13 +469,13 @@ function MyRequestsPage() {
                                             children: statusCounts.pending
                                         }, void 0, false, {
                                             fileName: "[project]/app/tenant/requests/page.js",
-                                            lineNumber: 110,
+                                            lineNumber: 166,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/tenant/requests/page.js",
-                                    lineNumber: 108,
+                                    lineNumber: 164,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -390,13 +484,13 @@ function MyRequestsPage() {
                                     children: getStatusEmoji('pending')
                                 }, void 0, false, {
                                     fileName: "[project]/app/tenant/requests/page.js",
-                                    lineNumber: 112,
+                                    lineNumber: 168,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 107,
+                            lineNumber: 163,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -409,7 +503,7 @@ function MyRequestsPage() {
                                             children: "In Progress"
                                         }, void 0, false, {
                                             fileName: "[project]/app/tenant/requests/page.js",
-                                            lineNumber: 120,
+                                            lineNumber: 176,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -417,13 +511,13 @@ function MyRequestsPage() {
                                             children: statusCounts['in-progress']
                                         }, void 0, false, {
                                             fileName: "[project]/app/tenant/requests/page.js",
-                                            lineNumber: 121,
+                                            lineNumber: 177,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/tenant/requests/page.js",
-                                    lineNumber: 119,
+                                    lineNumber: 175,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -432,13 +526,13 @@ function MyRequestsPage() {
                                     children: getStatusEmoji('in-progress')
                                 }, void 0, false, {
                                     fileName: "[project]/app/tenant/requests/page.js",
-                                    lineNumber: 123,
+                                    lineNumber: 179,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 118,
+                            lineNumber: 174,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -451,7 +545,7 @@ function MyRequestsPage() {
                                             children: "Resolved"
                                         }, void 0, false, {
                                             fileName: "[project]/app/tenant/requests/page.js",
-                                            lineNumber: 131,
+                                            lineNumber: 187,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -459,13 +553,13 @@ function MyRequestsPage() {
                                             children: statusCounts.resolved
                                         }, void 0, false, {
                                             fileName: "[project]/app/tenant/requests/page.js",
-                                            lineNumber: 132,
+                                            lineNumber: 188,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/tenant/requests/page.js",
-                                    lineNumber: 130,
+                                    lineNumber: 186,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -474,26 +568,26 @@ function MyRequestsPage() {
                                     children: getStatusEmoji('resolved')
                                 }, void 0, false, {
                                     fileName: "[project]/app/tenant/requests/page.js",
-                                    lineNumber: 134,
+                                    lineNumber: 190,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 129,
+                            lineNumber: 185,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/tenant/requests/page.js",
-                    lineNumber: 105,
+                    lineNumber: 161,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "my-8 border-t border-gray-200"
                 }, void 0, false, {
                     fileName: "[project]/app/tenant/requests/page.js",
-                    lineNumber: 141,
+                    lineNumber: 197,
                     columnNumber: 9
                 }, this),
                 requests.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -511,7 +605,7 @@ function MyRequestsPage() {
                                                 children: request.property?.title || 'Property'
                                             }, void 0, false, {
                                                 fileName: "[project]/app/tenant/requests/page.js",
-                                                lineNumber: 150,
+                                                lineNumber: 206,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -519,7 +613,7 @@ function MyRequestsPage() {
                                                 children: request.issue
                                             }, void 0, false, {
                                                 fileName: "[project]/app/tenant/requests/page.js",
-                                                lineNumber: 153,
+                                                lineNumber: 209,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -532,7 +626,7 @@ function MyRequestsPage() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/tenant/requests/page.js",
-                                                        lineNumber: 155,
+                                                        lineNumber: 211,
                                                         columnNumber: 23
                                                     }, this),
                                                     request.updatedAt !== request.createdAt && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -542,19 +636,19 @@ function MyRequestsPage() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/tenant/requests/page.js",
-                                                        lineNumber: 157,
+                                                        lineNumber: 213,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/tenant/requests/page.js",
-                                                lineNumber: 154,
+                                                lineNumber: 210,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/tenant/requests/page.js",
-                                        lineNumber: 149,
+                                        lineNumber: 205,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -564,28 +658,28 @@ function MyRequestsPage() {
                                             children: request.status.replace('-', ' ').toUpperCase()
                                         }, void 0, false, {
                                             fileName: "[project]/app/tenant/requests/page.js",
-                                            lineNumber: 162,
+                                            lineNumber: 218,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/tenant/requests/page.js",
-                                        lineNumber: 161,
+                                        lineNumber: 217,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/tenant/requests/page.js",
-                                lineNumber: 148,
+                                lineNumber: 204,
                                 columnNumber: 17
                             }, this)
                         }, request._id, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 147,
+                            lineNumber: 203,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/tenant/requests/page.js",
-                    lineNumber: 145,
+                    lineNumber: 201,
                     columnNumber: 11
                 }, this) : /* Empty state */ /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                     className: "mt-6 card animate-fade-in text-center",
@@ -595,7 +689,7 @@ function MyRequestsPage() {
                             children: "💬"
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 177,
+                            lineNumber: 233,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -603,7 +697,7 @@ function MyRequestsPage() {
                             children: "No Requests Yet"
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 178,
+                            lineNumber: 234,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -611,24 +705,24 @@ function MyRequestsPage() {
                             children: "You haven't sent any requests to property owners yet."
                         }, void 0, false, {
                             fileName: "[project]/app/tenant/requests/page.js",
-                            lineNumber: 181,
+                            lineNumber: 237,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/tenant/requests/page.js",
-                    lineNumber: 176,
+                    lineNumber: 232,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/tenant/requests/page.js",
-            lineNumber: 85,
+            lineNumber: 101,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/tenant/requests/page.js",
-        lineNumber: 84,
+        lineNumber: 100,
         columnNumber: 5
     }, this);
 }

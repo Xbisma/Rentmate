@@ -1,5 +1,5 @@
 import express from "express";
-import { verifyToken, verifyRole } from "../middleware/authMiddleware.js";
+import { verifyToken } from "../middleware/authMiddleware.js";
 import {
   getTenantTenancies,
   getTenancyById
@@ -8,7 +8,7 @@ import {
 const router = express.Router();
 
 // Tenant routes
-router.get("/", verifyToken, verifyRole(["tenant"]), getTenantTenancies);
-router.get("/:id", verifyToken, verifyRole(["tenant"]), getTenancyById);
+router.get("/", verifyToken, getTenantTenancies);
+router.get("/:id", verifyToken, getTenancyById);
 
 export default router;

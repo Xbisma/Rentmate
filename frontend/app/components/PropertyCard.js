@@ -1,3 +1,4 @@
+// frontend/app/components/PropertyCard.js
 'use client';
 
 import Link from 'next/link';

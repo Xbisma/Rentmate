@@ -43,3 +43,30 @@ export const filterProperties = async (filters) => {
   const res = await API.get(`/properties/filter?${queryParams.toString()}`);
   return res.data;
 };
+
+// Tenant-specific functions
+export const getTenantProperties = async () => {
+  const res = await API.get("/tenant/properties");
+  return res.data;
+};
+
+export const getTenantPropertyById = async (id) => {
+  const res = await API.get(`/tenant/properties/${id}`);
+  return res.data;
+};
+
+export const filterTenantProperties = async (filters) => {
+  const queryParams = new URLSearchParams();
+  
+  if (filters.city) queryParams.append('city', filters.city);
+  if (filters.location) queryParams.append('location', filters.location);
+  if (filters.type) queryParams.append('type', filters.type);
+  if (filters.availability) queryParams.append('availability', filters.availability);
+  if (filters.bedrooms) queryParams.append('bedrooms', filters.bedrooms);
+  if (filters.bathrooms) queryParams.append('bathrooms', filters.bathrooms);
+  if (filters.price?.$gte) queryParams.append('minPrice', filters.price.$gte);
+  if (filters.price?.$lte) queryParams.append('maxPrice', filters.price.$lte);
+  
+  const res = await API.get(`/tenant/properties/filter?${queryParams.toString()}`);
+  return res.data;
+};

@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useState, Suspense, useEffect } from "react";
 import Header from "../Header";
+import Footer from "../../components/Footer";
 import { getAllProperties, getPropertyById } from "../../../services/propertyService";
 import { getTenantDashboard } from "../../../services/dashboardService";
 
@@ -278,7 +279,7 @@ function TenantHomeDashboard() {
       <div className="content-container">
         <div className="animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 text-gray-900">
-            Welcome to Tenant Portal
+            Welcome to Your Tenant Portal
           </h2>
 
           <p className="text-gray-700 mb-10 text-lg max-w-3xl">
@@ -290,33 +291,48 @@ function TenantHomeDashboard() {
         {!statsLoading && dashboardStats && (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 animate-fade-in">
             <Link href="/tenant/tenancies" className="card text-center hover:shadow-lg transition-shadow">
-              <div className="text-2xl font-bold text-blue-600">{dashboardStats.activeTenancies || 0}</div>
-              <div className="text-sm text-gray-600">Active Tenancies</div>
+              <div className="text-2xl font-bold text-blue-600">{dashboardStats.activeTenancies > 0 ? '1' : '0'}</div>
+              <div className="text-sm text-gray-600">Active Rental</div>
             </Link>
             <div className="card text-center">
-              <div className="text-2xl font-bold text-green-600">{dashboardStats.applications || 0}</div>
-              <div className="text-sm text-gray-600">Applications</div>
+              <div className="text-2xl font-bold text-green-600">{dashboardStats.pendingApplications || 0}</div>
+              <div className="text-sm text-gray-600">Pending Apps</div>
             </div>
             <Link href="/tenant/requests" className="card text-center hover:shadow-lg transition-shadow">
-              <div className="text-2xl font-bold text-orange-600">{dashboardStats.maintenanceRequests || 0}</div>
-              <div className="text-sm text-gray-600">Requests</div>
+              <div className="text-2xl font-bold text-orange-600">{dashboardStats.openRequests || 0}</div>
+              <div className="text-sm text-gray-600">Open Requests</div>
             </Link>
             <Link href="/tenant/payments" className="card text-center hover:shadow-lg transition-shadow">
-              <div className="text-2xl font-bold text-purple-600">{dashboardStats.payments || 0}</div>
+              <div className="text-2xl font-bold text-purple-600">{dashboardStats.totalPayments || 0}</div>
               <div className="text-sm text-gray-600">Payments Made</div>
             </Link>
           </div>
         )}
 
+        {/* Next Payment Due */}
+        {!statsLoading && dashboardStats && dashboardStats.nextPaymentDue && (
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 animate-fade-in">
+            <div className="flex items-center">
+              <div className="text-blue-600 text-xl mr-3">💰</div>
+              <div>
+                <h3 className="text-blue-800 font-semibold">Next Payment Due</h3>
+                <p className="text-blue-700 text-sm">
+                  PKR {dashboardStats.nextPaymentDue.amount?.toLocaleString()} due on the {dashboardStats.nextPaymentDue.dueDate}th
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Pending Payments Alert */}
-        {!statsLoading && dashboardStats && dashboardStats.pendingPayments > 0 && (
+        {!statsLoading && dashboardStats && dashboardStats.pendingRentPayments > 0 && (
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8 animate-fade-in">
             <div className="flex items-center">
               <div className="text-yellow-600 text-xl mr-3">⚠️</div>
               <div>
-                <h3 className="text-yellow-800 font-semibold">Pending Rent Payments</h3>
+                <h3 className="text-yellow-800 font-semibold">Rent Payment Due</h3>
                 <p className="text-yellow-700 text-sm">
-                  You have {dashboardStats.pendingPayments} pending rent payment{dashboardStats.pendingPayments > 1 ? 's' : ''}.
+                  Your rent payment is pending.
                   <Link href="/tenant/tenancies" className="ml-2 underline hover:text-yellow-900">
                     Pay now →
                   </Link>
@@ -333,8 +349,8 @@ function TenantHomeDashboard() {
           >
             <span className="text-2xl mt-1">🔍</span>
             <div>
-              <h3 className="font-semibold text-lg text-gray-900">Search Properties</h3>
-              <p className="text-gray-600 mt-1">Find your perfect rental property</p>
+              <h3 className="font-semibold text-lg text-gray-900">Find Properties</h3>
+              <p className="text-gray-600 mt-1">Search and apply for rental properties</p>
             </div>
           </Link>
 
@@ -344,8 +360,8 @@ function TenantHomeDashboard() {
           >
             <span className="text-2xl mt-1">🏠</span>
             <div>
-              <h3 className="font-semibold text-lg text-gray-900">My Tenancies</h3>
-              <p className="text-gray-600 mt-1">Manage your rental agreements</p>
+              <h3 className="font-semibold text-lg text-gray-900">My Rental</h3>
+              <p className="text-gray-600 mt-1">Manage your current rental property</p>
             </div>
           </Link>
         </div>
@@ -357,8 +373,8 @@ function TenantHomeDashboard() {
           >
             <span className="text-2xl mt-1">💬</span>
             <div>
-              <h3 className="font-semibold text-lg text-gray-900">View Requests</h3>
-              <p className="text-gray-600 mt-1">Check your requests and messages</p>
+              <h3 className="font-semibold text-lg text-gray-900">Support Requests</h3>
+              <p className="text-gray-600 mt-1">Maintenance and property inquiries</p>
             </div>
           </Link>
 
@@ -369,7 +385,7 @@ function TenantHomeDashboard() {
             <span className="text-2xl mt-1">💳</span>
             <div>
               <h3 className="font-semibold text-lg text-gray-900">Payment History</h3>
-              <p className="text-gray-600 mt-1">View your payment records</p>
+              <p className="text-gray-600 mt-1">View all rent payments and receipts</p>
             </div>
           </Link>
         </div>
@@ -434,6 +450,7 @@ function TenantHomeDashboard() {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

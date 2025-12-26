@@ -1,9 +1,16 @@
 'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import { logoutUser } from '../services/authService';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleLogout = () => {
+    logoutUser();
+    router.push('/');
+  };
 
   const navItems = [
     { href: '/tenant/dashboard', label: 'Dashboard' },
@@ -38,7 +45,11 @@ export default function Navbar() {
           </div>
           
           {/* Logout */}
-          <button className="p-2 text-gray-600 hover:text-gray-800 transition-colors">
+          <button 
+            onClick={handleLogout}
+            className="p-2 text-gray-600 hover:text-gray-800 transition-colors"
+            title="Logout"
+          >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
             </svg>

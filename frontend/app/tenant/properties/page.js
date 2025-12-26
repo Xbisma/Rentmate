@@ -1,9 +1,9 @@
 'use client';
 
 import Header from '../Header';
-import { Search, Filter } from 'lucide-react';
+import { Filter } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { getAllProperties } from '../../../services/propertyService';
+import { getTenantProperties } from '../../../services/propertyService';
 
 export default function PropertiesPage() {
   const [properties, setProperties] = useState([]);
@@ -25,7 +25,7 @@ export default function PropertiesPage() {
 
   const fetchProperties = async () => {
     try {
-      const data = await getAllProperties();
+      const data = await getTenantProperties();
       setProperties(data);
     } catch (err) {
       setError('Failed to load properties');
@@ -38,7 +38,6 @@ export default function PropertiesPage() {
   return (
     <div className="page-container">
       <Header />
-
       <div className="content-container">
         <div className="animate-fade-in">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">Search Properties</h1>
@@ -187,9 +186,10 @@ export default function PropertiesPage() {
                   <span>Baths: {property.bathrooms || 'N/A'}</span>
                 </div>
 
-                <button className="btn-primary w-full">
+                <Link href={`/properties/${property._id}`} className="btn-primary w-full text-center block">
                   View Details
-                </button>
+                </Link>
+
               </div>
             ))}
           </div>

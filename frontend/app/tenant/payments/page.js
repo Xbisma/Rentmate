@@ -2,12 +2,17 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Header from "../Header";
-import { getTenantPayments } from "../../../services/paymentService";
+import { getTenantPayments, payRent } from "../../../services/paymentService";
+import { getTenantTenancies } from "../../../services/tenancyService";
 
 export default function PaymentHistoryPage() {
   const [payments, setPayments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [tenancies, setTenancies] = useState([]);
+const [selectedTenancy, setSelectedTenancy] = useState("");
+const [amount, setAmount] = useState("");
+
 
   useEffect(() => {
     fetchPayments();
@@ -23,6 +28,15 @@ export default function PaymentHistoryPage() {
     } finally {
       setLoading(false);
     }
+  };
+
+  useEffect(() => {
+    loadTenancies();
+  }, []);
+
+  const loadTenancies = async () => {
+    const data = await getTenantTenancies();
+    setTenancies(data);
   };
 
   if (loading) {
@@ -97,6 +111,50 @@ export default function PaymentHistoryPage() {
             <div className="text-sm text-gray-600">Average Payment</div>
           </div>
         </div>
+
+        <div className="card mb-8 animate-fade-in">
+  <h2 className="text-xl font-bold mb-4">Pay Rent</h2>
+
+  <select
+    className="input-field mb-3"
+    value={selectedTenancy}
+    onChange={(e) => setSelectedTenancy(e.target.value)}
+  >
+    <option value="">Select Tenancy</option>
+    {tenancies.map((t) => (
+      <option key={t._id} value={t._id}>
+        {t.property?.title}
+      </option>
+    ))}
+  </select>
+
+  <input
+    type="number"
+    placeholder="Amount"
+    className="input-field mb-4"
+    value={amount}
+    onChange={(e) => setAmount(e.target.value)}
+  />
+
+  <button
+    className="btn-primary"
+    onClick={async () => {
+      try {
+        await payRent({
+          tenancyId: selectedTenancy,
+          amount
+        });
+        alert("Rent paid successfully");
+        fetchPayments();
+      } catch {
+        alert("Payment failed");
+      }
+    }}
+  >
+    Pay Rent
+  </button>
+</div>
+
 
         {/* Payments List */}
         {payments.length > 0 ? (

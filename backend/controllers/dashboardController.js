@@ -10,24 +10,45 @@ export const tenantDashboard = async (req, res) => {
   try {
     const tenantId = req.user.id;
 
+    // Active tenancies (current rental agreements)
     const activeTenancies = await Tenancy.countDocuments({ tenant: tenantId });
-    const applications = await RentalApplication.countDocuments({ tenant: tenantId });
-    const maintenanceRequests = await MaintenanceRequest.countDocuments({ tenant: tenantId });
-    const payments = await Payment.countDocuments({ tenant: tenantId });
 
-    // Get pending rent payments (tenancies where rent is not paid for current month)
-    const currentMonth = new Date().toLocaleString("default", { month: "long", year: "numeric" });
-    const pendingPayments = await Tenancy.countDocuments({
+    // Pending applications (applications that haven't been approved/rejected)
+    const pendingApplications = await RentalApplication.countDocuments({
+      tenant: tenantId,
+      status: { $in: ['pending', 'under-review'] }
+    });
+
+    // Open maintenance requests (not resolved)
+    const openRequests = await MaintenanceRequest.countDocuments({
+      tenant: tenantId,
+      status: { $ne: 'resolved' }
+    });
+
+    // Total payments made
+    const totalPayments = await Payment.countDocuments({ tenant: tenantId });
+
+    // Pending rent payments (tenancies where rent is not paid)
+    const pendingRentPayments = await Tenancy.countDocuments({
       tenant: tenantId,
       rentPaid: false
     });
 
+    // Next payment due date (earliest rent due date)
+    const nextTenancy = await Tenancy.findOne({ tenant: tenantId })
+      .sort({ rentDueDate: 1 })
+      .select('rentDueDate rentAmount');
+
     res.json({
       activeTenancies,
-      applications,
-      maintenanceRequests,
-      payments,
-      pendingPayments
+      pendingApplications,
+      openRequests,
+      totalPayments,
+      pendingRentPayments,
+      nextPaymentDue: nextTenancy ? {
+        amount: nextTenancy.rentAmount,
+        dueDate: nextTenancy.rentDueDate
+      } : null
     });
   } catch (err) {
     res.status(500).json({ message: err.message });
