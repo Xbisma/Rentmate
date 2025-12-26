@@ -10,8 +10,20 @@ export const getOwnerProperties = async () => {
   return res.data;
 };
 
-export const addProperty = async (data) => {
-  const res = await API.post("/properties", data);
+export const addProperty = async (propertyData) => {
+  const formData = new FormData();
+
+  for (const key in propertyData) {
+    if (key === "images") {
+      propertyData.images.forEach((file) => {
+        formData.append("images", file);
+      });
+    } else {
+      formData.append(key, propertyData[key]);
+    }
+  }
+
+  const res = await api.post("/properties", formData);
   return res.data;
 };
 

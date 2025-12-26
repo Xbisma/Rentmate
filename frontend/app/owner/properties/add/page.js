@@ -27,42 +27,25 @@ export default function AddProperty() {
   const [images, setImages] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      addProperty({
-        ...formData,
-        images: images
-      });
-      
-      // Reset form
-      setFormData({
-        title: '',
-        description: '',
-        propertyType: 'Apartments',
-        status: 'Available',
-        address: '',
-        city: '',
-        monthlyRent: '',
-        area: '',
-        bedrooms: '',
-        bathrooms: '',
-        amenities: ''
-      });
-      setImages([]);
-      
-      // Redirect to properties page after a short delay
-      setTimeout(() => {
-        router.push('/owner/properties');
-      }, 1500);
-    } catch (error) {
-      console.error('Error adding property:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  const handleSubmit = async () => {
+  try {
+    await addProperty({
+      title,
+      price,
+      city,
+      location,
+      bedrooms,
+      bathrooms,
+      availability,
+      images, // this must be File objects
+    });
+
+    router.push("/owner/properties");
+  } catch (err) {
+    console.error(err);
+    alert(err.response?.data?.message || "Failed to add property");
+  }
+};
 
   const handleChange = (e) => {
     setFormData({

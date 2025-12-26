@@ -2,6 +2,10 @@ import Property from "../models/Property.js";
 
 export const addProperty = async (req, res) => {
   try {
+    console.log("BODY:", req.body);
+    console.log("FILES:", req.files);
+    console.log("USER:", req.user);
+    
     const ownerId = req.user.id;
 
     const imageUrls = req.files ? req.files.map(file => file.path) : [];

@@ -21,7 +21,7 @@ router.get("/filter", filterProperties);
 router.get("/:id", getPropertyById);
 router.put("/:id", verifyToken, updateProperty);
 router.delete("/:id", verifyToken, deleteProperty);
-// router.post("/", verifyToken, verifyRole(["owner"]), upload.array("images", 5), addProperty);
+router.post("/", verifyToken, verifyRole(["owner"]), upload.array("images", 5), addProperty);
 // router.post("/properties", upload.single("image"), addProperty);
 
 
