@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { resetPassword } from "../../../../services/authService";
+import AuthSideVisual from '../../../components/AuthSideVisual';
 
 export default function ForgotPasswordPage() {
   const [formData, setFormData] = useState({
@@ -13,7 +14,13 @@ export default function ForgotPasswordPage() {
   });
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
+  // const [mounted, setMounted] = useState(false); // Add this
 
+  // // Add this useEffect
+  // useEffect(() => {
+  //   setMounted(true);
+  // }, []);
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -60,13 +67,29 @@ export default function ForgotPasswordPage() {
     }
   };
 
+  // // Wrap your form rendering with a condition
+  // if (!mounted) {
+  //   return (
+  //     <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 pt-20 flex items-center justify-center p-4">
+  //       <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
+  //         <div className="h-8 bg-gray-200 rounded animate-pulse mb-4"></div>
+  //         <div className="h-4 bg-gray-200 rounded animate-pulse mb-8"></div>
+  //         {/* Add more skeleton loading if needed */}
+  //       </div>
+  //     </div>
+  //   );
+  // }
+
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 pt-20 flex items-center justify-center p-4">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8"
-      >
+      <AuthSideVisual variant="tenant" />
+      <div className="flex w-full lg:w-1/2 items-center justify-center bg-slate-50 p-6">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8"
+    >
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-2">Reset Password</h1>
         <p className="text-gray-600 text-center mb-8">Enter your email and new password</p>
 
@@ -124,10 +147,13 @@ export default function ForgotPasswordPage() {
 
           <motion.button
             type="submit"
-            disabled={loading}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="w-full bg-linear-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            className={`w-full font-semibold py-3 rounded-lg transition-all shadow-lg
+              ${formData.userType === 'tenant'
+                ? 'bg-gradient-to-r from-blue-600 to-sky-500 hover:shadow-blue-300'
+                : 'bg-gradient-to-r from-emerald-600 to-amber-500 hover:shadow-emerald-300'}
+             text-white`}
           >
             {loading ? 'Resetting...' : 'Reset Password'}
           </motion.button>
@@ -145,6 +171,7 @@ export default function ForgotPasswordPage() {
           </p>
         </div>
       </motion.div>
+      </div>
     </div>
   );
 }

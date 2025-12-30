@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { loginUser } from "../../../../services/authService";
 import Link from 'next/link';
+import AuthSideVisual from '../../../components/AuthSideVisual';
 
 
 export default function LoginPage() {
@@ -80,10 +81,13 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 pt-20 flex items-center justify-center p-4">
+    <div className="min-h-screen flex">
+      <AuthSideVisual variant={formData.userType} />
+      <div className="flex w-full lg:w-1/2 items-center justify-center bg-slate-50 p-6">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
         className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8"
       >
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-2">Login to Rentmate</h1>
@@ -147,9 +151,9 @@ export default function LoginPage() {
           
           <motion.button
             type="submit"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="w-full bg-linear-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            className={`w-full font-semibold py-3 rounded-lg transition-all shadow-lg ${formData.userType === 'tenant'  ? 'bg-gradient-to-r from-blue-600 to-sky-500 hover:shadow-blue-300' : 'bg-gradient-to-r from-emerald-600 to-amber-500 hover:shadow-emerald-300'} text-white`}
           >
             Login to Continue
           </motion.button>
@@ -175,6 +179,7 @@ export default function LoginPage() {
           </p>
         </div>
       </motion.div>
+      </div>
     </div>
   );
 }

@@ -199,3 +199,17 @@ body {
     @apply p-4;
   }
 }
+
+/* Tenant Theme */
+:root {
+  --tenant-primary: #2563eb;
+  --tenant-secondary: #0ea5e9;
+  --tenant-success: #10b981;
+}
+
+/* Owner Theme (used later) */
+:root {
+  --owner-primary: #059669;
+  --owner-secondary: #f59e0b;
+  --owner-accent: #7c3aed;
+}

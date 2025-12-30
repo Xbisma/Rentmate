@@ -128,13 +128,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       {/* Navigation - Your original animated navbar */}
       <motion.nav 
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
-        className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}
+        className={`fixed w-full z-50 transition-all duration-300 backdrop-blur-md ${isScrolled  ? 'bg-white/80 shadow-sm py-2 border-b border-gray-200'  : 'bg-transparent py-4'}`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <motion.div 
@@ -142,27 +142,30 @@ export default function Home() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <h1 className="text-2xl font-bold text-blue-600">Rentmate</h1>
+            <h1 className="text-2xl font-bold text-[var(--tenant-primary)]">Rentmate</h1>
             <span className="text-sm text-gray-600 italic">tension nahi, hum hain na</span>
           </motion.div>
-          <Link href="/auth/login">
-            <motion.button 
-              className="btn-primary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Login
-            </motion.button>
-          </Link>
-          <Link href="/auth/signup">
-            <motion.button 
-              className="btn-secondary ml-4"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Sign Up
-            </motion.button>
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link href="/auth/login">
+              <motion.button 
+                className="btn-outline"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Login
+              </motion.button>
+            </Link>
+
+            <Link href="/auth/signup">
+              <motion.button 
+                className="btn-primary rounded-xl px-5"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Sign Up
+              </motion.button>
+            </Link>
+          </div>
         </div>
       </motion.nav>
 
@@ -193,13 +196,13 @@ export default function Home() {
             >
               <motion.h1 
                 variants={itemVariants}
-                className="text-4xl md:text-5xl font-bold mb-4"
+                className="text-4xl md:text-5xl font-semibold tracking-tight mb-4"
               >
                 Search, Select, Settle In
               </motion.h1>
               <motion.p 
                 variants={itemVariants}
-                className="text-xl mb-8 opacity-90"
+                className="text-lg md:text-xl mb-8 text-gray-200"
               >
                 Find your perfect home with Rentmate
               </motion.p>
@@ -207,7 +210,7 @@ export default function Home() {
               {/* Compact Search Box */}
               <motion.form 
                 variants={itemVariants}
-                className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-6 text-gray-800"
+                className="max-w-4xl mx-auto bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl p-8 text-gray-800"
                 onSubmit={handleSearch}
               >
                 {/* Top Text */}
@@ -223,7 +226,7 @@ export default function Home() {
                     <select 
                       value={selectedCity}
                       onChange={(e) => setSelectedCity(e.target.value)}
-                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white text-sm"
+                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
                     >
                       {cities.map(city => (
                         <option key={city} value={city}>{city}</option>
@@ -237,7 +240,7 @@ export default function Home() {
                     <select 
                       value={selectedPropertyType}
                       onChange={(e) => setSelectedPropertyType(e.target.value)}
-                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white text-sm"
+                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
                     >
                       {propertyTypes.map(type => (
                         <option key={type} value={type}>{type}</option>
@@ -251,7 +254,7 @@ export default function Home() {
                     <select 
                       value={selectedBeds}
                       onChange={(e) => setSelectedBeds(e.target.value)}
-                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white text-sm"
+                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
                     >
                       {bedOptions.map(beds => (
                         <option key={beds} value={beds}>{beds}</option>
@@ -269,7 +272,7 @@ export default function Home() {
                       type="text" 
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
-                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 text-sm"
+                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] text-sm"
                       placeholder="Enter area or sector"
                     />
                   </div>
@@ -285,7 +288,7 @@ export default function Home() {
                         );
                         if (selected) setPriceRange(selected);
                       }}
-                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white text-sm"
+                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
                     >
                       {priceOptions.map((option, index) => (
                         <option key={index} value={`${option.min} to ${option.max}`}>
@@ -306,7 +309,7 @@ export default function Home() {
                         );
                         if (selected) setAreaRange(selected);
                       }}
-                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white text-sm"
+                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
                     >
                       {areaOptions.map((option, index) => (
                         <option key={index} value={`${option.min} to ${option.max}`}>
@@ -321,7 +324,7 @@ export default function Home() {
                 <div className="flex justify-center">
                   <motion.button 
                     type="submit"
-                    className="bg-blue-600 text-white px-8 py-2 rounded font-semibold hover:bg-blue-700 transition-colors text-sm"
+                    className="bg-[var(--tenant-primary)] text-white px-10 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all text-sm"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -335,7 +338,7 @@ export default function Home() {
 
         {/* Footer */}
         <motion.footer 
-          className="bg-gray-800 text-white py-12"
+          className="bg-slate-900 text-gray-300 py-16"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -378,7 +381,7 @@ export default function Home() {
                     {section.items.map((item, itemIndex) => (
                       <motion.li 
                         key={item}
-                        className="hover:text-blue-300 transition-colors cursor-pointer"
+                        className="hover:text-[var(--tenant-secondary)] transition-colors cursor-pointer"
                         whileHover={{ x: 5 }}
                       >
                         {item}
