@@ -1,16 +1,277 @@
-[00:00:08.866] Server  LOG      ✓ Ready in 5.9s
-[00:00:57.827] Server  LOG      ○ Compiling / ...
-[00:01:19.666] Browser ERROR   {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjY3Nzg2MDEsImV4cCI6MTc2NzM4MzQwMX0.0tP22T44OfVSdY4a-UPipvZ1NiDUYbRiX7vgXwPu9sY"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/properties","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:4267:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:5025:49)\n    at async getTenantProperties (http://localhost:3000/_next/static/chunks/frontend_c1bec125._.js:43:17)\n    at async fetchProperties (http://localhost:3000/_next/static/chunks/frontend_c1bec125._.js:149:24)"}
-[00:01:44.912] Server  LOG      ○ Compiling /auth/login ...
-[00:01:46.801] Browser ERROR   uncaughtError: SyntaxError: Failed to execute 'querySelector' on 'Document': 'link[rel="preload"][as="image"][href="Rentmaterontendapp(public)auth	enant.svg"]' is not a valid selector.
-[00:01:46.802] Browser ERROR   uncaughtError: SyntaxError: Failed to execute 'querySelector' on 'Document': 'link[rel="preload"][as="image"][href="Rentmaterontendapp(public)auth	enant.svg"]' is not a valid selector.
-[00:01:46.802] Browser ERROR   uncaughtError: SyntaxError: Failed to execute 'querySelector' on 'Document': 'link[rel="preload"][as="image"][href="Rentmaterontendapp(public)auth	enant.svg"]' is not a valid selector.
-[00:01:46.802] Browser ERROR   uncaughtError: SyntaxError: Failed to execute 'querySelector' on 'Document': 'link[rel="preload"][as="image"][href="Rentmaterontendapp(public)auth	enant.svg"]' is not a valid selector.
-[00:01:46.802] Browser ERROR   uncaughtError: SyntaxError: Failed to execute 'querySelector' on 'Document': 'link[rel="preload"][as="image"][href="Rentmaterontendapp(public)auth	enant.svg"]' is not a valid selector.
-[00:01:46.802] Browser ERROR   uncaughtError: SyntaxError: Failed to execute 'querySelector' on 'Document': 'link[rel="preload"][as="image"][href="Rentmaterontendapp(public)auth	enant.svg"]' is not a valid selector.
-[00:01:46.802] Browser ERROR   uncaughtError: SyntaxError: Failed to execute 'querySelector' on 'Document': 'link[rel="preload"][as="image"][href="Rentmaterontendapp(public)auth	enant.svg"]' is not a valid selector.
-[00:01:46.802] Browser ERROR   uncaughtError: SyntaxError: Failed to execute 'querySelector' on 'Document': 'link[rel="preload"][as="image"][href="Rentmaterontendapp(public)auth	enant.svg"]' is not a valid selector.
-[00:01:46.802] Browser ERROR   uncaughtError: SyntaxError: Failed to execute 'querySelector' on 'Document': 'link[rel="preload"][as="image"][href="Rentmaterontendapp(public)auth	enant.svg"]' is not a valid selector.
-[00:02:40.277] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:02:40.296] Server  LOG      ✓ Compiled in 739ms
-[00:08:21.286] Server  LOG      ✓ Compiled in 588ms
+[00:00:03.981] Server  LOG      ✓ Ready in 2.8s
+[00:00:45.356] Server  LOG      ○ Compiling / ...
+[00:01:00.613] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="/frontend/...">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="min-h-scre...">
+            <motion.nav>
+            <main>
+              <section className="pt-32 pb-2...">
+                <motion.div>
+                <motion.div>
+                <motion.div>
+                <motion.div>
+                <div className="container ...">
+                  <motion.div variants={{hidden:{...}, ...}} initial="hidden" animate="visible">
+                    <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                      <motion.h1>
+                      <motion.p>
+                      <motion.form variants={{...}} className="max-w-4xl ..." onSubmit={function handleSearch}>
+                        <form className="max-w-4xl ..." onSubmit={function handleSearch} style={{opacity:0, ...}} ...>
+                          <div>
+                          <div>
+                          <div className="grid grid-...">
+                            <div>
+                            <div>
+                              <label>
+                              <select
+                                value="0 to Any"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="nuyo5k"
+                              >
+                            <div>
+                              <label>
+                              <select
+                                value="0 to Any"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="3npv9"
+                              >
+                          <div className="flex justi...">
+                            <motion.button type="submit" className="bg-[var(--..." whileHover={{scale:1.05}} ...>
+                              <button
+                                type="submit"
+                                className="bg-[var(--tenant-primary)] text-white px-10 py-3 rounded-xl font-semibold s..."
+                                tabIndex={0}
+                                style={{}}
+                                ref={function useMotionRef.useCallback}
+-                               fdprocessedid="dq80zk"
+                              >
++                               FIND
+              ...
+
+[00:01:18.425] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
+[00:01:18.938] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzEwNDY5MywiZXhwIjoxNzY3NzA5NDkzfQ.Rrnf1f7rPxpE5HfqX65Bmx9uDjE7CfSvXydPZEGCe_I","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[00:01:38.116] Server  LOG      ✓ Compiled in 970ms
+[00:01:38.542] Browser ERROR   uncaughtError: ReferenceError: stat is not defined
+[00:01:57.883] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="/frontend/...">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="min-h-scre...">
+            <motion.nav>
+            <main>
+              <section className="pt-32 pb-2...">
+                <motion.div>
+                <motion.div>
+                <motion.div>
+                <motion.div>
+                <div className="container ...">
+                  <motion.div variants={{hidden:{...}, ...}} initial="hidden" animate="visible">
+                    <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                      <motion.h1>
+                      <motion.p>
+                      <motion.form variants={{...}} className="max-w-4xl ..." onSubmit={function handleSearch}>
+                        <form className="max-w-4xl ..." onSubmit={function handleSearch} style={{opacity:0, ...}} ...>
+                          <div>
+                          <div className="grid grid-...">
+                            <div>
+                              <label>
+                              <select
+                                value="Islamabad"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="9oq0k"
+                              >
+                            <div>
+                              <label>
+                              <select
+                                value="Homes"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="m7rj7"
+                              >
+                            <div>
+                              <label>
+                              <select
+                                value="All"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="rs6iw"
+                              >
+                          <div className="grid grid-...">
+                            <div>
+                              <label>
+                              <input
+                                type="text"
+                                value=""
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+                                placeholder="Enter area or sector"
+-                               fdprocessedid="xh3sxk"
+                              >
+                            <div>
+                              <label>
+                              <select
+                                value="0 to Any"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="l3feck"
+                              >
+                            <div>
+                              <label>
+                              <select
+                                value="0 to Any"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="3kqu2a"
+                              >
+                          <div className="flex justi...">
+                            <motion.button type="submit" className="bg-[var(--..." whileHover={{scale:1.05}} ...>
+                              <button
+                                type="submit"
+                                className="bg-[var(--tenant-primary)] text-white px-10 py-3 rounded-xl font-semibold s..."
+                                tabIndex={0}
+                                style={{}}
+                                ref={function useMotionRef.useCallback}
+-                               fdprocessedid="0t1xuo"
+                              >
++                               FIND
+              ...
+
+[00:02:11.655] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
+[00:02:12.465] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzEwNDc0NiwiZXhwIjoxNzY3NzA5NTQ2fQ.LkncVLFONejxO3wUO5j64gjsM8Ol-VBV2MazxVCCJXw","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[00:02:12.941] Browser ERROR   uncaughtError: ReferenceError: stat is not defined
+[00:05:16.807] Server  LOG      ✓ Compiled in 8.4s
+[00:05:20.001] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:26:57.591] Server  LOG      ✓ Compiled in 1000ms
+[00:26:58.557] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'bg')
+[00:27:52.798] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="/frontend/...">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="min-h-scre...">
+            <motion.nav>
+            <main>
+              <section className="pt-32 pb-2...">
+                <motion.div>
+                <motion.div>
+                <motion.div>
+                <motion.div>
+                <div className="container ...">
+                  <motion.div variants={{hidden:{...}, ...}} initial="hidden" animate="visible">
+                    <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                      <motion.h1>
+                      <motion.p>
+                      <motion.form variants={{...}} className="max-w-4xl ..." onSubmit={function handleSearch}>
+                        <form className="max-w-4xl ..." onSubmit={function handleSearch} style={{opacity:0, ...}} ...>
+                          <div>
+                          <div className="grid grid-...">
+                            <div>
+                              <label>
+                              <select
+                                value="Islamabad"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="ccx2s"
+                              >
+                            <div>
+                              <label>
+                              <select
+                                value="Homes"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="jwelc"
+                              >
+                            <div>
+                              <label>
+                              <select
+                                value="All"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="nojf3c"
+                              >
+                          <div className="grid grid-...">
+                            <div>
+                              <label>
+                              <input
+                                type="text"
+                                value=""
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+                                placeholder="Enter area or sector"
+-                               fdprocessedid="56wx8"
+                              >
+                            <div>
+                              <label>
+                              <select
+                                value="0 to Any"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="qxkwti"
+                              >
+                            <div>
+                              <label>
+                              <select
+                                value="0 to Any"
+                                onChange={function onChange}
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 f..."
+-                               fdprocessedid="ywf4z6"
+                              >
+                          <div className="flex justi...">
+                            <motion.button type="submit" className="bg-[var(--..." whileHover={{scale:1.05}} ...>
+                              <button
+                                type="submit"
+                                className="bg-[var(--tenant-primary)] text-white px-10 py-3 rounded-xl font-semibold s..."
+                                tabIndex={0}
+                                style={{}}
+                                ref={function useMotionRef.useCallback}
+-                               fdprocessedid="1okohr"
+                              >
++                               FIND
+              ...
+
+[00:28:12.558] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
+[00:28:13.520] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzEwNjMwNywiZXhwIjoxNzY3NzExMTA3fQ.HOI-sOwe5xLbpKOY6sHHhwzgh7JPOJLPdAODSwsxZrw","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[00:52:06.928] Server  LOG      ✓ Compiled in 551ms

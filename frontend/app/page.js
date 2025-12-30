@@ -227,6 +227,7 @@ export default function Home() {
                       value={selectedCity}
                       onChange={(e) => setSelectedCity(e.target.value)}
                       className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
+                      suppressHydrationWarning={true}
                     >
                       {cities.map(city => (
                         <option key={city} value={city}>{city}</option>
@@ -241,6 +242,7 @@ export default function Home() {
                       value={selectedPropertyType}
                       onChange={(e) => setSelectedPropertyType(e.target.value)}
                       className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
+                      suppressHydrationWarning={true}
                     >
                       {propertyTypes.map(type => (
                         <option key={type} value={type}>{type}</option>
@@ -255,6 +257,7 @@ export default function Home() {
                       value={selectedBeds}
                       onChange={(e) => setSelectedBeds(e.target.value)}
                       className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
+                      suppressHydrationWarning={true}
                     >
                       {bedOptions.map(beds => (
                         <option key={beds} value={beds}>{beds}</option>
@@ -274,6 +277,7 @@ export default function Home() {
                       onChange={(e) => setLocation(e.target.value)}
                       className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] text-sm"
                       placeholder="Enter area or sector"
+                      suppressHydrationWarning={true}
                     />
                   </div>
                   
@@ -289,6 +293,7 @@ export default function Home() {
                         if (selected) setPriceRange(selected);
                       }}
                       className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
+                      suppressHydrationWarning={true}
                     >
                       {priceOptions.map((option, index) => (
                         <option key={index} value={`${option.min} to ${option.max}`}>
@@ -310,6 +315,7 @@ export default function Home() {
                         if (selected) setAreaRange(selected);
                       }}
                       className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[var(--tenant-primary)] bg-white text-sm"
+                      suppressHydrationWarning={true}
                     >
                       {areaOptions.map((option, index) => (
                         <option key={index} value={`${option.min} to ${option.max}`}>
@@ -327,6 +333,7 @@ export default function Home() {
                     className="bg-[var(--tenant-primary)] text-white px-10 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all text-sm"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    suppressHydrationWarning={true}
                   >
                     FIND
                   </motion.button>
