@@ -245,8 +245,33 @@ function TenantHomeDashboard() {
   const [dashboardStats, setDashboardStats] = useState(null);
   const [loading, setLoading] = useState(true);
   const [statsLoading, setStatsLoading] = useState(true);
+  const [userName, setUserName] = useState('');
 
+  const getDaySuffix = (day) => {
+  if (!day) return '';
+  const lastDigit = day % 10;
+  const lastTwoDigits = day % 100;
+  
+  if (lastTwoDigits >= 11 && lastTwoDigits <= 13) return 'th';
+  if (lastDigit === 1) return 'st';
+  if (lastDigit === 2) return 'nd';
+  if (lastDigit === 3) return 'rd';
+  return 'th';
+};
   useEffect(() => {
+    // Get user name from localStorage
+    const storedName = localStorage.getItem('userName');
+    const storedEmail = localStorage.getItem('userEmail');
+    
+    // Use name if available, otherwise use email, otherwise show generic welcome
+    if (storedName) {
+      setUserName(storedName);
+    } else if (storedEmail) {
+      // Extract name from email (before @)
+      const nameFromEmail = storedEmail.split('@')[0];
+      setUserName(nameFromEmail);
+    }
+    
     fetchFeaturedProperties();
     fetchDashboardStats();
   }, []);
@@ -273,13 +298,25 @@ function TenantHomeDashboard() {
       setStatsLoading(false);
     }
   };
+
+  // Format the welcome message
+  const getWelcomeMessage = () => {
+    if (!userName) {
+      return "Welcome to Your Tenant Portal";
+    }
+    
+    // Capitalize first letter of name
+    const formattedName = userName.charAt(0).toUpperCase() + userName.slice(1);
+    return `Welcome, ${formattedName}!`;
+  };
+
   return (
     <div className="page-container">
       <Header />
       <div className="content-container">
         <div className="animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 text-gray-900">
-            Welcome to Your Tenant Portal
+            {getWelcomeMessage()}
           </h2>
 
           <p className="text-gray-700 mb-10 text-lg max-w-3xl">
@@ -288,59 +325,62 @@ function TenantHomeDashboard() {
         </div>
 
         {/* Statistics Section */}
-        {!statsLoading && dashboardStats && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 animate-fade-in">
-            <Link href="/tenant/tenancies" className="card text-center hover:shadow-lg transition-shadow">
-              <div className="text-2xl font-bold text-blue-600">{dashboardStats.activeTenancies > 0 ? '1' : '0'}</div>
-              <div className="text-sm text-gray-600">Active Rental</div>
-            </Link>
-            <Link href="/tenant/applications" className="card text-center hover:shadow-lg transition-shadow">
-              <div className="text-2xl font-bold text-green-600">{dashboardStats.pendingApplications || 0}</div>
-              <div className="text-sm text-gray-600">Pending Apps</div>
-            </Link>
-            <Link href="/tenant/requests" className="card text-center hover:shadow-lg transition-shadow">
-              <div className="text-2xl font-bold text-orange-600">{dashboardStats.openRequests || 0}</div>
-              <div className="text-sm text-gray-600">Open Requests</div>
-            </Link>
-            <Link href="/tenant/payments" className="card text-center hover:shadow-lg transition-shadow">
-              <div className="text-2xl font-bold text-purple-600">{dashboardStats.totalPayments || 0}</div>
-              <div className="text-sm text-gray-600">Payments Made</div>
-            </Link>
-          </div>
-        )}
+{!statsLoading && dashboardStats && (
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 animate-fade-in">
+    <Link href="/tenant/tenancies" className="card text-center hover:shadow-lg transition-shadow">
+      <div className="text-2xl font-bold text-blue-600">{dashboardStats.activeTenancies > 0 ? '1' : '0'}</div>
+      <div className="text-sm text-gray-600">Active Rental</div>
+    </Link>
+    <Link href="/tenant/applications" className="card text-center hover:shadow-lg transition-shadow">
+      <div className="text-2xl font-bold text-green-600">{dashboardStats.pendingApplications || 0}</div>
+      <div className="text-sm text-gray-600">Pending Apps</div>
+    </Link>
+    <Link href="/tenant/requests" className="card text-center hover:shadow-lg transition-shadow">
+      <div className="text-2xl font-bold text-orange-600">{dashboardStats.openRequests || 0}</div>
+      <div className="text-sm text-gray-600">Open Requests</div>
+    </Link>
+    <Link href="/tenant/payments" className="card text-center hover:shadow-lg transition-shadow">
+      <div className="text-2xl font-bold text-purple-600">{dashboardStats.totalPayments || 0}</div>
+      <div className="text-sm text-gray-600">Payments Made</div>
+    </Link>
+  </div>
+)}
 
-        {/* Next Payment Due */}
-        {!statsLoading && dashboardStats && dashboardStats.nextPaymentDue && (
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 animate-fade-in">
-            <div className="flex items-center">
-              <div className="text-blue-600 text-xl mr-3">💰</div>
-              <div>
-                <h3 className="text-blue-800 font-semibold">Next Payment Due</h3>
-                <p className="text-blue-700 text-sm">
-                  PKR {dashboardStats.nextPaymentDue.amount?.toLocaleString()} due on the {dashboardStats.nextPaymentDue.dueDate}th
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
+{/* Next Payment Due - Only show if there's actually a payment due with valid data */}
+{!statsLoading && dashboardStats && dashboardStats.nextPaymentDue && dashboardStats.nextPaymentDue.amount && dashboardStats.nextPaymentDue.dueDate && (
+  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 animate-fade-in">
+    <div className="flex items-center">
+      <div className="text-blue-600 text-xl mr-3">💰</div>
+      <div>
+        <h3 className="text-blue-800 font-semibold">Next Payment Due</h3>
+        <p className="text-blue-700 text-sm">
+          PKR {dashboardStats.nextPaymentDue.amount?.toLocaleString()} due on {dashboardStats.nextPaymentDue.dueDate}{getDaySuffix(dashboardStats.nextPaymentDue.dueDate)}
+        </p>
+      </div>
+    </div>
+  </div>
+)}
 
-        {/* Pending Payments Alert */}
-        {!statsLoading && dashboardStats && dashboardStats.pendingRentPayments > 0 && (
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8 animate-fade-in">
-            <div className="flex items-center">
-              <div className="text-yellow-600 text-xl mr-3">⚠️</div>
-              <div>
-                <h3 className="text-yellow-800 font-semibold">Rent Payment Due</h3>
-                <p className="text-yellow-700 text-sm">
-                  Your rent payment is pending.
-                  <Link href="/tenant/tenancies" className="ml-2 underline hover:text-yellow-900">
-                    Pay now →
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
+{/* Pending Payments Alert - Only show if pendingRentPayments > 0 */}
+{!statsLoading && dashboardStats && dashboardStats.pendingRentPayments > 0 && (
+  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8 animate-fade-in">
+    <div className="flex items-center">
+      <div className="text-yellow-600 text-xl mr-3">⚠️</div>
+      <div>
+        <h3 className="text-yellow-800 font-semibold">Rent Payment Due</h3>
+        <p className="text-yellow-700 text-sm">
+          Your rent payment is pending.
+          <Link 
+            href="/tenant/tenancies" 
+            className="ml-2 text-yellow-800 font-semibold underline hover:text-yellow-900"
+          >
+            Pay now →
+          </Link>
+        </p>
+      </div>
+    </div>
+  </div>
+)}
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           <Link

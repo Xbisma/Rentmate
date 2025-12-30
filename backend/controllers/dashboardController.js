@@ -1,3 +1,5 @@
+// backend/controllers/dashboardController.js
+
 import Property from "../models/Property.js";
 import RentalApplication from "../models/RentalApplication.js";
 import Tenancy from "../models/Tenancy.js";

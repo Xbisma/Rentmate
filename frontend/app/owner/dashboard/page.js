@@ -30,10 +30,27 @@ export default function OwnerDashboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [mounted, setMounted] = useState(false);
+  const [userName, setUserName] = useState('');
   const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
+    
+    // Get user name from localStorage - it's stored as "userName"
+    const storedName = localStorage.getItem('userName');
+    
+    if (storedName) {
+      setUserName(storedName);
+    } else {
+      // Fallback to email if name not found
+      const storedEmail = localStorage.getItem('userEmail');
+      if (storedEmail) {
+        // Extract name from email (before @)
+        const nameFromEmail = storedEmail.split('@')[0];
+        setUserName(nameFromEmail);
+      }
+    }
+    
     fetchDashboardData();
   }, []);
 
@@ -73,6 +90,17 @@ export default function OwnerDashboard() {
     } finally {
       setLoading(false);
     }
+  };
+
+  // Format the welcome message
+  const getWelcomeMessage = () => {
+    if (!userName) {
+      return "Welcome back!";
+    }
+    
+    // Capitalize first letter of name
+    const formattedName = userName.charAt(0).toUpperCase() + userName.slice(1);
+    return `Welcome back, ${formattedName}!`;
   };
 
   const defaultStats = [
@@ -150,11 +178,18 @@ export default function OwnerDashboard() {
       <main className="content-container">
         <div className="mb-12 text-center animate-fade-in">
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-4">
-            Welcome back, <span className="gradient-text">Property Owner</span>
+            {getWelcomeMessage()}
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
             Manage your properties, track maintenance requests, and grow your rental business
           </p>
+          
+          {/* Optional: Show email in smaller text */}
+          {!userName && localStorage.getItem('userEmail') && (
+            <p className="text-sm text-gray-500 mt-2">
+              Logged in as: {localStorage.getItem('userEmail')}
+            </p>
+          )}
         </div>
 
         <div className="flex justify-end mb-6">
@@ -170,7 +205,7 @@ export default function OwnerDashboard() {
               <div
                 className="relative overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-300 p-6 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
-                suppressHydrationWarning // Add this to suppress hydration warnings
+                suppressHydrationWarning
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className={`w-14 h-14 ${colorMap[stat.color].bg} rounded-xl flex items-center justify-center`}>
@@ -191,13 +226,12 @@ export default function OwnerDashboard() {
               </div>
             );
 
-            // Make Pending Applications clickable
             if (stat.title === "Pending Applications") {
               return (
                 <Link 
                   key={stat.title} 
                   href="/owner/applications"
-                  suppressHydrationWarning // Add this
+                  suppressHydrationWarning
                 >
                   {card}
                 </Link>
@@ -218,7 +252,7 @@ export default function OwnerDashboard() {
                 href={action.link}
                 className="rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-transparent group animate-slide-in"
                 style={{ animationDelay: `${index * 100}ms` }}
-                suppressHydrationWarning // Add this
+                suppressHydrationWarning
               >
                 <div className="flex items-center mb-4">
                   <div className={`w-14 h-14 ${colorMap[action.color].bg} rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform`}>

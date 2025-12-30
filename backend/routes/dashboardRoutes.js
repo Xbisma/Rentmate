@@ -1,3 +1,5 @@
+// backend/routes/dashboardRoutes.js
+
 import express from "express";
 import {
   tenantDashboard,

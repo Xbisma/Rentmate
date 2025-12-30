@@ -1,3 +1,5 @@
+// backend/routes/userRoutes.js
+
 import express from "express";
 import { registerUser, loginUser, resetPassword } from "../controllers/userController.js";
 import { verifyToken, verifyRole} from "../middleware/authMiddleware.js";

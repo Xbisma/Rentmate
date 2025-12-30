@@ -1,3 +1,5 @@
+// fronend/services/dashboardService.js
+
 import API from "./api";
 
 export const getTenantDashboard = async () => {

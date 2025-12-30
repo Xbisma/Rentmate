@@ -7,7 +7,6 @@ import { loginUser } from "../../../../services/authService";
 import Link from 'next/link';
 import AuthSideVisual from '../../../components/AuthSideVisual';
 
-
 export default function LoginPage() {
   const router = useRouter();
   const [formData, setFormData] = useState({
@@ -43,58 +42,33 @@ export default function LoginPage() {
     try {
       console.log('Attempting login with:', {
         email: formData.email,
-        password: formData.password,
-        userType: formData.userType
+        password: formData.password
       });
 
-      // Login with userType for backend validation
+      // DON'T send userType to backend - backend only accepts email and password
       const data = await loginUser({
         email: formData.email,
-        password: formData.password,
-        userType: formData.userType  // Send userType to backend
+        password: formData.password
       });
 
       console.log('Full login response:', data);
       
-      // Check what the backend actually returns
-      console.log('User data from backend:', data.user);
-      console.log('User type from backend:', data.user?.userType || data.userType);
-
-      // Method 1: Try to get user type from different possible locations
-      let returnedUserType = null;
+      // Get user type from backend response - it's called "role" not "userType"
+      let returnedUserType = data.user?.role; // This is the correct field name
       
-      if (data.user?.userType) {
-        returnedUserType = data.user.userType;
-      } else if (data.userType) {
-        returnedUserType = data.userType;
-      } else if (data.user?.role) {
-        returnedUserType = data.user.role;
-      } else if (data.role) {
-        returnedUserType = data.role;
-      } else if (data.user?.isOwner !== undefined) {
-        returnedUserType = data.user.isOwner ? 'owner' : 'tenant';
-      } else if (data.isOwner !== undefined) {
-        returnedUserType = data.isOwner ? 'owner' : 'tenant';
-      }
+      console.log('User type from backend:', returnedUserType);
       
-      console.log('Determined user type:', returnedUserType);
-      
-      // If we can't determine user type, skip the validation for now
       if (!returnedUserType) {
-        console.warn('User type not found in response, skipping validation');
-        // Continue with the user's selected type
+        console.warn('User role not found in response');
+        // Fallback to the selected type
         returnedUserType = formData.userType;
       }
       
-      // IMPORTANT: Verify that the returned user type matches what was selected
-      // But be more flexible - check if they're essentially the same
-      const normalizedSelected = formData.userType.toLowerCase();
-      const normalizedReturned = returnedUserType.toLowerCase();
-      
-      if (normalizedReturned !== normalizedSelected) {
+      // IMPORTANT: Verify that the returned user role matches what was selected
+      if (returnedUserType !== formData.userType) {
         // User tried to login with wrong user type
-        const correctType = normalizedReturned === 'tenant' ? 'Tenant' : 'Owner';
-        const wrongType = normalizedSelected === 'tenant' ? 'Tenant' : 'Owner';
+        const correctType = returnedUserType === 'tenant' ? 'Tenant' : 'Owner';
+        const wrongType = formData.userType === 'tenant' ? 'Tenant' : 'Owner';
         throw new Error(`This email is registered as a ${correctType}. Please login as a ${correctType}.`);
       }
 
@@ -103,11 +77,12 @@ export default function LoginPage() {
         localStorage.setItem("token", data.token);
         localStorage.setItem("userType", returnedUserType);
         
-        // If your backend returns user info
+        // Store user info from backend
         if (data.user) {
-          localStorage.setItem("userId", data.user._id || data.user.id);
-          localStorage.setItem("userName", data.user.name || data.user.email);
+          localStorage.setItem("userId", data.user.id || data.user._id);
+          localStorage.setItem("userName", data.user.name); // This is the name field from MongoDB
           localStorage.setItem("userEmail", data.user.email);
+          localStorage.setItem("userRole", data.user.role);
         }
 
         console.log('Redirecting to:', returnedUserType === 'tenant' ? '/tenant/dashboard' : '/owner/dashboard');
