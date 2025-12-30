@@ -51,7 +51,7 @@ export default function AuthSideVisual({ role = 'tenant' }) {
           transition={{ duration: 6, repeat: Infinity }}
         >
           <Image
-            src={isTenant ? 'Rentmate\frontend\app\(public)\auth\tenant.svg' : '/auth/owner.svg'}
+            src={isTenant ? '/tenant.svg' : '/auth/owner.svg'}
             alt="Auth Illustration"
             width={420}
             height={420}
