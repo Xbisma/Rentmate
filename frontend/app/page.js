@@ -155,7 +155,6 @@ export default function Home() {
                 Login
               </motion.button>
             </Link>
-
             <Link href="/auth/signup">
               <motion.button 
                 className="btn-primary rounded-xl px-5"

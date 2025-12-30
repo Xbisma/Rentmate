@@ -2,5 +2,6 @@
   "/(public)/auth/login/page": "app/(public)/auth/login/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/owner/dashboard/page": "app/owner/dashboard/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/tenant/dashboard/page": "app/tenant/dashboard/page.js"
 }

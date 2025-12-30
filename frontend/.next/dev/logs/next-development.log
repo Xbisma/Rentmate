@@ -275,3 +275,63 @@ It can also happen if the client has a browser extension installed which messes 
 [00:28:12.558] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
 [00:28:13.520] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzEwNjMwNywiZXhwIjoxNzY3NzExMTA3fQ.HOI-sOwe5xLbpKOY6sHHhwzgh7JPOJLPdAODSwsxZrw","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
 [00:52:06.928] Server  LOG      ✓ Compiled in 551ms
+[01:05:21.795] Server  LOG      ✓ Compiled in 522ms
+[01:07:40.891] Server  LOG      ✓ Compiled in 675ms
+[01:08:33.152] Server  LOG      ✓ Compiled in 529ms
+[01:09:34.255] Server  LOG      ✓ Compiled in 460ms
+[01:11:15.510] Server  LOG      ✓ Compiled in 550ms
+[01:11:54.831] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
+[01:11:55.155] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzEwODkyOSwiZXhwIjoxNzY3NzEzNzI5fQ.uk4idAf2W1NuuVPTwHiP7UBSvOSt4U6I40JEtyvoYq8","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[01:13:42.613] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
+[01:13:42.921] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzEwOTAzNywiZXhwIjoxNzY3NzEzODM3fQ.AVbE9ihq7KmyHKynn8D_P7dn1M79TnBeApVBdPR73oA","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[01:17:48.666] Server  LOG      ✓ Compiled in 562ms
+[01:18:15.905] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123","userType":"tenant"}
+[01:18:16.243] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzEwOTMxMCwiZXhwIjoxNzY3NzE0MTEwfQ.Z_OE6vpT3yRGoJTNX3Ga5iDt2zI2S-p3v1AUajJvD20","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[01:18:16.243] Browser ERROR   Login error: {}
+[01:18:54.105] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3","userType":"owner"}
+[01:18:54.480] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMDkzNDgsImV4cCI6MTc2NzcxNDE0OH0.OH9UF5Etxmj86em0Ls5dXve_gV32UEB6UIy0XaO29Qs","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
+[01:18:54.480] Browser ERROR   Login error: {}
+[01:19:02.271] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3","userType":"tenant"}
+[01:19:02.581] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMDkzNTcsImV4cCI6MTc2NzcxNDE1N30.QF37xLXF-KVdl5FRmtsAS4fUk3sRaaAtEn1OE8bFwSk","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
+[01:19:02.581] Browser ERROR   Login error: {}
+[01:19:05.884] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3","userType":"tenant"}
+[01:19:06.244] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMDkzNjAsImV4cCI6MTc2NzcxNDE2MH0.Gxe62Piibc-epkiP4lVBfPoeA1XzIAXKgATt1_hhD0c","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
+[01:19:06.244] Browser ERROR   Login error: {}
+[01:19:16.757] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3","userType":"tenant"}
+[01:19:17.073] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMDkzNzEsImV4cCI6MTc2NzcxNDE3MX0.qgjlZmPOrxbRJqYb8PfLevDhlMguoT50qA3txhHHjuQ","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
+[01:19:17.073] Browser ERROR   Login error: {}
+[01:21:14.909] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3","userType":"tenant"}
+[01:21:15.270] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMDk0ODksImV4cCI6MTc2NzcxNDI4OX0.ITRV4rGZGINb1Vze7H7DuE5kuE4n6moHd9ouuYNM-S0","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
+[01:21:15.271] Browser ERROR   Login error: {}
+[01:22:35.998] Server  LOG      ✓ Compiled in 556ms
+[01:24:12.574] Server  LOG      ✓ Compiled in 590ms
+[01:24:28.119] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3","userType":"tenant"}
+[01:24:28.440] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMDk2ODIsImV4cCI6MTc2NzcxNDQ4Mn0.N7rU7cdv-Ar_L_5HT9_-vx3DAQ4BzRcbvS78gq3ykkU","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
+[01:24:28.440] Browser LOG     User data from backend: {"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}
+[01:24:28.440] Browser LOG     User type from backend: undefined
+[01:24:28.440] Browser LOG     Determined user type: tenant
+[01:24:28.440] Browser LOG     Redirecting to: /tenant/dashboard
+[01:25:19.981] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3","userType":"tenant"}
+[01:25:20.449] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMDk3MzQsImV4cCI6MTc2NzcxNDUzNH0.f-e7nbzdQsZkg87FwDgvRqsUSMK75FgqsigiCv7Tgkc","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
+[01:25:20.449] Browser LOG     User data from backend: {"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}
+[01:25:20.449] Browser LOG     User type from backend: undefined
+[01:25:20.449] Browser LOG     Determined user type: tenant
+[01:25:20.449] Browser LOG     Redirecting to: /tenant/dashboard
+[01:25:41.072] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3","userType":"owner"}
+[01:25:41.416] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMDk3NTUsImV4cCI6MTc2NzcxNDU1NX0.t3ZoqLP3641rJUTwaNBLooIyzhWzYXj2yJZ0a_E7JPc","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
+[01:25:41.416] Browser LOG     User data from backend: {"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}
+[01:25:41.416] Browser LOG     User type from backend: undefined
+[01:25:41.416] Browser LOG     Determined user type: tenant
+[01:25:41.416] Browser ERROR   Login error: {}
+[01:26:06.346] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123","userType":"tenant"}
+[01:26:06.688] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzEwOTc4MSwiZXhwIjoxNzY3NzE0NTgxfQ.fE_BW6zODkOT8H41WTYYTypnI8kajTN3iNUIPUZHHZ8","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[01:26:06.688] Browser LOG     User data from backend: {"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}
+[01:26:06.688] Browser LOG     User type from backend: undefined
+[01:26:06.688] Browser LOG     Determined user type: owner
+[01:26:06.688] Browser ERROR   Login error: {}
+[01:26:11.860] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123","userType":"owner"}
+[01:26:12.211] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzEwOTc4NiwiZXhwIjoxNzY3NzE0NTg2fQ.VF1fiX-j6c_l0yvHxof_Y6RJBzdiKG_fdeDtuVHYhEo","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[01:26:12.211] Browser LOG     User data from backend: {"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}
+[01:26:12.211] Browser LOG     User type from backend: undefined
+[01:26:12.211] Browser LOG     Determined user type: owner
+[01:26:12.211] Browser LOG     Redirecting to: /owner/dashboard
