@@ -1,7 +1,16 @@
 {
   "/(public)/auth/login/page": "app/(public)/auth/login/page.js",
+  "/(public)/auth/signup/page": "app/(public)/auth/signup/page.js",
   "/owner/dashboard/page": "app/owner/dashboard/page.js",
+  "/owner/maintenance/page": "app/owner/maintenance/page.js",
   "/owner/properties/add/page": "app/owner/properties/add/page.js",
+  "/owner/properties/details/[id]/page": "app/owner/properties/details/[id]/page.js",
   "/owner/properties/page": "app/owner/properties/page.js",
-  "/page": "app/page.js"
+  "/owner/tenancies/page": "app/owner/tenancies/page.js",
+  "/page": "app/page.js",
+  "/properties/[id]/page": "app/properties/[id]/page.js",
+  "/tenant/dashboard/page": "app/tenant/dashboard/page.js",
+  "/tenant/payments/page": "app/tenant/payments/page.js",
+  "/tenant/search/page": "app/tenant/search/page.js",
+  "/tenant/tenancies/page": "app/tenant/tenancies/page.js"
 }

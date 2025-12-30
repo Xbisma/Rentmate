@@ -1,9 +1,54 @@
-[00:00:03.620] Server  LOG      ✓ Ready in 2.5s
-[00:00:06.745] Server  LOG      ○ Compiling /owner/properties ...
-[00:00:18.561] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:41.618] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:57.993] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
-[00:00:58.744] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2Njc3NjEwMSwiZXhwIjoxNzY3MzgwOTAxfQ.U2xOZVgsfA-Jkh95VYoPrEvfyvUbeIbM5GvMtsXqzik","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
-[00:01:59.137] Browser ERROR   {}
-[00:02:00.794] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:30.367] Server  LOG      ✓ Compiled in 169ms
+[00:00:03.874] Server  LOG      ✓ Ready in 2.7s
+[00:00:11.161] Server  LOG      ○ Compiling / ...
+[00:00:32.365] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+      <Home params={Promise} searchParams={Promise}>
+        <div className="min-h-scre...">
+          <motion.nav>
+          <main>
+            <section className="pt-32 pb-2...">
+              <motion.div>
+              <motion.div>
+              <motion.div>
+              <motion.div>
+              <div className="container ...">
+                <motion.div variants={{hidden:{...}, ...}} initial="hidden" animate="visible">
+                  <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                    <motion.h1>
+                    <motion.p>
+                    <motion.form variants={{...}} className="max-w-3xl ..." onSubmit={function handleSearch}>
+                      <form className="max-w-3xl ..." onSubmit={function handleSearch} style={{opacity:0, ...}} ...>
+                        <div>
+                        <div>
+                        <div>
+                        <div className="flex justi...">
+                          <motion.button type="submit" className="bg-blue-60..." whileHover={{scale:1.05}} ...>
+                            <button
+                              type="submit"
+                              className="bg-blue-600 text-white px-8 py-2 rounded font-semibold hover:bg-blue-700 tran..."
+                              tabIndex={0}
+                              style={{}}
+                              ref={function useMotionRef.useCallback}
+-                             fdprocessedid="gjuv1f"
+                            >
++                             FIND
+            ...
+
+[00:00:49.447] Server  LOG      ○ Compiling /auth/signup ...
+[00:01:18.282] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
+[00:01:18.996] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2Njc3ODQyNiwiZXhwIjoxNzY3MzgzMjI2fQ.NGFw3eM_xRk0H4k0SoDYkAqmRcSfkrw_cnQVFKbpZhg","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[00:02:54.248] Browser ERROR   {}
+[00:04:12.725] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3"}
+[00:04:13.139] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjY3Nzg2MDEsImV4cCI6MTc2NzM4MzQwMX0.0tP22T44OfVSdY4a-UPipvZ1NiDUYbRiX7vgXwPu9sY","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
