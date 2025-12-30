@@ -1,9 +1,3 @@
-[00:00:03.620] Server  LOG      ✓ Ready in 2.5s
-[00:00:06.745] Server  LOG      ○ Compiling /owner/properties ...
-[00:00:18.561] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:41.618] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:57.993] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
-[00:00:58.744] Browser LOG     Login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2Njc3NjEwMSwiZXhwIjoxNzY3MzgwOTAxfQ.U2xOZVgsfA-Jkh95VYoPrEvfyvUbeIbM5GvMtsXqzik","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
-[00:01:59.137] Browser ERROR   {}
-[00:02:00.794] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:30.367] Server  LOG      ✓ Compiled in 169ms
+[00:00:04.038] Server  LOG      ✓ Ready in 2.9s
+[00:00:10.525] Server  LOG      ○ Compiling / ...
+[00:00:31.608] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

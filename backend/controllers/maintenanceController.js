@@ -1,6 +1,7 @@
 import MaintenanceRequest from "../models/MaintenanceRequest.js";
 import Property from "../models/Property.js";
 import Notification from "../models/Notification.js";
+import User from "../models/User.js";
 
 // Tenant creates request
 export const createMaintenanceRequest = async (req, res) => {
@@ -19,14 +20,19 @@ export const createMaintenanceRequest = async (req, res) => {
       issue
     });
 
-    await Notification.create({
+    const tenantUser = await User.findById(tenantId);
+    const notification = await Notification.create({
       user: property.owner,
-      message: "New maintenance request submitted"
+      message: `New maintenance request: ${tenantUser ? tenantUser.name : 'A tenant'} reported "${issue}" for "${property.title || property.location || property._id}"`,
+      link: `/owner/requests`
     });
+
+
 
     res.status(201).json({
       message: "Maintenance request created",
-      request
+      request,
+      notification
     });
 
   } catch (err) {

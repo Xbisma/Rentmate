@@ -1,14 +1,20 @@
 import express from "express";
-import { verifyToken } from "../middleware/authMiddleware.js";
+import { verifyToken, verifyRole } from "../middleware/authMiddleware.js";
 import {
   getTenantTenancies,
+  getOwnerTenancies,
   getTenancyById
 } from "../controllers/tenancyController.js";
 
 const router = express.Router();
 
-// Tenant routes
+// tenant tenancies
 router.get("/", verifyToken, getTenantTenancies);
+
+// owner tenancies
+router.get("/owner", verifyToken, verifyRole(["owner"]), getOwnerTenancies);
+
+// single tenancy
 router.get("/:id", verifyToken, getTenancyById);
 
 export default router;

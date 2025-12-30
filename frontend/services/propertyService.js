@@ -1,84 +1,99 @@
-import API from "./api";
+import axios from "axios";
 
+const API = axios.create({
+  baseURL: "http://localhost:5000/api", // your backend base URL
+});
+
+// ===================== PROPERTIES =====================
+
+// Get all properties
 export const getAllProperties = async () => {
   const res = await API.get("/properties");
   return res.data;
 };
 
+// Get properties of the logged-in owner
 export const getOwnerProperties = async () => {
-  const res = await API.get("/properties/owner");
+  const res = await API.get("/properties/owner", {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  });
   return res.data;
 };
 
+// Get properties for tenants (all)
+export const getTenantProperties = async () => {
+  const res = await API.get("/properties", {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  });
+  return res.data;
+};
+
+// Add property (expects FormData with images)
 export const addProperty = async (propertyData) => {
-  const formData = new FormData();
-
-  for (const key in propertyData) {
-    if (key === "images") {
-      propertyData.images.forEach((file) => {
-        formData.append("images", file);
-      });
-    } else {
-      formData.append(key, propertyData[key]);
-    }
-  }
-
-  const res = await api.post("/properties", formData);
-  return res.data;
+  const res = await API.post("/properties", propertyData, {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+      "Content-Type": "multipart/form-data",
+    },
+  });
+  return res.data.property;
 };
 
+// Update property
+export const updateProperty = async (id, propertyData) => {
+  const res = await API.put(`/properties/${id}`, propertyData, {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  });
+  return res.data.property;
+};
+
+// Delete property
 export const deleteProperty = async (id) => {
-  const res = await API.delete(`/properties/${id}`);
+  const res = await API.delete(`/properties/${id}`, {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  });
   return res.data;
 };
-export const updateProperty = async (id, data) => {
-  const res = await API.put(`/properties/${id}`, data);
-  return res.data;
-};
+
+// Get property by ID
 export const getPropertyById = async (id) => {
   const res = await API.get(`/properties/${id}`);
   return res.data;
 };
 
+// ===================== FILTER PROPERTIES (TENANT SEARCH) =====================
 export const filterProperties = async (filters) => {
   const queryParams = new URLSearchParams();
-  
-  if (filters.city) queryParams.append('city', filters.city);
-  if (filters.location) queryParams.append('location', filters.location);
-  if (filters.type) queryParams.append('type', filters.type);
-  if (filters.availability) queryParams.append('availability', filters.availability);
-  if (filters.bedrooms) queryParams.append('bedrooms', filters.bedrooms);
-  if (filters.bathrooms) queryParams.append('bathrooms', filters.bathrooms);
-  if (filters.price?.$gte) queryParams.append('minPrice', filters.price.$gte);
-  if (filters.price?.$lte) queryParams.append('maxPrice', filters.price.$lte);
-  
+
+  if (filters.city) queryParams.append("city", filters.city);
+  if (filters.address) queryParams.append("address", filters.address); // ✅ address
+  if (filters.type) queryParams.append("type", filters.type);
+  if (filters.availability) queryParams.append("availability", filters.availability);
+  if (filters.bedrooms) queryParams.append("bedrooms", filters.bedrooms);
+  if (filters.bathrooms) queryParams.append("bathrooms", filters.bathrooms);
+  if (filters.price?.$gte) queryParams.append("minPrice", filters.price.$gte);
+  if (filters.price?.$lte) queryParams.append("maxPrice", filters.price.$lte);
+
   const res = await API.get(`/properties/filter?${queryParams.toString()}`);
   return res.data;
 };
 
-// Tenant-specific functions
-export const getTenantProperties = async () => {
-  const res = await API.get("/tenant/properties");
-  return res.data;
-};
+// ===================== TENANT HELPERS =====================
 
+// Get a single tenant-facing property by ID
 export const getTenantPropertyById = async (id) => {
-  const res = await API.get(`/tenant/properties/${id}`);
-  return res.data;
-};
-
-export const filterTenantProperties = async (filters) => {
-  const queryParams = new URLSearchParams();
-  
-  if (filters.city) queryParams.append('city', filters.city);
-  if (filters.location) queryParams.append('location', filters.location);
-  if (filters.type) queryParams.append('type', filters.type);
-  if (filters.availability) queryParams.append('availability', filters.availability);
-  if (filters.bedrooms) queryParams.append('bedrooms', filters.bedrooms);
-  if (filters.bathrooms) queryParams.append('bathrooms', filters.bathrooms);
-  if (filters.price?.$gte) queryParams.append('minPrice', filters.price.$gte);
-  if (filters.price?.$lte) queryParams.append('maxPrice', filters.price.$lte);
-  
-  const res = await API.get(`/tenant/properties/filter?${queryParams.toString()}`);
+  const res = await API.get(`/properties/${id}`, {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  });
   return res.data;
 };

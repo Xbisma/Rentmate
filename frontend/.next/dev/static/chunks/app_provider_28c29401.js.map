@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///E:/CS-B23/Sem%2005/FS%20Theory/RENTMATE/Rentmate/frontend/app/provider.js"],"sourcesContent":["// app/providers.js\r\n\"use client\"; // This makes it a client component\r\n\r\nimport { PropertyProvider } from './context/PropertyContext';\r\n\r\nexport function Providers({ children }) {\r\n  return <PropertyProvider>{children}</PropertyProvider>;\r\n}"],"names":[],"mappings":"AAAA,mBAAmB;;;;;;;;;;;AACnB,cAAc,mCAAmC;;;AAI1C,SAAS,UAAU,EAAE,QAAQ,EAAE;IACpC,qBAAO,6LAAC;kBAAkB;;;;;;AAC5B;KAFgB"}}]
-}

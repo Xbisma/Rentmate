@@ -1,6 +1,8 @@
 import Payment from "../models/Payment.js";
 import Tenancy from "../models/Tenancy.js";
 import Notification from "../models/Notification.js";
+import User from "../models/User.js";
+import Property from "../models/Property.js";
 
 // Tenant pays rent
 export const payRent = async (req, res) => {
@@ -21,15 +23,30 @@ export const payRent = async (req, res) => {
       property: tenancy.property,
       tenancy: tenancy._id,
       amount: tenancy.rentAmount,
-      month: new Date().toLocaleString("default", { month: "long", year: "numeric" })
+      month: new Date().toLocaleString("default", {
+        month: "long",
+        year: "numeric"
+      })
     });
 
     tenancy.rentPaid = true;
     await tenancy.save();
 
+    // Notify OWNER
+    const tenantUser = await User.findById(tenancy.tenant);
+    const property = await Property.findById(tenancy.property);
+
     await Notification.create({
       user: tenancy.owner,
-      message: "Rent has been paid by tenant."
+      message: `Rent PKR ${tenancy.rentAmount.toLocaleString()} paid by ${tenantUser?.name || "tenant"} for "${property?.title || "property"}".`,
+      link: `/owner/tenancies/${tenancy._id}`
+    });
+
+    // Notify TENANT
+    await Notification.create({
+      user: tenancy.tenant,
+      message: `Payment received for "${property?.title || "your tenancy"}".`,
+      link: `/tenant/tenancies/${tenancy._id}`
     });
 
     res.status(201).json({

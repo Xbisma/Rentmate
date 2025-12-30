@@ -294,10 +294,10 @@ function TenantHomeDashboard() {
               <div className="text-2xl font-bold text-blue-600">{dashboardStats.activeTenancies > 0 ? '1' : '0'}</div>
               <div className="text-sm text-gray-600">Active Rental</div>
             </Link>
-            <div className="card text-center">
+            <Link href="/tenant/applications" className="card text-center hover:shadow-lg transition-shadow">
               <div className="text-2xl font-bold text-green-600">{dashboardStats.pendingApplications || 0}</div>
               <div className="text-sm text-gray-600">Pending Apps</div>
-            </div>
+            </Link>
             <Link href="/tenant/requests" className="card text-center hover:shadow-lg transition-shadow">
               <div className="text-2xl font-bold text-orange-600">{dashboardStats.openRequests || 0}</div>
               <div className="text-sm text-gray-600">Open Requests</div>

@@ -25,6 +25,18 @@ export default function Header({ children }) {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // Poll notifications every 10 seconds and refresh on window focus
+  useEffect(() => {
+    const interval = setInterval(fetchNotifications, 10000); // 10s
+    const handleFocus = () => fetchNotifications();
+    window.addEventListener('focus', handleFocus);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('focus', handleFocus);
+    };
+  }, []);
+
   const fetchNotifications = async () => {
     try {
       const data = await getNotifications();
@@ -106,13 +118,57 @@ export default function Header({ children }) {
                       notifications.map((notification) => (
                         <div 
                           key={notification._id} 
-                          className={`p-4 border-b border-gray-100 hover:bg-gray-50 cursor-pointer ${!notification.isRead ? 'bg-blue-50' : ''}`}
-                          onClick={() => markAsRead(notification._id)}
+                          className={`p-4 border-b border-gray-100 hover:bg-gray-50 ${!notification.isRead ? 'bg-blue-50' : ''}`}
                         >
-                          <p className="text-sm text-gray-800">{notification.message}</p>
-                          <p className="text-xs text-gray-500 mt-1">
-                            {new Date(notification.createdAt).toLocaleDateString()}
-                          </p>
+                          <div onClick={() => markAsRead(notification._id)} className="cursor-pointer">
+                            <p className="text-sm text-gray-800">{notification.message}</p>
+                            <p className="text-xs text-gray-500 mt-1">{new Date(notification.createdAt).toLocaleDateString()}</p>
+                          </div>
+
+                          {/* Quick actions for application notifications */}
+                          {notification.link && notification.link.includes('/owner/applications') && (
+                            <div className="mt-3 flex gap-2">
+                              <button
+                                onClick={async (e) => {
+                                  e.stopPropagation();
+                                  if (!confirm('Approve this application?')) return;
+                                  try {
+                                    const id = notification.link.split('/owner/applications/')[1];
+                                    await (await import('../../services/rentalApplicationService')).updateApplicationStatus(id, 'approved');
+                                    await markNotificationAsRead(notification._id);
+                                    fetchNotifications();
+                                  } catch (err) {
+                                    console.error('Failed to approve application:', err);
+                                    alert('Failed to approve application');
+                                  }
+                                }}
+                                className="px-3 py-1 rounded bg-emerald-600 text-white text-sm"
+                              >
+                                Approve
+                              </button>
+
+                              <button
+                                onClick={async (e) => {
+                                  e.stopPropagation();
+                                  if (!confirm('Reject this application?')) return;
+                                  try {
+                                    const id = notification.link.split('/owner/applications/')[1];
+                                    await (await import('../../services/rentalApplicationService')).updateApplicationStatus(id, 'rejected');
+                                    await markNotificationAsRead(notification._id);
+                                    fetchNotifications();
+                                  } catch (err) {
+                                    console.error('Failed to reject application:', err);
+                                    alert('Failed to reject application');
+                                  }
+                                }}
+                                className="px-3 py-1 rounded bg-red-600 text-white text-sm"
+                              >
+                                Reject
+                              </button>
+
+                              <a href={notification.link} className="px-3 py-1 rounded bg-gray-100 text-gray-800 text-sm hover:bg-gray-200">View</a>
+                            </div>
+                          )}
                         </div>
                       ))
                     )}

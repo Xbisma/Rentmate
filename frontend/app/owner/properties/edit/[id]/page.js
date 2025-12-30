@@ -8,7 +8,7 @@ import { useProperty } from '../../../../context/PropertyContext';
 
 export default function EditProperty({ params }) {
   const router = useRouter();
-  const { properties, updateProperty } = useProperty();
+  const { properties, updateProperty, fetchPropertyById } = useProperty();
   const [propertyId, setPropertyId] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -28,14 +28,16 @@ export default function EditProperty({ params }) {
     getParams();
   }, [params]);
 
-  // Find the property based on propertyId
-  const property = properties.find(prop => prop.id === parseInt(propertyId));
+  // Find the property based on propertyId (support both _id and id)
+  const property = (properties || []).find(
+    (prop) => String(prop._id) === String(propertyId) || String(prop.id) === String(propertyId)
+  );
 
   const [formData, setFormData] = useState({
     title: "",
     description: "",
     propertyType: "Apartments",
-    status: "Available",
+    availability: "available",
     address: "",
     city: "",
     monthlyRent: "",
@@ -53,32 +55,84 @@ export default function EditProperty({ params }) {
         title: property.title || "",
         description: property.description || "",
         propertyType: property.propertyType || "Apartments",
-        status: property.status || "Available",
-        address: property.address || "",
+        availability: property.availability || "available",
+        address: property.location || property.address || "",
         city: property.city || "",
-        monthlyRent: property.rent?.toString() || "",
+        monthlyRent: property.price?.toString() || property.rent?.toString() || "",
         bedrooms: property.bedrooms?.toString() || "",
         bathrooms: property.bathrooms?.toString() || "",
         area: property.area?.toString() || "",
         amenities: property.amenities || ""
       });
-      setImages(property.images || []);
+      // Normalize existing image URLs into objects for ImageUpload component
+      setImages((property.images || []).map(img => (typeof img === 'string' ? { id: img, preview: img } : img)));
+      return;
     }
-  }, [property]);
+
+    // If property not found locally, fetch from API and populate form
+    if (propertyId) {
+      let cancelled = false;
+      setIsLoading(true);
+      fetchPropertyById(propertyId)
+        .then((data) => {
+          if (!cancelled && data) {
+            setFormData({
+              title: data.title || "",
+              description: data.description || "",
+              propertyType: data.propertyType || "Apartments",
+              availability: data.availability || "available",
+              address: data.location || data.address || data.city || "",
+              city: data.city || "",
+              monthlyRent: (data.price ?? data.rent ?? data.monthlyRent)?.toString() || "",
+              bedrooms: data.bedrooms?.toString() || "",
+              bathrooms: data.bathrooms?.toString() || "",
+              area: data.area?.toString() || "",
+              amenities: data.amenities || ""
+            });
+            // Normalize existing image URLs into objects for ImageUpload component
+            setImages((data.images || []).map(img => (typeof img === 'string' ? { id: img, preview: img } : img)));
+          }
+        })
+        .catch((err) => console.error('Failed to fetch property for edit:', err))
+        .finally(() => setIsLoading(false));
+
+      return () => { cancelled = true; };
+    }
+  }, [property, propertyId, fetchPropertyById]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
-      updateProperty(propertyId, {
-        ...formData,
-        images: images
-      });
-      
-      setTimeout(() => {
-        router.push(`/owner/properties/edit/${propertyId}`);
-      }, 1500);
+      // Build FormData to match addProperty behavior and support file uploads
+      const fd = new FormData();
+      fd.append('title', formData.title || '');
+      fd.append('description', formData.description || '');
+      fd.append('propertyType', formData.propertyType || 'Apartments');
+      fd.append('availability', formData.availability || 'available');
+      fd.append('location', formData.address || '');
+      fd.append('city', formData.city || '');
+      fd.append('price', formData.monthlyRent || '');
+      fd.append('bedrooms', formData.bedrooms || '');
+      fd.append('bathrooms', formData.bathrooms || '');
+      fd.append('area', formData.area || '');
+
+      // Separate new files from existing image URLs
+      const newFiles = images.filter(img => img && img.file).map(img => img.file);
+      const existingImages = images
+        .filter(img => img && !img.file)
+        .map(img => (typeof img === 'string' ? img : img.preview || img));
+
+      newFiles.forEach(file => fd.append('images', file));
+      // Pass existing image URLs to backend so it can merge them
+      fd.append('existingImages', JSON.stringify(existingImages));
+
+      // Call updateProperty with FormData
+      await updateProperty(propertyId, fd);
+
+      // After successful update, stay on edit page and show notification (already handled in context), optionally reload form
+      router.push(`/owner/properties/details/${propertyId}`);
     } catch (error) {
       console.error('Error updating property:', error);
     } finally {
@@ -136,11 +190,13 @@ export default function EditProperty({ params }) {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">
           {/* Back Button */}
-          <Link 
-            href={`/owner/properties/details/${propertyId}`} 
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6"
+          <Link
+            href="/owner/properties"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-md shadow-sm hover:bg-gray-50 transition-colors mb-6"
+            aria-label="Back to properties"
           >
-            ← Back to Property Details
+            <span className="text-lg">←</span>
+            <span className="font-medium">Back to Properties</span>
           </Link>
 
           <h1 className="text-2xl font-bold text-gray-800 mb-6">Edit Property</h1>
@@ -164,26 +220,87 @@ export default function EditProperty({ params }) {
               />
             </div>
 
-            {/* ... (Include all other form fields) ... */}
-
-            {/* Image Upload */}
-            <ImageUpload onImagesChange={handleImagesChange} existingImages={images} />
-
-            {/* Amenities */}
+            {/* Monthly Rent */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Amenities
+                Monthly Rent *
+              </label>
+              <input
+                type="number"
+                name="monthlyRent"
+                value={formData.monthlyRent}
+                onChange={handleChange}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                required
+                min="0"
+              />
+            </div>
+
+            {/* Property Status */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Property Status</label>
+              <select
+                name="availability"
+                value={formData.availability}
+                onChange={handleChange}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+              >
+                <option value="available">Available</option>
+                <option value="rented">Rented</option>
+              </select>
+            </div>
+
+            {/* Address */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Address *
               </label>
               <input
                 type="text"
-                name="amenities"
-                value={formData.amenities}
+                name="address"
+                value={formData.address}
                 onChange={handleChange}
-                placeholder="Parking, Security, Gym, Swimming Pool (comma separated)"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                required
               />
-              <p className="text-xs text-gray-500 mt-1">Separate multiple amenities with commas</p>
             </div>
+
+
+
+            <div className="grid grid-cols-2 gap-4">
+              {/* Bedrooms */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Bedrooms
+                </label>
+                <input
+                  type="number"
+                  name="bedrooms"
+                  value={formData.bedrooms}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                  min="0"
+                />
+              </div>
+
+              {/* Bathrooms */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Bathrooms
+                </label>
+                <input
+                  type="number"
+                  name="bathrooms"
+                  value={formData.bathrooms}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                  min="0"
+                />
+              </div>
+            </div>
+
+            {/* Image Upload */}
+            <ImageUpload onImagesChange={handleImagesChange} existingImages={images} />
 
             {/* Submit Buttons */}
             <div className="flex justify-end space-x-4 pt-6 border-t">

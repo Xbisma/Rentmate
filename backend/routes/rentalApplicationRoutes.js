@@ -3,6 +3,7 @@ import {
   applyForProperty,
   getTenantApplications,
   getOwnerApplications,
+  getOwnerApplicationById,
   updateApplicationStatus
 } from "../controllers/rentalApplicationController.js";
 
@@ -10,7 +11,7 @@ import { verifyToken, verifyRole } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-// Tenant
+/* ================= TENANT ================= */
 router.post(
   "/",
   verifyToken,
@@ -25,16 +26,25 @@ router.get(
   getTenantApplications
 );
 
-// Owner
+/* ================= OWNER ================= */
 router.get(
   "/owner",
   verifyToken,
+  verifyRole(["owner"]),
   getOwnerApplications
+);
+
+router.get(
+  "/owner/:id",
+  verifyToken,
+  verifyRole(["owner"]),
+  getOwnerApplicationById
 );
 
 router.put(
   "/:id",
   verifyToken,
+  verifyRole(["owner"]),
   updateApplicationStatus
 );
 

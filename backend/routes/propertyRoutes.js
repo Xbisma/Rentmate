@@ -14,15 +14,25 @@ import upload from "../middleware/upload.js";
 
 const router = express.Router();
 
-router.post("/", verifyToken, upload.array("images", 5), addProperty);
-router.get("/", getAllProperties);
-router.get("/owner", verifyToken, getOwnerProperties);
-router.get("/filter", filterProperties);
-router.get("/:id", getPropertyById);
-router.put("/:id", verifyToken, updateProperty);
-router.delete("/:id", verifyToken, deleteProperty);
+// Owner add
 router.post("/", verifyToken, verifyRole(["owner"]), upload.array("images", 5), addProperty);
-// router.post("/properties", upload.single("image"), addProperty);
 
+// Get all properties (tenant & public)
+router.get("/", getAllProperties);
+
+// Owner properties
+router.get("/owner", verifyToken, getOwnerProperties);
+
+// Filter (tenant search)
+router.get("/filter", filterProperties);
+
+// Property by ID
+router.get("/:id", getPropertyById);
+
+// Update property
+router.put("/:id", verifyToken, upload.array("images", 5), updateProperty);
+
+// Delete property
+router.delete("/:id", verifyToken, deleteProperty);
 
 export default router;

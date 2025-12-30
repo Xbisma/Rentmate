@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { filterTenantProperties } from "../../../services/propertyService";
+import { filterProperties } from "../../../services/propertyService";
 import PropertyCard from "../../components/PropertyCard";
 
 export default function SearchProperties() {
@@ -11,6 +11,7 @@ export default function SearchProperties() {
   const [maxPrice, setMaxPrice] = useState("");
   const [bedrooms, setBedrooms] = useState("");
   const [status, setStatus] = useState("Available");
+  const [address, setAddress] = useState(""); // ✅ New address state
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -29,6 +30,7 @@ export default function SearchProperties() {
     try {
       const filters = {};
       if (city) filters.city = city;
+      if (address) filters.address = address; // ✅ Add address to filters
       if (propertyType && propertyType !== "All Types") filters.type = propertyType;
       if (minPrice) filters.price = { $gte: parseInt(minPrice) };
       if (maxPrice) {
@@ -37,10 +39,21 @@ export default function SearchProperties() {
       if (bedrooms && bedrooms !== "Any") filters.bedrooms = parseInt(bedrooms);
       if (status) filters.availability = status.toLowerCase();
 
-      const result = await filterTenantProperties(filters);
-      setProperties(result);
+      console.debug('Searching properties with filters:', filters);
+
+      const result = await filterProperties(filters);
+      console.debug('Search response:', result);
+
+      if (Array.isArray(result)) {
+        setProperties(result);
+      } else if (result && Array.isArray(result.properties)) {
+        setProperties(result.properties);
+      } else {
+        setProperties([]);
+      }
     } catch (error) {
       console.error("Error searching properties:", error);
+      setProperties([]);
     } finally {
       setLoading(false);
     }
@@ -48,6 +61,7 @@ export default function SearchProperties() {
 
   const clearFilters = () => {
     setCity("");
+    setAddress(""); // ✅ Clear address
     setPropertyType("");
     setMinPrice("");
     setMaxPrice("");
@@ -59,7 +73,6 @@ export default function SearchProperties() {
   return (
     <div className="page-container">
       <div className="content-container">
-        {/* Back to Home Button */}
         <Link 
           href="/tenant/dashboard" 
           className="btn-secondary inline-flex items-center gap-2 mb-6 animate-fade-in"
@@ -67,7 +80,6 @@ export default function SearchProperties() {
           ← Back to Home
         </Link>
 
-        {/* Header Section */}
         <div className="animate-fade-in">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Search Properties
@@ -77,9 +89,7 @@ export default function SearchProperties() {
           </p>
         </div>
 
-        {/* Filter Box */}
         <div className="card mb-8 animate-fade-in">
-          {/* First Row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             {/* City Field */}
             <div className="relative">
@@ -115,6 +125,20 @@ export default function SearchProperties() {
               </div>
             </div>
 
+            {/* Address Field (NEW) */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-800 mb-2">
+                Address
+              </label>
+              <input
+                type="text"
+                placeholder="Enter address"
+                className="input-field"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+              />
+            </div>
+
             {/* Property Type */}
             <div>
               <label className="block text-sm font-semibold text-gray-800 mb-2">
@@ -131,8 +155,10 @@ export default function SearchProperties() {
                 <option>Plot</option>
               </select>
             </div>
+          </div>
 
-            {/* Min Price */}
+          {/* Second Row */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             <div>
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 Min Price
@@ -145,11 +171,7 @@ export default function SearchProperties() {
                 onChange={(e) => setMinPrice(e.target.value)}
               />
             </div>
-          </div>
 
-          {/* Second Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            {/* Max Price */}
             <div>
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 Max Price
@@ -163,7 +185,6 @@ export default function SearchProperties() {
               />
             </div>
 
-            {/* Bedrooms */}
             <div>
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 Bedrooms
@@ -180,7 +201,9 @@ export default function SearchProperties() {
                 <option>4</option>
               </select>
             </div>
+          </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             {/* Status */}
             <div>
               <label className="block text-sm font-semibold text-gray-800 mb-2">
@@ -197,7 +220,6 @@ export default function SearchProperties() {
             </div>
           </div>
 
-          {/* Clear Filters Button */}
           <div className="flex gap-4">
             <button 
               className="btn-secondary"
@@ -221,7 +243,6 @@ export default function SearchProperties() {
             {properties.length} {properties.length === 1 ? "property" : "properties"} found
           </p>
           
-          {/* Properties Grid */}
           {properties.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {properties.map((property) => (

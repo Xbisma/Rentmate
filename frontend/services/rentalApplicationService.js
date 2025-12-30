@@ -1,37 +1,31 @@
 import API from "./api";
 
-export const applyForProperty = async (applicationData) => {
-  try {
-    const response = await API.post("/applications", applicationData);
-    return response.data;
-  } catch (error) {
-    throw error;
-  }
+/* ================= APPLY FOR PROPERTY ================= */
+export const applyForProperty = async (data) => {
+  const res = await API.post("/applications", data);
+  return res.data;
 };
 
+/* ================= TENANT APPLICATIONS ================= */
 export const getTenantApplications = async () => {
-  try {
-    const response = await API.get("/applications/tenant");
-    return response.data;
-  } catch (error) {
-    throw error;
-  }
+  const res = await API.get("/applications/tenant");
+  return res.data;
 };
 
+/* ================= OWNER APPLICATIONS ================= */
 export const getOwnerApplications = async () => {
-  try {
-    const response = await API.get("/applications/owner");
-    return response.data;
-  } catch (error) {
-    throw error;
-  }
+  const res = await API.get("/applications/owner");
+  return res.data;
 };
 
+/* ================= OWNER SINGLE APPLICATION ================= */
+export const getOwnerApplicationById = async (id) => {
+  const res = await API.get(`/applications/owner/${id}`);
+  return res.data;
+};
+
+/* ================= UPDATE STATUS ================= */
 export const updateApplicationStatus = async (id, status) => {
-  try {
-    const response = await API.put(`/applications/${id}`, { status });
-    return response.data;
-  } catch (error) {
-    throw error;
-  }
+  const res = await API.put(`/applications/${id}`, { status });
+  return res.data;
 };

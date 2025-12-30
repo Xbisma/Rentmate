@@ -1,10 +1,28 @@
 'use client';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export default function ImageUpload({ onImagesChange, existingImages = [] }) {
   const [images, setImages] = useState(existingImages);
   const [isDragging, setIsDragging] = useState(false);
   const fileInputRef = useRef(null);
+
+  // Sync when parent provides existing images after mount but avoid update loops
+  useEffect(() => {
+    if (!existingImages) return;
+
+    setImages(prev => {
+      const prevIds = Array.isArray(prev) ? prev.map(i => (i && (i.id || i.preview || i))) : [];
+      const nextIds = Array.isArray(existingImages) ? existingImages.map(i => (i && (i.id || i.preview || i))) : [];
+
+      const same = prevIds.length === nextIds.length && prevIds.every((v, idx) => v === nextIds[idx]);
+      if (same) return prev;
+
+      // Normalize string URLs to objects for consistent shape
+      return (existingImages || []).map(img => (typeof img === 'string' ? { id: img, preview: img } : img));
+    });
+
+    // IMPORTANT: do NOT call onImagesChange here — that creates a parent update loop
+  }, [existingImages]);
 
   const handleFileSelect = (files) => {
     const newImages = Array.from(files).map(file => ({
