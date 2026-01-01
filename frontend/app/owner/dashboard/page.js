@@ -363,12 +363,6 @@ export default function OwnerDashboard() {
                       </Link>
                     ))}
                   </div>
-                  <button 
-                    onClick={() => router.push('/owner/tasks')}
-                    className="w-full mt-6 py-3 text-center text-blue-600 font-medium border border-blue-200 rounded-xl hover:bg-blue-50 transition-colors"
-                  >
-                    View All Tasks
-                  </button>
                 </div>
               </div>
 
@@ -378,12 +372,7 @@ export default function OwnerDashboard() {
                 <div className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
                   <div className="flex items-center justify-between mb-6">
                     <h2 className="text-xl font-bold text-gray-900">Recent Activity</h2>
-                    <Link 
-                      href="/owner/activity" 
-                      className="text-sm text-blue-600 hover:text-blue-700 font-medium"
-                    >
-                      View all →
-                    </Link>
+                    
                   </div>
                   <div className="space-y-4">
                     {(dashboardData?.recentActivity || []).map((activity) => (

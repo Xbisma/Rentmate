@@ -17,6 +17,9 @@ const router = express.Router();
 // Owner add
 router.post("/", verifyToken, verifyRole(["owner"]), upload.array("images", 5), addProperty);
 
+// Owner edit
+router.put("/:id", verifyToken, verifyRole(["owner"]), upload.array("images", 5), updateProperty);
+
 // Get all properties (tenant & public)
 router.get("/", getAllProperties);
 

@@ -33,13 +33,30 @@ export const getTenantProperties = async () => {
 };
 
 // Add property (expects FormData with images)
+// export const addProperty = async (propertyData) => {
+//   const res = await API.post("/properties", propertyData, {
+//     headers: {
+//       Authorization: `Bearer ${localStorage.getItem("token")}`,
+//       "Content-Type": "multipart/form-data",
+//     },
+//   });
+//   return res.data.property;
+// };
+
+// Update your addProperty function
 export const addProperty = async (propertyData) => {
-  const res = await API.post("/properties", propertyData, {
+  // Check if propertyData is FormData or regular object
+  const isFormData = propertyData instanceof FormData;
+  
+  const config = {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
-      "Content-Type": "multipart/form-data",
+      // Only set Content-Type for FormData (axios sets it automatically)
+      ...(isFormData ? {} : { 'Content-Type': 'application/json' })
     },
-  });
+  };
+  
+  const res = await API.post("/properties", propertyData, config);
   return res.data.property;
 };
 
@@ -59,10 +76,11 @@ export const updateProperty = async (propertyId, formData) => {
   try {
     const token = localStorage.getItem('token');
     
-    const response = await fetch(`/api/properties/${propertyId}`, {
+    const response = await fetch(`http://localhost:5000/api/properties/${propertyId}`, {
       method: 'PUT',
       headers: {
         'Authorization': `Bearer ${token}`,
+        // Don't set Content-Type for FormData - browser sets it automatically
       },
       body: formData,
     });

@@ -430,12 +430,6 @@ function TenantHomeDashboard() {
         <div className="card">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-lg font-semibold text-gray-900">Recent Activities</h3>
-            <Link 
-              href="/tenant/activities" 
-              className="text-sm text-blue-600 hover:text-blue-700"
-            >
-              View All
-            </Link>
           </div>
           <div className="space-y-4">
             {recentActivities.map((activity) => (
@@ -460,12 +454,6 @@ function TenantHomeDashboard() {
         <div className="card">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-lg font-semibold text-gray-900">Upcoming Events</h3>
-            <Link 
-              href="/tenant/calendar" 
-              className="text-sm text-blue-600 hover:text-blue-700"
-            >
-              View Calendar
-            </Link>
           </div>
           <div className="space-y-4">
             {upcomingEvents.map((event) => (

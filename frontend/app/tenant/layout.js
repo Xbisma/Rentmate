@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function TenantLayout({ children }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className="bg-gray-50">
+    // <html lang="en" className={inter.className}>
+    //   <body className="bg-gray-50">
         <div className="flex min-h-screen">
           <TenantSidebar />
           <div className="flex-1 flex flex-col">
@@ -19,7 +19,7 @@ export default function TenantLayout({ children }) {
             </main>
           </div>
         </div>
-      </body>
-    </html>
+      // </body>
+    // </html>
   );
 }
