@@ -1244,3 +1244,1070 @@ https://nextjs.org/docs/messages/module-not-found
 [00:49:18.351] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
 [00:49:35.598] Server  LOG      ✓ Compiled in 765ms
 [00:50:10.327] Server  LOG      ✓ Compiled in 523ms
+[00:56:47.210] Server  LOG      ✓ Compiled in 1130ms
+[00:56:47.662] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+Open your browser's console to view the Component stack trace.
+[01:00:03.977] Server  LOG      ✓ Compiled in 1081ms
+[01:00:04.146] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:00:10.849] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:41.070] Server  LOG      ✓ Compiled in 785ms
+[01:05:43.963] Server  LOG      ✓ Compiled in 475ms
+[01:06:29.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:33.571] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:42.282] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:45.066] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:10:57.972] Server  ERROR    ⨯ ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:10:58.107] Server  ERROR    ⨯ ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:10:58.410] Server  ERROR    ⨯ ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:10:58.706] Server  ERROR    ⨯ ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:10:58.825] Server  LOG      ✓ Compiled in 1733ms
+[01:10:59.410] Browser ERROR   ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:11:53.022] Server  LOG      ✓ Compiled in 678ms
+[01:12:47.067] Server  ERROR    ⨯ ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:12:47.086] Server  ERROR    ⨯ ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:12:47.103] Server  ERROR    ⨯ ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:12:47.129] Server  ERROR    ⨯ ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:12:47.891] Browser ERROR   ./frontend/app/owner/properties/add/page.js:5:1
+Module not found: Can't resolve '../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/properties/add/page.js [Client Component Browser]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/properties/add/page.js [Client Component SSR]
+    ./frontend/app/owner/properties/add/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:12:58.880] Server  LOG      ✓ Compiled in 363ms
+[01:16:16.546] Server  LOG      ✓ Compiled in 626ms
+[02:59:16.352] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:16.755] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:17.012] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:17.255] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:17.897] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.069] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.318] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.471] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.586] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.633] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.671] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.698] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.754] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.782] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.803] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.822] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:59:18.833] Server  LOG      ✓ Compiled in 3.4s
+[02:59:21.661] Browser ERROR   ./frontend/app/owner/dashboard/page.js:5:1
+Module not found: Can't resolve '../../../../services/dashboardService'
+  3 | import Link from 'next/link';
+  4 | import { useRouter } from 'next/navigation';
+> 5 | import { getOwnerDashboard } from '../../../../services/dashboardService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const colorMap = {
+  8 |   blue: {
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[03:00:01.090] Server  LOG      ✓ Compiled in 943ms
+[03:06:15.653] Server  LOG      ✓ Compiled in 922ms
+[03:30:01.017] Server  LOG      ✓ Compiled in 788ms
+[03:30:02.083] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./frontend/app/owner/properties/add/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[03:30:12.066] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:31:20.983] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.018] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.043] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.068] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.262] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.277] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.293] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.307] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.328] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.344] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.359] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.370] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.389] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.401] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.415] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.429] Server  ERROR    ⨯ ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:31:21.436] Server  LOG      ✓ Compiled in 839ms
+[03:31:21.635] Browser ERROR   ./frontend/app/owner/dashboard/page.js:6:1
+Module not found: Can't resolve '../properties/add'
+  4 | import { useRouter } from 'next/navigation';
+  5 | import { getOwnerDashboard } from '../../../services/dashboardService';
+> 6 | import AddPropertyModal from '../properties/add'; // We'll create this component
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const colorMap = {
+  9 |   blue: {
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/dashboard/page.js [Client Component Browser]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/dashboard/page.js [Client Component SSR]
+    ./frontend/app/owner/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[03:31:34.389] Server  LOG      ✓ Compiled in 1212ms
+[03:38:52.564] Server  LOG      ✓ Compiled in 1319ms
+[03:42:30.023] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:42:33.149] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

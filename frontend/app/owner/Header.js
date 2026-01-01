@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import API from '../../services/api';
 import { getNotifications, markNotificationAsRead } from '../../services/notificationService';
 
 export default function Header({ children }) {
@@ -78,13 +77,6 @@ export default function Header({ children }) {
           
           {/* Right side - Add Property, Notifications, Logout */}
           <div className="flex items-center space-x-4">
-            {/* Add Property Button */}
-            <Link 
-              href="/owner/properties/add" 
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              Add property
-            </Link>
             
             {/* Notifications Bell Icon */}
             <div className="relative" ref={dropdownRef}>
