@@ -88,12 +88,12 @@ export default function OwnerApplicationsPage() {
 
                     {/* Property Location */}
                     <div className="text-sm text-gray-600">
-                      📍 {app.property?.location || "Location not available"}
+                      {app.property?.location || "Location not available"}
                     </div>
 
                     {/* Property Rent */}
                     <div className="text-sm text-gray-600">
-                      💰 Rent: Rs{" "}
+                      Rent: Rs{" "}
                       {app.property?.price
                         ? app.property.price.toLocaleString()
                         : "N/A"}

@@ -72,11 +72,11 @@ export default function ApplicationDetailPage() { // Remove params prop
             </h2>
 
             <div className="text-sm text-gray-600">
-              📍 {application.property?.location || "Location not available"}
+              {application.property?.location || "Location not available"}
             </div>
 
             <div className="text-sm text-gray-600 mt-1">
-              💰 Rent: Rs{" "}
+              Rent: Rs{" "}
               {application.property?.price
                 ? application.property.price.toLocaleString()
                 : "N/A"}

@@ -43,14 +43,40 @@ export const addProperty = async (propertyData) => {
   return res.data.property;
 };
 
-// Update property
-export const updateProperty = async (id, propertyData) => {
-  const res = await API.put(`/properties/${id}`, propertyData, {
-    headers: {
-      Authorization: `Bearer ${localStorage.getItem("token")}`,
-    },
-  });
-  return res.data.property;
+// // Update property
+// export const updateProperty = async (id, propertyData) => {
+//   const res = await API.put(`/properties/${id}`, propertyData, {
+//     headers: {
+//       Authorization: `Bearer ${localStorage.getItem("token")}`,
+//     },
+//   });
+//   return res.data.property;
+// };
+
+// services/propertyService.js
+
+export const updateProperty = async (propertyId, formData) => {
+  try {
+    const token = localStorage.getItem('token');
+    
+    const response = await fetch(`/api/properties/${propertyId}`, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+      },
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const error = await response.json();
+      throw new Error(error.message || 'Failed to update property');
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Error updating property:', error);
+    throw error;
+  }
 };
 
 // Delete property

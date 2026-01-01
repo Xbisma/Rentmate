@@ -104,7 +104,7 @@ export default function Properties() {
               </div>
             ) : (
               properties.map((property) => (
-                <div key={property?._id || property?.id || Math.random()} className="card card-hover animate-fade-in">
+                <div key={property?._id || property?.id || Math.random()} className="card card-hover animate-fade-in flex flex-col">
                   {/* Property Image */}
                   <div className="relative">
                     <img
@@ -130,8 +130,8 @@ export default function Properties() {
                     </div>
                   </div>
 
-                  {/* Property Details */}
-                  <div className="p-6">
+                  {/* Property Details - Flex-grow to push buttons to bottom */}
+                  <div className="p-6 flex-grow flex flex-col">
                     {/* Price */}
                     <div className="mb-3">
                       <h3 className="text-2xl font-bold text-gray-900">
@@ -140,12 +140,12 @@ export default function Properties() {
                     </div>
 
                     {/* Address */}
-                    <p className="text-gray-700 font-medium mb-4">
+                    <p className="text-gray-700 font-medium mb-4 truncate">
                       {property?.address || 'Address not available'}
                     </p>
 
                     {/* Property Features */}
-                    <div className="flex items-center space-x-4 text-gray-600 mb-3">
+                    <div className="flex items-center justify-between text-gray-600 mb-3">
                       <span className="flex items-center">
                         <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -167,7 +167,7 @@ export default function Properties() {
                     </div>
 
                     {/* Property Description */}
-                    <p className="text-gray-800 text-sm mb-4 line-clamp-2">
+                    <p className="text-gray-800 text-sm mb-4 line-clamp-2 flex-grow">
                       {property?.description || 'No description available'}
                     </p>
 
@@ -179,16 +179,22 @@ export default function Properties() {
                       )}
                     </div>
 
-                    {/* Action Buttons */}
-                    <div className="flex justify-between items-center">
-                      <div className="flex space-x-2">
-                        <button className="flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
+                    {/* Action Buttons - Fixed spacing */}
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                      <div className="flex justify-center sm:justify-start space-x-4">
+                        <button 
+                          className="flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium px-2 py-1 hover:bg-blue-50 rounded transition-colors"
+                          title="Send Email"
+                        >
                           <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                           </svg>
                           EMAIL
                         </button>
-                        <button className="flex items-center text-green-600 hover:text-green-800 text-sm font-medium">
+                        <button 
+                          className="flex items-center text-green-600 hover:text-green-800 text-sm font-medium px-2 py-1 hover:bg-green-50 rounded transition-colors"
+                          title="Make Call"
+                        >
                           <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                           </svg>
@@ -198,7 +204,7 @@ export default function Properties() {
                       
                       <Link
                         href={`/owner/properties/details/${property?.id || property?._id || '#'}`}
-                        className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+                        className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium text-center"
                       >
                         View Details
                       </Link>

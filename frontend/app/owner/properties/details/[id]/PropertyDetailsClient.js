@@ -4,7 +4,9 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useProperty } from '../../../../context/PropertyContext';
-import Header from '../../../Header';
+import EditPropertyModal from '../../../properties/edit/[id]/page';
+import { updateProperty as updatePropertyApi } from '../../../../../services/propertyService';
+import toast from 'react-hot-toast';
 
 export default function PropertyDetailsClient({ propertyId }) {
   const router = useRouter();
@@ -13,6 +15,10 @@ export default function PropertyDetailsClient({ propertyId }) {
   const [isLoading, setIsLoading] = useState(true);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [selectedImage, setSelectedImage] = useState(0);
+  
+  // Edit modal state
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const [isUpdating, setIsUpdating] = useState(false);
 
   useEffect(() => {
     if (!propertyId) return;
@@ -47,6 +53,36 @@ export default function PropertyDetailsClient({ propertyId }) {
       router.push('/owner/properties');
     }, 1000);
   };
+
+  const handleUpdateProperty = async (propertyId, formData) => {
+  setIsUpdating(true);
+  try {
+    // Convert FormData to regular object if your API expects JSON
+    // Or keep as FormData if your API handles multipart/form-data
+    
+    const updatedProperty = await updatePropertyApi(propertyId, formData);
+    
+    // Update local property state with the returned updated property
+    setProperty(prev => ({
+      ...prev,
+      ...updatedProperty,
+      // Ensure images are preserved if not returned
+      images: updatedProperty.images || prev.images
+    }));
+    
+    // Close modal
+    setIsEditModalOpen(false);
+    
+    toast.success('Property updated successfully!');
+    
+  } catch (error) {
+    console.error('Failed to update property:', error);
+    
+    toast.error('Failed to update property');
+  } finally {
+    setIsUpdating(false);
+  }
+};
 
   const formatPrice = (price) => {
     // Accept explicit price or fall back to known property fields
@@ -153,8 +189,6 @@ export default function PropertyDetailsClient({ propertyId }) {
                   <p className="text-gray-700 mt-2 text-lg font-medium">{property.location || property.address || property.city}</p>
                 </div>
 
-
-
                 <div className="flex items-center space-x-6 text-gray-700">
                   <span className="flex items-center">🛏 {property.bedrooms ?? '—'} Bedrooms</span>
                   <span className="flex items-center">🛁 {property.bathrooms ?? '—'} Bathrooms</span>
@@ -182,12 +216,12 @@ export default function PropertyDetailsClient({ propertyId }) {
 
           {/* Action Buttons */}
           <div className="bg-white rounded-lg shadow p-6 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-            <Link
-              href={`/owner/properties/edit/${property._id || property.id}`}
+            <button
+              onClick={() => setIsEditModalOpen(true)}
               className="w-full sm:flex-1 bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
               Edit Property
-            </Link>
+            </button>
             <button
               onClick={() => setShowDeleteConfirm(true)}
               className="w-full sm:flex-1 bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors font-medium"
@@ -197,6 +231,15 @@ export default function PropertyDetailsClient({ propertyId }) {
           </div>
         </div>
       </main>
+
+      {/* Edit Property Modal */}
+      <EditPropertyModal
+        isOpen={isEditModalOpen}
+        onClose={() => setIsEditModalOpen(false)}
+        property={property}
+        onUpdate={handleUpdateProperty}
+        isSubmitting={isUpdating}
+      />
 
       {/* Delete Confirmation */}
       {showDeleteConfirm && (

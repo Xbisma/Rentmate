@@ -1,14 +1,11 @@
 {
   "/(public)/auth/login/page": "app/(public)/auth/login/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/owner/applications/[id]/page": "app/owner/applications/[id]/page.js",
   "/owner/applications/page": "app/owner/applications/page.js",
   "/owner/dashboard/page": "app/owner/dashboard/page.js",
   "/owner/maintenance/page": "app/owner/maintenance/page.js",
-  "/owner/properties/add/page": "app/owner/properties/add/page.js",
   "/owner/properties/details/[id]/page": "app/owner/properties/details/[id]/page.js",
-  "/owner/properties/edit/[id]/page": "app/owner/properties/edit/[id]/page.js",
   "/owner/properties/page": "app/owner/properties/page.js",
   "/owner/tenancies/page": "app/owner/tenancies/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/tenant/dashboard/page": "app/tenant/dashboard/page.js"
 }
