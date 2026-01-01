@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import { filterProperties } from "../../../services/propertyService";
 import PropertyCard from "../../components/PropertyCard";
 
@@ -73,12 +72,6 @@ export default function SearchProperties() {
   return (
     <div className="page-container">
       <div className="content-container">
-        <Link 
-          href="/tenant/dashboard" 
-          className="btn-secondary inline-flex items-center gap-2 mb-6 animate-fade-in"
-        >
-          ← Back to Home
-        </Link>
 
         <div className="animate-fade-in">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">

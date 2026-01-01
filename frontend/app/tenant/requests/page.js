@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { getTenantMaintenanceRequests, createMaintenanceRequest } from "../../../services/maintenanceService";
 
 export default function MyRequestsPage() {
@@ -99,13 +98,6 @@ export default function MyRequestsPage() {
   return (
     <div className="page-container">
       <div className="content-container">
-        {/* BACK TO HOME BUTTON */}
-        <Link 
-          href="/tenant/dashboard" 
-          className="btn-secondary inline-flex items-center gap-2 mb-6 animate-fade-in"
-        >
-          ← Back to Home
-        </Link>
 
         {/* Header */}
         <div className="animate-fade-in">

@@ -14,3 +14,3466 @@
 [00:05:28.500] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcyNTc3OTgsImV4cCI6MTc2Nzg2MjU5OH0.RqAYy__K7TqRuv2JEOEvKKkVydFtBnMOqIZ0Kn3Ac-o","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
 [00:05:28.500] Browser LOG     User type from backend: tenant
 [00:05:28.500] Browser LOG     Redirecting to: /tenant/dashboard
+[00:10:40.336] Server  LOG      ✓ Compiled in 540ms
+[00:11:15.568] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.601] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\.next\dev\server\chunks\ssr\9e883_next_dist_7fae1273._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.620] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.650] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.654] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.656] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.661] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.664] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.673] Server  ERROR    ⨯ Error: The default export is not a React Component in "/tenant/dashboard/layout"
+[00:11:15.691] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.694] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\.next\dev\server\chunks\ssr\9e883_next_dist_7fae1273._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.698] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.700] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.704] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.706] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.714] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.716] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:15.723] Server  ERROR    ⨯ Error: The default export is not a React Component in "/tenant/dashboard/layout"
+[00:11:18.205] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.211] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\.next\dev\server\chunks\ssr\9e883_next_dist_7fae1273._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.214] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.218] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.221] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.237] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.247] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.254] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.302] Server  ERROR    ⨯ Error: The default export is not a React Component in "/tenant/dashboard/layout"
+[00:11:18.353] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.355] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\.next\dev\server\chunks\ssr\9e883_next_dist_7fae1273._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.365] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.368] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.370] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.372] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.399] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.401] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:18.444] Server  ERROR    ⨯ Error: The default export is not a React Component in "/tenant/dashboard/layout"
+[00:11:20.531] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/tenant/dashboard/layout"
+[00:11:24.667] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.679] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.689] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.701] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.717] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.733] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.749] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.765] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.778] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.787] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.800] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.813] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.824] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:6:1
+Module not found: Can't resolve './globals.css'
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+> 6 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+  9 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:24.846] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:6:1
+Module not found: Can't resolve './globals.css'
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+> 6 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+  9 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:25.301] Browser ERROR   ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:25.301] Browser ERROR   ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:25.301] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:25.301] Browser ERROR   ./frontend/app/tenant/layout.js:6:1
+Module not found: Can't resolve './globals.css'
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+> 6 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+  9 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:15:34.592] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.604] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.616] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.630] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.636] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.648] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.654] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.669] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.684] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.692] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.701] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:34.711] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:35.083] Browser ERROR   ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:15:35.083] Browser ERROR   ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:15:35.083] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:15:47.417] Browser ERROR   ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:15:47.417] Browser ERROR   ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:15:47.417] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:17:23.083] Browser ERROR   ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:17:23.083] Browser ERROR   ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:17:23.083] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:17:40.076] Browser ERROR   ./frontend/app/tenant/layout.js:5:1
+Module not found: Can't resolve '../../../components/Footer'
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+  4 | import Header from '../../../components/Header';
+> 5 | import Footer from '../../../components/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import './globals.css';
+  7 |
+  8 | const inter = Inter({ subsets: ['latin'] });
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:17:40.076] Browser ERROR   ./frontend/app/tenant/layout.js:4:1
+Module not found: Can't resolve '../../../components/Header'
+  2 | import { Inter } from 'next/font/google';
+  3 | import TenantSidebar from '../../../components/TenantSidebar';
+> 4 | import Header from '../../../components/Header';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:17:40.076] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from '../../../components/Header';
+  5 | import Footer from '../../../components/Footer';
+  6 | import './globals.css';
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:19:02.067] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:02.075] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:02.080] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:02.087] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:03.072] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:19:04.083] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../../../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../../../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:19:40.937] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:40.947] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:40.952] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:40.957] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:42.077] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import Footer from '../components/Footer';
+  6 | import './globals.css';
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:02.381] Server  LOG      ✓ Compiled in 710ms
+[00:20:08.046] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:08.863] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/da..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+>                         <body>
+                            ...
+                              <link>
+                              <script>
+                              <script>
+                              <ClientSegmentRoot Component={function TenantLayout} slots={{...}} ...>
+                                <TenantLayout params={Promise}>
+>                                 <html lang="en" className="inter_396b12ce-module__rRjk0G__className">
+                  ...
+
+[00:20:08.863] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[00:20:08.863] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:20:08.863] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:20:08.863] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/da..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         className="inter_396b12ce-module__rRjk0G__className"
+                        >
+                          <body
+-                           className="bg-gray-50"
+                          >
+                            ...
+                              <div className="p-4 border...">
+                                <div className="flex items...">
+                                  <div className="w-10 h-10 ...">
+                                    <span className="text-blue-600 font-semibold">
++                                     B
+-                                     T
+                                  ...
+                  ...
+
+[00:20:08.863] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:20:08.863] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:22:31.904] Server  LOG      ✓ Compiled in 701ms
+[00:22:34.937] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:35.376] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/da..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+>                         <body>
+                            ...
+                              <link>
+                              <script>
+                              <script>
+                              <ClientSegmentRoot Component={function TenantLayout} slots={{...}} ...>
+                                <TenantLayout params={Promise}>
+>                                 <html lang="en" className="inter_396b12ce-module__rRjk0G__className">
+                  ...
+
+[00:22:35.376] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[00:22:35.376] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:22:35.376] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:22:35.376] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/da..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         className="inter_396b12ce-module__rRjk0G__className"
+                        >
+                          <body
+-                           className="bg-gray-50"
+                          >
+                            ...
+                              <div className="p-4 border...">
+                                <div className="flex items...">
+                                  <div className="w-10 h-10 ...">
+                                    <span className="text-blue-600 font-semibold">
++                                     B
+-                                     T
+                                  ...
+                  ...
+
+[00:22:35.376] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:22:35.376] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:24:44.561] Server  LOG      ✓ Compiled in 877ms
+[00:25:17.624] Server  LOG      ✓ Compiled in 655ms
+[00:26:28.573] Server  LOG      ✓ Compiled in 772ms
+[00:26:53.506] Server  LOG      ✓ Compiled in 727ms
+[00:27:26.501] Server  LOG      ✓ Compiled in 634ms
+[00:28:10.431] Server  LOG      ✓ Compiled in 790ms
+[00:28:53.858] Server  LOG      ✓ Compiled in 960ms
+[00:28:59.160] Server  LOG      ✓ Compiled in 1186ms
+[00:29:18.101] Server  LOG      ✓ Compiled in 769ms
+[00:29:40.416] Server  LOG      ✓ Compiled in 587ms
+[00:29:47.528] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:50.901] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:51.155] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/pa..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+>                         <body>
+                            ...
+                              <link>
+                              <script>
+                              <script>
+                              <ClientSegmentRoot Component={function TenantLayout} slots={{...}} ...>
+                                <TenantLayout params={Promise}>
+>                                 <html lang="en" className="inter_396b12ce-module__rRjk0G__className">
+                  ...
+
+[00:29:51.156] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[00:29:51.156] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:29:51.156] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:29:51.156] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/pa..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         className="inter_396b12ce-module__rRjk0G__className"
+                        >
+                          <body
+-                           className="bg-gray-50"
+                          >
+                            ...
+                              <div className="p-4 border...">
+                                <div className="flex items...">
+                                  <div className="w-10 h-10 ...">
+                                    <span className="text-blue-600 font-semibold">
++                                     B
+-                                     T
+                                  ...
+                  ...
+
+[00:29:51.156] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:29:51.156] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:29:55.023] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:57.730] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:58.002] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/pa..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+>                         <body>
+                            ...
+                              <link>
+                              <script>
+                              <script>
+                              <ClientSegmentRoot Component={function TenantLayout} slots={{...}} ...>
+                                <TenantLayout params={Promise}>
+>                                 <html lang="en" className="inter_396b12ce-module__rRjk0G__className">
+                  ...
+
+[00:29:58.002] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[00:29:58.002] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:29:58.002] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:29:58.002] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/pa..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         className="inter_396b12ce-module__rRjk0G__className"
+                        >
+                          <body
+-                           className="bg-gray-50"
+                          >
+                            ...
+                              <div className="p-4 border...">
+                                <div className="flex items...">
+                                  <div className="w-10 h-10 ...">
+                                    <span className="text-blue-600 font-semibold">
++                                     B
+-                                     T
+                                  ...
+                  ...
+
+[00:29:58.003] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:29:58.003] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:30:36.343] Server  LOG      ✓ Compiled in 1304ms
+[00:31:13.023] Server  LOG      ✓ Compiled in 654ms
+[00:33:59.172] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.226] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.276] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.301] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.330] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.367] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.416] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.450] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.490] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.510] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.530] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.546] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.567] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.582] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.609] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.630] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.646] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.665] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.710] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.741] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.758] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.772] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.795] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.809] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.822] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.832] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.843] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.855] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.864] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.872] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.880] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.889] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:59.893] Server  LOG      ✓ Compiled in 2s
+[00:34:00.010] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:00.800] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:02.464] Browser ERROR   uncaughtError: Error: ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:04.116] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:04.116] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:04.116] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:04.116] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:04.116] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:04.116] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:04.116] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/TenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/TenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:23.115] Server  LOG      ✓ Compiled in 1476ms
+[00:34:25.318] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:25.336] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[00:34:32.618] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:40.083] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `TenantLayout`.
+[00:35:34.720] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.737] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.747] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.755] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.765] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.777] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.784] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.791] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.800] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.807] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.816] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.821] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.830] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.835] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.841] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.851] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.861] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.868] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.873] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.882] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.887] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.895] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.901] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.906] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.913] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.921] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.928] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.935] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.942] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.954] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.960] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.967] Server  ERROR    ⨯ ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:35:34.968] Server  LOG      ✓ Compiled in 652ms
+[00:35:35.082] Browser ERROR   ./frontend/app/tenant/layout.js:3:1
+Module not found: Can't resolve '../components/tenantSidebar'
+  1 | 'use client';
+  2 | import { Inter } from 'next/font/google';
+> 3 | import TenantSidebar from '../components/tenantSidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Header from './Header';
+  5 | import './globals.css';
+  6 |
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/tenant/layout.js [Client Component Browser]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/tenant/layout.js [Client Component SSR]
+    ./frontend/app/tenant/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:35:50.584] Server  LOG      ✓ Compiled in 969ms
+[00:35:51.358] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:35:53.798] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:54.243] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/da..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+>                         <body>
+                            ...
+                              <link>
+                              <script>
+                              <script>
+                              <ClientSegmentRoot Component={function TenantLayout} slots={{...}} ...>
+                                <TenantLayout params={Promise}>
+>                                 <html lang="en" className="inter_396b12ce-module__rRjk0G__className">
+                  ...
+
+[00:35:54.243] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[00:35:54.243] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:35:54.243] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:35:54.243] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tenant/da..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/frontend/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         className="inter_396b12ce-module__rRjk0G__className"
+                        >
+                          <body
+-                           className="bg-gray-50"
+                          >
+                            ...
+                              <div className="p-4 border...">
+                                <div className="flex items...">
+                                  <div className="w-10 h-10 ...">
+                                    <span className="text-blue-600 font-semibold">
++                                     B
+-                                     T
+                                  ...
+                  ...
+
+[00:35:54.243] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:35:54.243] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:36:47.620] Server  LOG      ✓ Compiled in 1279ms
+[00:37:44.568] Server  LOG      ✓ Compiled in 1329ms
+[00:40:18.711] Server  LOG      ✓ Compiled in 1246ms
+[00:43:43.039] Server  LOG      ✓ Compiled in 1676ms

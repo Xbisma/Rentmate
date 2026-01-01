@@ -66,7 +66,6 @@ export default function MyTenanciesPage() {
   if (loading) {
     return (
       <div className="page-container">
-        <Header />
         <div className="content-container">
           <div className="flex justify-center items-center h-64">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
@@ -80,7 +79,6 @@ export default function MyTenanciesPage() {
   if (error) {
     return (
       <div className="page-container">
-        <Header />
         <div className="content-container">
           <div className="card text-center">
             <h1 className="text-2xl font-bold text-red-600 mb-4">Error</h1>
@@ -96,15 +94,7 @@ export default function MyTenanciesPage() {
 
   return (
     <div className="page-container">
-      <Header />
       <div className="content-container">
-        {/* Back to Home Button */}
-        <Link
-          href="/tenant/dashboard"
-          className="btn-secondary inline-flex items-center gap-2 mb-6 animate-fade-in"
-        >
-          ← Back to Home
-        </Link>
 
         {/* Header */}
         <div className="animate-fade-in">

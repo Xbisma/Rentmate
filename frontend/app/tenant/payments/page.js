@@ -1,7 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
-import Header from "../Header";
 import { getTenantPayments, payRent } from "../../../services/paymentService";
 import { getTenantTenancies } from "../../../services/tenancyService";
 
@@ -66,11 +64,7 @@ export default function PaymentHistoryPage() {
 
   return (
     <div className="page-container">
-      <Header />
-      <div className="content-container">
-        <Link href="/tenant/dashboard" className="btn-secondary mb-6">
-          ← Back to Home
-        </Link>
+      <div className="content-container">        
 
         <h1 className="text-3xl font-bold mb-4">Payment History</h1>
 

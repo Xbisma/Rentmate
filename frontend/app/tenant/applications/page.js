@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Header from "../Header";
-import Footer from "../../components/Footer";
 import { getTenantApplications } from "../../../services/rentalApplicationService";
 import { payRent } from "../../../services/paymentService";
 
@@ -60,16 +58,9 @@ export default function TenantApplicationsPage() {
 
   return (
     <div className="page-container">
-      <Header />
 
       <div className="content-container py-8">
         <div className="max-w-4xl mx-auto">
-          <Link
-            href="/tenant/dashboard"
-            className="btn-secondary inline-flex items-center gap-2 mb-6"
-          >
-            ← Back to Dashboard
-          </Link>
 
           <h1 className="text-3xl font-bold mb-4">My Applications</h1>
           <p className="text-gray-600 mb-6">
@@ -120,8 +111,8 @@ export default function TenantApplicationsPage() {
 
                       {property && typeof property === "object" && (
                         <div className="text-sm text-gray-700 mt-2 space-y-1">
-                          <div>📍 City: {property.city}</div>
-                          <div>💰 Price: PKR {property.price?.toLocaleString()}</div>
+                          <div>City: {property.city}</div>
+                          <div>Price: PKR {property.price?.toLocaleString()}</div>
                           <div>
                             🛏 {property.bedrooms} Beds | 🛁 {property.bathrooms} Baths
                           </div>
@@ -166,8 +157,6 @@ export default function TenantApplicationsPage() {
           )}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
