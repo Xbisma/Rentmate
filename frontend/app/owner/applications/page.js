@@ -2,12 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Header from "../Header";
-import Footer from "../../components/Footer";
-import {
-  getOwnerApplications,
-  updateApplicationStatus
-} from "../../../services/rentalApplicationService";
+import { getOwnerApplications, updateApplicationStatus } from "../../../services/rentalApplicationService";
 
 export default function OwnerApplicationsPage() {
   const router = useRouter();
@@ -46,10 +41,10 @@ export default function OwnerApplicationsPage() {
 
   return (
     <div className="page-container">
-      <Header />
 
       <div className="content-container py-8">
         <div className="max-w-4xl mx-auto">
+
           <h1 className="text-3xl font-bold mb-4">Applications</h1>
           <p className="text-gray-600 mb-6">
             View and manage rental applications for your properties.
@@ -166,8 +161,6 @@ export default function OwnerApplicationsPage() {
           )}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

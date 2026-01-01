@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import ImageUpload from '../../../components/ImageUpload';
 import { useProperty } from '../../../context/PropertyContext';
-import Header from '../../Header';
 
 export default function AddProperty() {
   const router = useRouter();
@@ -66,13 +65,11 @@ export default function AddProperty() {
 
   return (
     <div className="page-container">
-      <Header />
       <main className="content-container">
         <div className="max-w-2xl mx-auto">
           <Link href="/owner/properties" className="btn-outline mb-6 inline-block">
             ← Back to Properties
           </Link>
-
           <h1 className="text-2xl font-bold mb-6">Add New Property</h1>
 
           <form onSubmit={handleSubmit} className="card space-y-4">

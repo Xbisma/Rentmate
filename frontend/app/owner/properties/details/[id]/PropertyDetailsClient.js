@@ -59,7 +59,6 @@ export default function PropertyDetailsClient({ propertyId }) {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-50">
-        <Header />
         <div className="container mx-auto px-4 py-8 text-center text-gray-600">
           Loading property details...
         </div>
@@ -70,7 +69,6 @@ export default function PropertyDetailsClient({ propertyId }) {
   if (!property) {
     return (
       <div className="min-h-screen bg-gray-50">
-        <Header />
         <div className="container mx-auto px-4 py-8 text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">
             Property not found
@@ -90,7 +88,6 @@ export default function PropertyDetailsClient({ propertyId }) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <Link

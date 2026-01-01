@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import Header from '../../../Header';
 import ImageUpload from '../../../../components/ImageUpload';
 import { useProperty } from '../../../../context/PropertyContext';
 
@@ -154,7 +153,6 @@ export default function EditProperty({ params }) {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-50">
-        <Header />
         <div className="container mx-auto px-4 py-8">
           <div className="flex justify-center items-center">
             <div className="text-gray-600">Loading edit form...</div>
@@ -167,7 +165,6 @@ export default function EditProperty({ params }) {
   if (!property) {
     return (
       <div className="min-h-screen bg-gray-50">
-        <Header />
         <div className="container mx-auto px-4 py-8">
           <div className="text-center">
             <h1 className="text-2xl font-bold text-gray-800 mb-4">Property not found</h1>
@@ -185,7 +182,6 @@ export default function EditProperty({ params }) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
       
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">

@@ -1,7 +1,5 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Header from '../Header';
 import { getOwnerMaintenanceRequests, updateMaintenanceRequestStatus } from '../../../services/maintenanceService';
 
 export default function MaintenanceRequests() {
@@ -58,7 +56,6 @@ export default function MaintenanceRequests() {
   if (loading) {
     return (
       <div className="page-container">
-        <Header />
         <main className="content-container">
           <div className="text-center">Loading maintenance requests...</div>
         </main>
@@ -69,7 +66,7 @@ export default function MaintenanceRequests() {
   if (error) {
     return (
       <div className="page-container">
-        <Header />
+
         <main className="content-container">
           <div className="text-center text-red-600">{error}</div>
         </main>
@@ -79,16 +76,8 @@ export default function MaintenanceRequests() {
 
   return (
     <div className="page-container">
-      <Header />
 
       <main className="content-container">
-        {/* Back to Dashboard Button */}
-        <Link
-          href="/owner/dashboard"
-          className="btn-outline inline-flex items-center gap-2 mb-6"
-        >
-          ← Back to Dashboard
-        </Link>
 
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Maintenance Requests</h1>

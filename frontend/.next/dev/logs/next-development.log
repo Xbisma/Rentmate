@@ -1,40 +1,1246 @@
-[00:00:02.683] Server  LOG      ✓ Ready in 1865ms
-[00:00:13.798] Server  LOG      ○ Compiling / ...
-[00:00:43.901] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
-[00:00:44.219] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzExMzY4OCwiZXhwIjoxNzY3NzE4NDg4fQ.xi3T-0gUmH7e33Lx_pMNeThChg8dA-Ix7ui0JDZC1OU","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
-[00:00:44.219] Browser LOG     User type from backend: owner
-[00:00:44.219] Browser LOG     Redirecting to: /owner/dashboard
-[00:00:59.638] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3"}
-[00:00:59.935] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMTM3MDQsImV4cCI6MTc2NzcxODUwNH0.nZsgIL6rPgL_z4lchTCPToaUydcgw_oYjpZnL8m-t6U","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
-[00:00:59.935] Browser LOG     User type from backend: tenant
-[00:00:59.935] Browser LOG     Redirecting to: /tenant/dashboard
-[00:02:41.413] Browser DEBUG   Searching properties with filters: {"availability":"available"}
-[00:02:41.739] Browser DEBUG   Search response: [{"__v":0,"_id":"6939960f19564a9e9a35ef3c","availability":"available","bedrooms":3,"city":"Karachi","createdAt":"2025-12-10T15:47:27.565Z","description":"Big house","images":[],"location":"DHA Phase 6","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":50000,"title":"My house","updatedAt":"2025-12-10T15:47:27.565Z"},{"__v":0,"_id":"693f978e24a2de4ad8e0d4ff","availability":"available","bathrooms":3,"bedrooms":3,"city":"Karachi","createdAt":"2025-12-15T05:07:26.737Z","description":"Big Apartment","images":[],"location":"123 DHA Phase 6","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":120000,"title":"Luxury Apartment","updatedAt":"2025-12-30T12:13:41.635Z"},{"__v":0,"_id":"693ff77aa030e0ca75839d3e","availability":"available","bathrooms":1,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-15T11:56:42.489Z","description":"Cozy 2-bedroom flat in the heart of Gulberg with great connectivity to major commercial areas and entertainment spots.","images":[],"location":"Gulberg","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":45000,"title":"Luxurious Flat","updatedAt":"2025-12-15T11:56:42.489Z"},{"__v":0,"_id":"694ed9212fe4370eff6202e7","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-26T18:51:13.417Z","images":[],"location":"Gulshan","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":60000,"title":"Owner Test Property","updatedAt":"2025-12-26T18:51:13.417Z"},{"__v":0,"_id":"694ef1f9c8be5d0a6745a3eb","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-26T20:37:13.355Z","images":[],"location":"Gulshan","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":60000,"title":"Owner Test Property","updatedAt":"2025-12-26T20:37:13.355Z"},{"__v":0,"_id":"694f76838ab01d8e24698cfe","availability":"available","bathrooms":7,"bedrooms":6,"city":"mmm","createdAt":"2025-12-27T06:02:43.259Z","description":"mm","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766826566/rentmate_properties/zw1fhxj82n8muxaartt8.png"],"location":"mm","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":3,"title":"mmmm","updatedAt":"2025-12-27T09:09:27.170Z"},{"__v":0,"_id":"694f76ac8ab01d8e24698d08","availability":"available","bathrooms":-7,"bedrooms":-4,"city":"kk","createdAt":"2025-12-27T06:03:24.671Z","description":"ll","images":[],"location":"kk","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-5,"title":"kk","updatedAt":"2025-12-27T06:03:24.671Z"},{"__v":0,"_id":"694f76dc8ab01d8e24698d1a","availability":"available","bathrooms":-2,"bedrooms":-2,"city":"kk","createdAt":"2025-12-27T06:04:12.625Z","description":"kk","images":[],"location":"kk","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-4,"title":"kk","updatedAt":"2025-12-27T06:04:12.625Z"},{"__v":0,"_id":"694f814d95da5002b74080e0","availability":"available","bathrooms":-2,"bedrooms":-2,"city":"j","createdAt":"2025-12-27T06:48:45.702Z","description":"k","images":[],"location":"jj","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":4,"title":"kk","updatedAt":"2025-12-27T06:48:45.702Z"},{"__v":0,"_id":"694f814e95da5002b74080e2","availability":"available","bathrooms":-2,"bedrooms":-2,"city":"j","createdAt":"2025-12-27T06:48:46.876Z","description":"k","images":[],"location":"jj","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":4,"title":"kk","updatedAt":"2025-12-27T06:48:46.876Z"},{"__v":0,"_id":"694f893b57131b4a523304f7","availability":"available","bathrooms":-12,"bedrooms":-5,"city":"jj","createdAt":"2025-12-27T07:22:35.114Z","description":"kk","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766820154/rentmate_properties/ijwq08xydgq5u7y94hpp.png"],"location":"jjj","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-5,"title":"jk","updatedAt":"2025-12-27T07:22:35.114Z"},{"__v":0,"_id":"694f92282655ae6489a09e14","availability":"available","bathrooms":-4,"bedrooms":-2,"city":"islo","createdAt":"2025-12-27T08:00:40.205Z","description":"heelo","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766822439/rentmate_properties/bba77lobsfdaovjcd0cs.png"],"location":"heelo","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-1,"title":"heeelo","updatedAt":"2025-12-27T08:00:40.205Z"},{"__v":0,"_id":"694fa2ae7d7785d2ba04051a","availability":"available","bathrooms":2,"bedrooms":6,"city":"Rawalpindi","createdAt":"2025-12-27T09:11:10.906Z","description":"Parking,Water,gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766826670/rentmate_properties/gwgmixzcxntvumepbe6f.png"],"location":"Lane 5 , Scheme 3 , Rawalpindi","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":32,"title":"House","updatedAt":"2025-12-27T09:11:10.906Z"},{"__v":0,"_id":"694fa648c13fe80702534904","availability":"available","bathrooms":1,"bedrooms":2,"city":"Rawalpindi","createdAt":"2025-12-27T09:26:32.938Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766827592/rentmate_properties/pvrd9tshaz6nfhwivftg.png"],"location":"Rawalpindi","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"House","updatedAt":"2025-12-27T09:26:32.938Z"},{"__v":0,"_id":"694ffb2b9a0ba6fb55a84ff4","availability":"available","bathrooms":1,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-27T15:28:43.385Z","description":"WATER","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766849323/rentmate_properties/atx2fdorj6xdyxscj0ja.png"],"location":"karachi","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":6000,"title":"House","updatedAt":"2025-12-27T15:28:43.385Z"},{"__v":0,"_id":"6950bf3ebc325f00097d5538","availability":"available","bathrooms":4,"bedrooms":1,"city":"Rawalpindi","createdAt":"2025-12-28T05:25:18.485Z","description":"water, Parking","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766899517/rentmate_properties/zbudmxoedvwiescwf56x.png"],"location":"SCHEME 3","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":60000,"title":"Apartment","updatedAt":"2025-12-28T05:27:24.066Z"},{"__v":0,"_id":"6950c3747898c28b3bf8fe48","availability":"available","bathrooms":3,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-28T05:43:16.641Z","description":"water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766900595/rentmate_properties/hokz71rkl4ib7bqgv6hm.png"],"location":"gulistan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":49997,"title":"House","updatedAt":"2025-12-28T05:43:16.641Z"},{"__v":0,"_id":"6950c539844fd0787393270a","availability":"available","bathrooms":6,"bedrooms":3,"city":"Rawalpindi","createdAt":"2025-12-28T05:50:49.686Z","description":"water","images":[],"location":"Gulistan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T05:50:49.686Z"},{"__v":0,"_id":"6950c564844fd07873932718","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T05:51:32.440Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766901091/rentmate_properties/rmihqi9lxqwyht1wqlup.png"],"location":"Gulshan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":500,"title":"House","type":"Apartment","updatedAt":"2025-12-28T05:51:32.440Z"},{"__v":0,"_id":"6950db3d716d977b5f1b03d8","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T07:24:45.237Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766906684/rentmate_properties/id6vv6dbirvjghvtaxv5.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5008,"title":"House","type":"Apartment","updatedAt":"2025-12-28T07:24:45.237Z"},{"__v":0,"_id":"6950db7d716d977b5f1b03ef","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T07:25:49.805Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766906748/rentmate_properties/e5hakuagriwrx6u6qstg.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T07:25:49.805Z"},{"__v":0,"_id":"69510901c537acaaf557961c","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T10:40:01.846Z","description":"h","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766918399/rentmate_properties/ffbcyc0j5vhtdoltjtip.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"j","type":"Apartment","updatedAt":"2025-12-28T10:40:01.846Z"},{"__v":0,"_id":"695112de97d67362cf133aea","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:22:06.505Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766920924/rentmate_properties/glrtoguq7wewhbbh2mp6.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"Apartment","type":"Apartment","updatedAt":"2025-12-28T11:22:06.505Z"},{"__v":0,"_id":"6951132c97d67362cf133afa","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:23:24.410Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921002/rentmate_properties/qaxzx3aimio0imc4sdnu.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:23:24.410Z"},{"__v":0,"_id":"6951157797d67362cf133b2a","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:33:11.175Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921589/rentmate_properties/kdgzpoatyh3ogwjethsj.png"],"location":"Lalazar","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:33:11.175Z"},{"__v":0,"_id":"695116d8a412e4069b7063d0","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:39:04.481Z","description":"water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921942/rentmate_properties/pjdnbdgturmqnai9lkgm.png"],"location":"Lalazar","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:39:04.481Z"},{"__v":0,"_id":"69511b4087071a9595f649da","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-28T11:57:52.045Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766923070/rentmate_properties/dzr8uxddfobouye1anzr.png"],"location":"Askari","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"Apartment","type":"Apartment","updatedAt":"2025-12-28T11:57:52.045Z"},{"__v":0,"_id":"6951641787071a9595f64a81","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-28T17:08:39.310Z","description":"hello","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766941716/rentmate_properties/zi3n4rlvatj4qolxdnd1.png"],"location":"Askari","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"hello","type":"Apartment","updatedAt":"2025-12-28T17:08:39.310Z"},{"__v":0,"_id":"695166e803242784e600760a","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T17:20:40.093Z","description":"Near park and school","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766942437/rentmate_properties/lfu211obhobuienhlxpb.png"],"location":"G-13","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":500,"title":"Family House ","type":"Apartment","updatedAt":"2025-12-28T17:20:40.093Z"},{"__v":0,"_id":"69516a212026b206f2261664","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T17:34:25.768Z","description":"Near Park and School","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766943263/rentmate_properties/f1tdauhiesxdrffruuge.png"],"location":"J-13","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"Family House ","type":"Apartment","updatedAt":"2025-12-28T17:34:25.768Z"},{"__v":0,"_id":"695171d92026b206f22616a4","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T18:07:21.648Z","description":"parks","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766945239/rentmate_properties/vudxtpr1p5rizdvjgveh.png"],"location":"F10","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"House","type":"Apartment","updatedAt":"2025-12-28T18:07:21.648Z"},{"__v":0,"_id":"69517d46ee15f9dbdb37f512","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T18:56:06.834Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766948164/rentmate_properties/pjdrubhge6vjbpxsnuor.png"],"location":"F9","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"House","type":"Apartment","updatedAt":"2025-12-28T18:56:06.834Z"},{"__v":0,"_id":"6952529abf0f7dff48c2be94","availability":"available","bathrooms":0,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-29T10:06:18.125Z","description":"Gas and Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767002774/rentmate_properties/azjyf5ks2oibgh8fj8iv.png"],"location":"Lane 5 ","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":500,"title":"House","updatedAt":"2025-12-29T10:06:18.125Z"},{"__v":0,"_id":"6952550e93b31c65997d0e91","availability":"available","bathrooms":3,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-29T10:16:46.918Z","description":"Water and gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767003403/rentmate_properties/wbq2cq6mzg54a3ja6jeg.png"],"location":"I7","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":500,"title":"House","updatedAt":"2025-12-29T10:16:46.918Z"},{"__v":0,"_id":"695256428ec9f7e59037a4d4","availability":"available","bathrooms":3,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-29T10:21:54.595Z","description":"Gas and Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767003711/rentmate_properties/oaxp7kkz9cpsqbmemqaf.png"],"location":"i1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":500,"title":"House","updatedAt":"2025-12-29T10:21:54.595Z"},{"__v":0,"_id":"695326f04b20280745f63c77","availability":"available","bathrooms":2,"bedrooms":2,"city":"Rawalpindi","createdAt":"2025-12-30T01:12:16.747Z","description":"Near Park and School","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767057136/rentmate_properties/prc0psar6yp1d7os407j.png"],"location":"F1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":200,"title":"House ","updatedAt":"2025-12-30T01:12:51.743Z"},{"__v":0,"_id":"69536c6acfebaa72585abb3a","availability":"available","bathrooms":3,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-30T06:08:42.122Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767074921/rentmate_properties/loxdz8ksxvwlqlzxpedo.png"],"location":"DHA Phase 1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2500,"title":"Home","updatedAt":"2025-12-30T06:08:42.122Z"},{"__v":0,"_id":"695373d8e0136aecf3acc17e","availability":"available","bathrooms":2,"bedrooms":1,"city":"Rawalpindi","createdAt":"2025-12-30T06:40:24.158Z","description":"Near park","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767076823/rentmate_properties/xs3snvry1a3mq7pmretg.png"],"location":"D11","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2000,"title":"HOME","updatedAt":"2025-12-30T06:40:24.158Z"},{"__v":0,"_id":"695381a2a719225f15cb4b92","availability":"available","bathrooms":2,"bedrooms":2,"city":"Rawalpindi","createdAt":"2025-12-30T07:39:14.615Z","description":"Gas and water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767080354/rentmate_properties/gt25jl9lnxh9fce5fm1g.png"],"location":"E9","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2000,"title":"Portion","updatedAt":"2025-12-30T07:39:49.912Z"},{"__v":0,"_id":"6953b8d8a7621edffb62512e","availability":"available","bathrooms":-6,"bedrooms":4,"city":"Lahore","createdAt":"2025-12-30T11:34:48.649Z","description":"Near park","images":[],"location":"123 Main Street, DHA Phase 5","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":59999,"title":"Luxuary House","updatedAt":"2025-12-30T11:34:48.649Z"}]
-[00:03:00.988] Browser DEBUG   Searching properties with filters: {"availability":"available"}
-[00:03:01.645] Browser DEBUG   Search response: [{"__v":0,"_id":"6939960f19564a9e9a35ef3c","availability":"available","bedrooms":3,"city":"Karachi","createdAt":"2025-12-10T15:47:27.565Z","description":"Big house","images":[],"location":"DHA Phase 6","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":50000,"title":"My house","updatedAt":"2025-12-10T15:47:27.565Z"},{"__v":0,"_id":"693f978e24a2de4ad8e0d4ff","availability":"available","bathrooms":3,"bedrooms":3,"city":"Karachi","createdAt":"2025-12-15T05:07:26.737Z","description":"Big Apartment","images":[],"location":"123 DHA Phase 6","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":120000,"title":"Luxury Apartment","updatedAt":"2025-12-30T12:13:41.635Z"},{"__v":0,"_id":"693ff77aa030e0ca75839d3e","availability":"available","bathrooms":1,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-15T11:56:42.489Z","description":"Cozy 2-bedroom flat in the heart of Gulberg with great connectivity to major commercial areas and entertainment spots.","images":[],"location":"Gulberg","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":45000,"title":"Luxurious Flat","updatedAt":"2025-12-15T11:56:42.489Z"},{"__v":0,"_id":"694ed9212fe4370eff6202e7","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-26T18:51:13.417Z","images":[],"location":"Gulshan","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":60000,"title":"Owner Test Property","updatedAt":"2025-12-26T18:51:13.417Z"},{"__v":0,"_id":"694ef1f9c8be5d0a6745a3eb","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-26T20:37:13.355Z","images":[],"location":"Gulshan","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":60000,"title":"Owner Test Property","updatedAt":"2025-12-26T20:37:13.355Z"},{"__v":0,"_id":"694f76838ab01d8e24698cfe","availability":"available","bathrooms":7,"bedrooms":6,"city":"mmm","createdAt":"2025-12-27T06:02:43.259Z","description":"mm","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766826566/rentmate_properties/zw1fhxj82n8muxaartt8.png"],"location":"mm","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":3,"title":"mmmm","updatedAt":"2025-12-27T09:09:27.170Z"},{"__v":0,"_id":"694f76ac8ab01d8e24698d08","availability":"available","bathrooms":-7,"bedrooms":-4,"city":"kk","createdAt":"2025-12-27T06:03:24.671Z","description":"ll","images":[],"location":"kk","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-5,"title":"kk","updatedAt":"2025-12-27T06:03:24.671Z"},{"__v":0,"_id":"694f76dc8ab01d8e24698d1a","availability":"available","bathrooms":-2,"bedrooms":-2,"city":"kk","createdAt":"2025-12-27T06:04:12.625Z","description":"kk","images":[],"location":"kk","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-4,"title":"kk","updatedAt":"2025-12-27T06:04:12.625Z"},{"__v":0,"_id":"694f814d95da5002b74080e0","availability":"available","bathrooms":-2,"bedrooms":-2,"city":"j","createdAt":"2025-12-27T06:48:45.702Z","description":"k","images":[],"location":"jj","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":4,"title":"kk","updatedAt":"2025-12-27T06:48:45.702Z"},{"__v":0,"_id":"694f814e95da5002b74080e2","availability":"available","bathrooms":-2,"bedrooms":-2,"city":"j","createdAt":"2025-12-27T06:48:46.876Z","description":"k","images":[],"location":"jj","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":4,"title":"kk","updatedAt":"2025-12-27T06:48:46.876Z"},{"__v":0,"_id":"694f893b57131b4a523304f7","availability":"available","bathrooms":-12,"bedrooms":-5,"city":"jj","createdAt":"2025-12-27T07:22:35.114Z","description":"kk","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766820154/rentmate_properties/ijwq08xydgq5u7y94hpp.png"],"location":"jjj","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-5,"title":"jk","updatedAt":"2025-12-27T07:22:35.114Z"},{"__v":0,"_id":"694f92282655ae6489a09e14","availability":"available","bathrooms":-4,"bedrooms":-2,"city":"islo","createdAt":"2025-12-27T08:00:40.205Z","description":"heelo","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766822439/rentmate_properties/bba77lobsfdaovjcd0cs.png"],"location":"heelo","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-1,"title":"heeelo","updatedAt":"2025-12-27T08:00:40.205Z"},{"__v":0,"_id":"694fa2ae7d7785d2ba04051a","availability":"available","bathrooms":2,"bedrooms":6,"city":"Rawalpindi","createdAt":"2025-12-27T09:11:10.906Z","description":"Parking,Water,gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766826670/rentmate_properties/gwgmixzcxntvumepbe6f.png"],"location":"Lane 5 , Scheme 3 , Rawalpindi","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":32,"title":"House","updatedAt":"2025-12-27T09:11:10.906Z"},{"__v":0,"_id":"694fa648c13fe80702534904","availability":"available","bathrooms":1,"bedrooms":2,"city":"Rawalpindi","createdAt":"2025-12-27T09:26:32.938Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766827592/rentmate_properties/pvrd9tshaz6nfhwivftg.png"],"location":"Rawalpindi","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"House","updatedAt":"2025-12-27T09:26:32.938Z"},{"__v":0,"_id":"694ffb2b9a0ba6fb55a84ff4","availability":"available","bathrooms":1,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-27T15:28:43.385Z","description":"WATER","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766849323/rentmate_properties/atx2fdorj6xdyxscj0ja.png"],"location":"karachi","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":6000,"title":"House","updatedAt":"2025-12-27T15:28:43.385Z"},{"__v":0,"_id":"6950bf3ebc325f00097d5538","availability":"available","bathrooms":4,"bedrooms":1,"city":"Rawalpindi","createdAt":"2025-12-28T05:25:18.485Z","description":"water, Parking","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766899517/rentmate_properties/zbudmxoedvwiescwf56x.png"],"location":"SCHEME 3","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":60000,"title":"Apartment","updatedAt":"2025-12-28T05:27:24.066Z"},{"__v":0,"_id":"6950c3747898c28b3bf8fe48","availability":"available","bathrooms":3,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-28T05:43:16.641Z","description":"water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766900595/rentmate_properties/hokz71rkl4ib7bqgv6hm.png"],"location":"gulistan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":49997,"title":"House","updatedAt":"2025-12-28T05:43:16.641Z"},{"__v":0,"_id":"6950c539844fd0787393270a","availability":"available","bathrooms":6,"bedrooms":3,"city":"Rawalpindi","createdAt":"2025-12-28T05:50:49.686Z","description":"water","images":[],"location":"Gulistan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T05:50:49.686Z"},{"__v":0,"_id":"6950c564844fd07873932718","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T05:51:32.440Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766901091/rentmate_properties/rmihqi9lxqwyht1wqlup.png"],"location":"Gulshan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":500,"title":"House","type":"Apartment","updatedAt":"2025-12-28T05:51:32.440Z"},{"__v":0,"_id":"6950db3d716d977b5f1b03d8","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T07:24:45.237Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766906684/rentmate_properties/id6vv6dbirvjghvtaxv5.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5008,"title":"House","type":"Apartment","updatedAt":"2025-12-28T07:24:45.237Z"},{"__v":0,"_id":"6950db7d716d977b5f1b03ef","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T07:25:49.805Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766906748/rentmate_properties/e5hakuagriwrx6u6qstg.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T07:25:49.805Z"},{"__v":0,"_id":"69510901c537acaaf557961c","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T10:40:01.846Z","description":"h","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766918399/rentmate_properties/ffbcyc0j5vhtdoltjtip.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"j","type":"Apartment","updatedAt":"2025-12-28T10:40:01.846Z"},{"__v":0,"_id":"695112de97d67362cf133aea","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:22:06.505Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766920924/rentmate_properties/glrtoguq7wewhbbh2mp6.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"Apartment","type":"Apartment","updatedAt":"2025-12-28T11:22:06.505Z"},{"__v":0,"_id":"6951132c97d67362cf133afa","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:23:24.410Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921002/rentmate_properties/qaxzx3aimio0imc4sdnu.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:23:24.410Z"},{"__v":0,"_id":"6951157797d67362cf133b2a","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:33:11.175Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921589/rentmate_properties/kdgzpoatyh3ogwjethsj.png"],"location":"Lalazar","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:33:11.175Z"},{"__v":0,"_id":"695116d8a412e4069b7063d0","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:39:04.481Z","description":"water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921942/rentmate_properties/pjdnbdgturmqnai9lkgm.png"],"location":"Lalazar","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:39:04.481Z"},{"__v":0,"_id":"69511b4087071a9595f649da","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-28T11:57:52.045Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766923070/rentmate_properties/dzr8uxddfobouye1anzr.png"],"location":"Askari","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"Apartment","type":"Apartment","updatedAt":"2025-12-28T11:57:52.045Z"},{"__v":0,"_id":"6951641787071a9595f64a81","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-28T17:08:39.310Z","description":"hello","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766941716/rentmate_properties/zi3n4rlvatj4qolxdnd1.png"],"location":"Askari","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"hello","type":"Apartment","updatedAt":"2025-12-28T17:08:39.310Z"},{"__v":0,"_id":"695166e803242784e600760a","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T17:20:40.093Z","description":"Near park and school","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766942437/rentmate_properties/lfu211obhobuienhlxpb.png"],"location":"G-13","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":500,"title":"Family House ","type":"Apartment","updatedAt":"2025-12-28T17:20:40.093Z"},{"__v":0,"_id":"69516a212026b206f2261664","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T17:34:25.768Z","description":"Near Park and School","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766943263/rentmate_properties/f1tdauhiesxdrffruuge.png"],"location":"J-13","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"Family House ","type":"Apartment","updatedAt":"2025-12-28T17:34:25.768Z"},{"__v":0,"_id":"695171d92026b206f22616a4","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T18:07:21.648Z","description":"parks","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766945239/rentmate_properties/vudxtpr1p5rizdvjgveh.png"],"location":"F10","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"House","type":"Apartment","updatedAt":"2025-12-28T18:07:21.648Z"},{"__v":0,"_id":"69517d46ee15f9dbdb37f512","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T18:56:06.834Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766948164/rentmate_properties/pjdrubhge6vjbpxsnuor.png"],"location":"F9","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"House","type":"Apartment","updatedAt":"2025-12-28T18:56:06.834Z"},{"__v":0,"_id":"6952529abf0f7dff48c2be94","availability":"available","bathrooms":0,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-29T10:06:18.125Z","description":"Gas and Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767002774/rentmate_properties/azjyf5ks2oibgh8fj8iv.png"],"location":"Lane 5 ","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":500,"title":"House","updatedAt":"2025-12-29T10:06:18.125Z"},{"__v":0,"_id":"6952550e93b31c65997d0e91","availability":"available","bathrooms":3,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-29T10:16:46.918Z","description":"Water and gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767003403/rentmate_properties/wbq2cq6mzg54a3ja6jeg.png"],"location":"I7","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":500,"title":"House","updatedAt":"2025-12-29T10:16:46.918Z"},{"__v":0,"_id":"695256428ec9f7e59037a4d4","availability":"available","bathrooms":3,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-29T10:21:54.595Z","description":"Gas and Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767003711/rentmate_properties/oaxp7kkz9cpsqbmemqaf.png"],"location":"i1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":500,"title":"House","updatedAt":"2025-12-29T10:21:54.595Z"},{"__v":0,"_id":"695326f04b20280745f63c77","availability":"available","bathrooms":2,"bedrooms":2,"city":"Rawalpindi","createdAt":"2025-12-30T01:12:16.747Z","description":"Near Park and School","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767057136/rentmate_properties/prc0psar6yp1d7os407j.png"],"location":"F1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":200,"title":"House ","updatedAt":"2025-12-30T01:12:51.743Z"},{"__v":0,"_id":"69536c6acfebaa72585abb3a","availability":"available","bathrooms":3,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-30T06:08:42.122Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767074921/rentmate_properties/loxdz8ksxvwlqlzxpedo.png"],"location":"DHA Phase 1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2500,"title":"Home","updatedAt":"2025-12-30T06:08:42.122Z"},{"__v":0,"_id":"695373d8e0136aecf3acc17e","availability":"available","bathrooms":2,"bedrooms":1,"city":"Rawalpindi","createdAt":"2025-12-30T06:40:24.158Z","description":"Near park","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767076823/rentmate_properties/xs3snvry1a3mq7pmretg.png"],"location":"D11","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2000,"title":"HOME","updatedAt":"2025-12-30T06:40:24.158Z"},{"__v":0,"_id":"695381a2a719225f15cb4b92","availability":"available","bathrooms":2,"bedrooms":2,"city":"Rawalpindi","createdAt":"2025-12-30T07:39:14.615Z","description":"Gas and water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767080354/rentmate_properties/gt25jl9lnxh9fce5fm1g.png"],"location":"E9","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2000,"title":"Portion","updatedAt":"2025-12-30T07:39:49.912Z"},{"__v":0,"_id":"6953b8d8a7621edffb62512e","availability":"available","bathrooms":-6,"bedrooms":4,"city":"Lahore","createdAt":"2025-12-30T11:34:48.649Z","description":"Near park","images":[],"location":"123 Main Street, DHA Phase 5","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":59999,"title":"Luxuary House","updatedAt":"2025-12-30T11:34:48.649Z"}]
-[00:03:11.848] Browser DEBUG   Searching properties with filters: {"availability":"available"}
-[00:03:12.386] Browser DEBUG   Search response: [{"__v":0,"_id":"6939960f19564a9e9a35ef3c","availability":"available","bedrooms":3,"city":"Karachi","createdAt":"2025-12-10T15:47:27.565Z","description":"Big house","images":[],"location":"DHA Phase 6","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":50000,"title":"My house","updatedAt":"2025-12-10T15:47:27.565Z"},{"__v":0,"_id":"693f978e24a2de4ad8e0d4ff","availability":"available","bathrooms":3,"bedrooms":3,"city":"Karachi","createdAt":"2025-12-15T05:07:26.737Z","description":"Big Apartment","images":[],"location":"123 DHA Phase 6","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":120000,"title":"Luxury Apartment","updatedAt":"2025-12-30T12:13:41.635Z"},{"__v":0,"_id":"693ff77aa030e0ca75839d3e","availability":"available","bathrooms":1,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-15T11:56:42.489Z","description":"Cozy 2-bedroom flat in the heart of Gulberg with great connectivity to major commercial areas and entertainment spots.","images":[],"location":"Gulberg","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":45000,"title":"Luxurious Flat","updatedAt":"2025-12-15T11:56:42.489Z"},{"__v":0,"_id":"694ed9212fe4370eff6202e7","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-26T18:51:13.417Z","images":[],"location":"Gulshan","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":60000,"title":"Owner Test Property","updatedAt":"2025-12-26T18:51:13.417Z"},{"__v":0,"_id":"694ef1f9c8be5d0a6745a3eb","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-26T20:37:13.355Z","images":[],"location":"Gulshan","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":60000,"title":"Owner Test Property","updatedAt":"2025-12-26T20:37:13.355Z"},{"__v":0,"_id":"694f76838ab01d8e24698cfe","availability":"available","bathrooms":7,"bedrooms":6,"city":"mmm","createdAt":"2025-12-27T06:02:43.259Z","description":"mm","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766826566/rentmate_properties/zw1fhxj82n8muxaartt8.png"],"location":"mm","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":3,"title":"mmmm","updatedAt":"2025-12-27T09:09:27.170Z"},{"__v":0,"_id":"694f76ac8ab01d8e24698d08","availability":"available","bathrooms":-7,"bedrooms":-4,"city":"kk","createdAt":"2025-12-27T06:03:24.671Z","description":"ll","images":[],"location":"kk","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-5,"title":"kk","updatedAt":"2025-12-27T06:03:24.671Z"},{"__v":0,"_id":"694f76dc8ab01d8e24698d1a","availability":"available","bathrooms":-2,"bedrooms":-2,"city":"kk","createdAt":"2025-12-27T06:04:12.625Z","description":"kk","images":[],"location":"kk","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-4,"title":"kk","updatedAt":"2025-12-27T06:04:12.625Z"},{"__v":0,"_id":"694f814d95da5002b74080e0","availability":"available","bathrooms":-2,"bedrooms":-2,"city":"j","createdAt":"2025-12-27T06:48:45.702Z","description":"k","images":[],"location":"jj","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":4,"title":"kk","updatedAt":"2025-12-27T06:48:45.702Z"},{"__v":0,"_id":"694f814e95da5002b74080e2","availability":"available","bathrooms":-2,"bedrooms":-2,"city":"j","createdAt":"2025-12-27T06:48:46.876Z","description":"k","images":[],"location":"jj","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":4,"title":"kk","updatedAt":"2025-12-27T06:48:46.876Z"},{"__v":0,"_id":"694f893b57131b4a523304f7","availability":"available","bathrooms":-12,"bedrooms":-5,"city":"jj","createdAt":"2025-12-27T07:22:35.114Z","description":"kk","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766820154/rentmate_properties/ijwq08xydgq5u7y94hpp.png"],"location":"jjj","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-5,"title":"jk","updatedAt":"2025-12-27T07:22:35.114Z"},{"__v":0,"_id":"694f92282655ae6489a09e14","availability":"available","bathrooms":-4,"bedrooms":-2,"city":"islo","createdAt":"2025-12-27T08:00:40.205Z","description":"heelo","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766822439/rentmate_properties/bba77lobsfdaovjcd0cs.png"],"location":"heelo","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":-1,"title":"heeelo","updatedAt":"2025-12-27T08:00:40.205Z"},{"__v":0,"_id":"694fa2ae7d7785d2ba04051a","availability":"available","bathrooms":2,"bedrooms":6,"city":"Rawalpindi","createdAt":"2025-12-27T09:11:10.906Z","description":"Parking,Water,gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766826670/rentmate_properties/gwgmixzcxntvumepbe6f.png"],"location":"Lane 5 , Scheme 3 , Rawalpindi","owner":{"_id":"694f64f1c8be5d0a6745a3ee","email":"ayeshamudassar557@gmail.com","name":"Ayesha Mudassar"},"price":32,"title":"House","updatedAt":"2025-12-27T09:11:10.906Z"},{"__v":0,"_id":"694fa648c13fe80702534904","availability":"available","bathrooms":1,"bedrooms":2,"city":"Rawalpindi","createdAt":"2025-12-27T09:26:32.938Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766827592/rentmate_properties/pvrd9tshaz6nfhwivftg.png"],"location":"Rawalpindi","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"House","updatedAt":"2025-12-27T09:26:32.938Z"},{"__v":0,"_id":"694ffb2b9a0ba6fb55a84ff4","availability":"available","bathrooms":1,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-27T15:28:43.385Z","description":"WATER","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766849323/rentmate_properties/atx2fdorj6xdyxscj0ja.png"],"location":"karachi","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":6000,"title":"House","updatedAt":"2025-12-27T15:28:43.385Z"},{"__v":0,"_id":"6950bf3ebc325f00097d5538","availability":"available","bathrooms":4,"bedrooms":1,"city":"Rawalpindi","createdAt":"2025-12-28T05:25:18.485Z","description":"water, Parking","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766899517/rentmate_properties/zbudmxoedvwiescwf56x.png"],"location":"SCHEME 3","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":60000,"title":"Apartment","updatedAt":"2025-12-28T05:27:24.066Z"},{"__v":0,"_id":"6950c3747898c28b3bf8fe48","availability":"available","bathrooms":3,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-28T05:43:16.641Z","description":"water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766900595/rentmate_properties/hokz71rkl4ib7bqgv6hm.png"],"location":"gulistan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":49997,"title":"House","updatedAt":"2025-12-28T05:43:16.641Z"},{"__v":0,"_id":"6950c539844fd0787393270a","availability":"available","bathrooms":6,"bedrooms":3,"city":"Rawalpindi","createdAt":"2025-12-28T05:50:49.686Z","description":"water","images":[],"location":"Gulistan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T05:50:49.686Z"},{"__v":0,"_id":"6950c564844fd07873932718","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T05:51:32.440Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766901091/rentmate_properties/rmihqi9lxqwyht1wqlup.png"],"location":"Gulshan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":500,"title":"House","type":"Apartment","updatedAt":"2025-12-28T05:51:32.440Z"},{"__v":0,"_id":"6950db3d716d977b5f1b03d8","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T07:24:45.237Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766906684/rentmate_properties/id6vv6dbirvjghvtaxv5.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5008,"title":"House","type":"Apartment","updatedAt":"2025-12-28T07:24:45.237Z"},{"__v":0,"_id":"6950db7d716d977b5f1b03ef","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T07:25:49.805Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766906748/rentmate_properties/e5hakuagriwrx6u6qstg.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T07:25:49.805Z"},{"__v":0,"_id":"69510901c537acaaf557961c","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T10:40:01.846Z","description":"h","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766918399/rentmate_properties/ffbcyc0j5vhtdoltjtip.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"j","type":"Apartment","updatedAt":"2025-12-28T10:40:01.846Z"},{"__v":0,"_id":"695112de97d67362cf133aea","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:22:06.505Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766920924/rentmate_properties/glrtoguq7wewhbbh2mp6.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"Apartment","type":"Apartment","updatedAt":"2025-12-28T11:22:06.505Z"},{"__v":0,"_id":"6951132c97d67362cf133afa","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:23:24.410Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921002/rentmate_properties/qaxzx3aimio0imc4sdnu.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:23:24.410Z"},{"__v":0,"_id":"6951157797d67362cf133b2a","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:33:11.175Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921589/rentmate_properties/kdgzpoatyh3ogwjethsj.png"],"location":"Lalazar","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:33:11.175Z"},{"__v":0,"_id":"695116d8a412e4069b7063d0","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:39:04.481Z","description":"water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921942/rentmate_properties/pjdnbdgturmqnai9lkgm.png"],"location":"Lalazar","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:39:04.481Z"},{"__v":0,"_id":"69511b4087071a9595f649da","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-28T11:57:52.045Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766923070/rentmate_properties/dzr8uxddfobouye1anzr.png"],"location":"Askari","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"Apartment","type":"Apartment","updatedAt":"2025-12-28T11:57:52.045Z"},{"__v":0,"_id":"6951641787071a9595f64a81","availability":"available","bathrooms":2,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-28T17:08:39.310Z","description":"hello","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766941716/rentmate_properties/zi3n4rlvatj4qolxdnd1.png"],"location":"Askari","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5000,"title":"hello","type":"Apartment","updatedAt":"2025-12-28T17:08:39.310Z"},{"__v":0,"_id":"695166e803242784e600760a","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T17:20:40.093Z","description":"Near park and school","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766942437/rentmate_properties/lfu211obhobuienhlxpb.png"],"location":"G-13","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":500,"title":"Family House ","type":"Apartment","updatedAt":"2025-12-28T17:20:40.093Z"},{"__v":0,"_id":"69516a212026b206f2261664","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T17:34:25.768Z","description":"Near Park and School","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766943263/rentmate_properties/f1tdauhiesxdrffruuge.png"],"location":"J-13","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"Family House ","type":"Apartment","updatedAt":"2025-12-28T17:34:25.768Z"},{"__v":0,"_id":"695171d92026b206f22616a4","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T18:07:21.648Z","description":"parks","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766945239/rentmate_properties/vudxtpr1p5rizdvjgveh.png"],"location":"F10","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"House","type":"Apartment","updatedAt":"2025-12-28T18:07:21.648Z"},{"__v":0,"_id":"69517d46ee15f9dbdb37f512","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T18:56:06.834Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766948164/rentmate_properties/pjdrubhge6vjbpxsnuor.png"],"location":"F9","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"House","type":"Apartment","updatedAt":"2025-12-28T18:56:06.834Z"},{"__v":0,"_id":"6952529abf0f7dff48c2be94","availability":"available","bathrooms":0,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-29T10:06:18.125Z","description":"Gas and Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767002774/rentmate_properties/azjyf5ks2oibgh8fj8iv.png"],"location":"Lane 5 ","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":500,"title":"House","updatedAt":"2025-12-29T10:06:18.125Z"},{"__v":0,"_id":"6952550e93b31c65997d0e91","availability":"available","bathrooms":3,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-29T10:16:46.918Z","description":"Water and gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767003403/rentmate_properties/wbq2cq6mzg54a3ja6jeg.png"],"location":"I7","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":500,"title":"House","updatedAt":"2025-12-29T10:16:46.918Z"},{"__v":0,"_id":"695256428ec9f7e59037a4d4","availability":"available","bathrooms":3,"bedrooms":2,"city":"Karachi","createdAt":"2025-12-29T10:21:54.595Z","description":"Gas and Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767003711/rentmate_properties/oaxp7kkz9cpsqbmemqaf.png"],"location":"i1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":500,"title":"House","updatedAt":"2025-12-29T10:21:54.595Z"},{"__v":0,"_id":"695326f04b20280745f63c77","availability":"available","bathrooms":2,"bedrooms":2,"city":"Rawalpindi","createdAt":"2025-12-30T01:12:16.747Z","description":"Near Park and School","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767057136/rentmate_properties/prc0psar6yp1d7os407j.png"],"location":"F1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":200,"title":"House ","updatedAt":"2025-12-30T01:12:51.743Z"},{"__v":0,"_id":"69536c6acfebaa72585abb3a","availability":"available","bathrooms":3,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-30T06:08:42.122Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767074921/rentmate_properties/loxdz8ksxvwlqlzxpedo.png"],"location":"DHA Phase 1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2500,"title":"Home","updatedAt":"2025-12-30T06:08:42.122Z"},{"__v":0,"_id":"695373d8e0136aecf3acc17e","availability":"available","bathrooms":2,"bedrooms":1,"city":"Rawalpindi","createdAt":"2025-12-30T06:40:24.158Z","description":"Near park","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767076823/rentmate_properties/xs3snvry1a3mq7pmretg.png"],"location":"D11","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2000,"title":"HOME","updatedAt":"2025-12-30T06:40:24.158Z"},{"__v":0,"_id":"695381a2a719225f15cb4b92","availability":"available","bathrooms":2,"bedrooms":2,"city":"Rawalpindi","createdAt":"2025-12-30T07:39:14.615Z","description":"Gas and water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767080354/rentmate_properties/gt25jl9lnxh9fce5fm1g.png"],"location":"E9","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2000,"title":"Portion","updatedAt":"2025-12-30T07:39:49.912Z"},{"__v":0,"_id":"6953b8d8a7621edffb62512e","availability":"available","bathrooms":-6,"bedrooms":4,"city":"Lahore","createdAt":"2025-12-30T11:34:48.649Z","description":"Near park","images":[],"location":"123 Main Street, DHA Phase 5","owner":{"_id":"693f79d18174af176f9f5cc0","email":"ayesha.mudassar@gmail.com","name":"Ayesha"},"price":59999,"title":"Luxuary House","updatedAt":"2025-12-30T11:34:48.649Z"}]
-[00:03:41.521] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
-[00:03:41.878] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzExMzg2NSwiZXhwIjoxNzY3NzE4NjY1fQ.cmyNS8Kjq0nQCR4QDuPD2GnvW2-CO2S5sQ271DOIBd4","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
-[00:03:41.878] Browser LOG     User type from backend: owner
-[00:03:41.878] Browser LOG     Redirecting to: /owner/dashboard
-[00:04:18.774] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3"}
-[00:04:19.130] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMTM5MDMsImV4cCI6MTc2NzcxODcwM30.z1lCNnOCF_zqxXwL2iDjtxcT6sydoEWg2SOmW0f5LS8","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
-[00:04:19.130] Browser LOG     User type from backend: tenant
-[00:04:19.130] Browser LOG     Redirecting to: /tenant/dashboard
-[00:05:25.453] Server  LOG      ✓ Compiled in 2.1s
-[00:07:49.200] Server  LOG      ✓ Compiled in 893ms
-[00:12:14.462] Server  LOG      ✓ Compiled in 994ms
-[00:15:45.937] Server  LOG      ✓ Compiled in 1082ms
-[00:16:14.778] Browser DEBUG   Searching properties with filters: {"availability":"available","city":"Islamabad"}
-[00:16:15.243] Browser DEBUG   Search response: [{"__v":0,"_id":"6950c564844fd07873932718","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T05:51:32.440Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766901091/rentmate_properties/rmihqi9lxqwyht1wqlup.png"],"location":"Gulshan","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":500,"title":"House","type":"Apartment","updatedAt":"2025-12-28T05:51:32.440Z"},{"__v":0,"_id":"6950db3d716d977b5f1b03d8","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T07:24:45.237Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766906684/rentmate_properties/id6vv6dbirvjghvtaxv5.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":5008,"title":"House","type":"Apartment","updatedAt":"2025-12-28T07:24:45.237Z"},{"__v":0,"_id":"6950db7d716d977b5f1b03ef","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T07:25:49.805Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766906748/rentmate_properties/e5hakuagriwrx6u6qstg.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T07:25:49.805Z"},{"__v":0,"_id":"69510901c537acaaf557961c","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T10:40:01.846Z","description":"h","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766918399/rentmate_properties/ffbcyc0j5vhtdoltjtip.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"j","type":"Apartment","updatedAt":"2025-12-28T10:40:01.846Z"},{"__v":0,"_id":"695112de97d67362cf133aea","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:22:06.505Z","description":"Water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766920924/rentmate_properties/glrtoguq7wewhbbh2mp6.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"Apartment","type":"Apartment","updatedAt":"2025-12-28T11:22:06.505Z"},{"__v":0,"_id":"6951132c97d67362cf133afa","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:23:24.410Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921002/rentmate_properties/qaxzx3aimio0imc4sdnu.png"],"location":"Chaklala","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:23:24.410Z"},{"__v":0,"_id":"6951157797d67362cf133b2a","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:33:11.175Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921589/rentmate_properties/kdgzpoatyh3ogwjethsj.png"],"location":"Lalazar","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:33:11.175Z"},{"__v":0,"_id":"695116d8a412e4069b7063d0","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T11:39:04.481Z","description":"water","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766921942/rentmate_properties/pjdnbdgturmqnai9lkgm.png"],"location":"Lalazar","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":8000,"title":"House","type":"Apartment","updatedAt":"2025-12-28T11:39:04.481Z"},{"__v":0,"_id":"695166e803242784e600760a","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T17:20:40.093Z","description":"Near park and school","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766942437/rentmate_properties/lfu211obhobuienhlxpb.png"],"location":"G-13","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":500,"title":"Family House ","type":"Apartment","updatedAt":"2025-12-28T17:20:40.093Z"},{"__v":0,"_id":"69516a212026b206f2261664","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T17:34:25.768Z","description":"Near Park and School","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766943263/rentmate_properties/f1tdauhiesxdrffruuge.png"],"location":"J-13","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"Family House ","type":"Apartment","updatedAt":"2025-12-28T17:34:25.768Z"},{"__v":0,"_id":"695171d92026b206f22616a4","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T18:07:21.648Z","description":"parks","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766945239/rentmate_properties/vudxtpr1p5rizdvjgveh.png"],"location":"F10","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"House","type":"Apartment","updatedAt":"2025-12-28T18:07:21.648Z"},{"__v":0,"_id":"69517d46ee15f9dbdb37f512","availability":"available","bathrooms":2,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-28T18:56:06.834Z","description":"gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1766948164/rentmate_properties/pjdrubhge6vjbpxsnuor.png"],"location":"F9","owner":{"_id":"694eeef6c8be5d0a6745a3e6","email":"ayesha44@gmail.com","name":"ayema"},"price":4999,"title":"House","type":"Apartment","updatedAt":"2025-12-28T18:56:06.834Z"},{"__v":0,"_id":"69536c6acfebaa72585abb3a","availability":"available","bathrooms":3,"bedrooms":2,"city":"Islamabad","createdAt":"2025-12-30T06:08:42.122Z","description":"Gas","images":["https://res.cloudinary.com/dadjakvj3/image/upload/v1767074921/rentmate_properties/loxdz8ksxvwlqlzxpedo.png"],"location":"DHA Phase 1","owner":{"_id":"694f712132db7884543a30c0","email":"hassn12@gmail.com","name":"hassan"},"price":2500,"title":"Home","updatedAt":"2025-12-30T06:08:42.122Z"}]
-[00:16:55.015] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
-[00:16:55.694] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzExNDY1OSwiZXhwIjoxNzY3NzE5NDU5fQ.3L0tP7REEIttuNQx6qGFTSVpHR7tb-Yfs6oqG6hJagc","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
-[00:16:55.694] Browser LOG     User type from backend: owner
-[00:16:55.694] Browser LOG     Redirecting to: /owner/dashboard
-[00:17:42.954] Browser LOG     Attempting login with: {"email":"bisma.slhry@gmail.com","password":"ihate_myslef<3"}
-[00:17:43.780] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMTQ3MDcsImV4cCI6MTc2NzcxOTUwN30.Wpz6M4EabVfU8P8DfPclWG5ftI2jzBbbZ24BAWf3Ums","user":{"email":"bisma.slhry@gmail.com","id":"6939269298fa118f30988d54","name":"Bisma","role":"tenant"}}
-[00:17:43.780] Browser LOG     User type from backend: tenant
-[00:17:43.780] Browser LOG     Redirecting to: /tenant/dashboard
-[01:16:09.672] Browser ERROR   Failed to load owner applications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMTQ3MDcsImV4cCI6MTc2NzcxOTUwN30.Wpz6M4EabVfU8P8DfPclWG5ftI2jzBbbZ24BAWf3Ums"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/owner","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 403","name":"AxiosError","stack":"AxiosError: Request failed with status code 403\n    at settle (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:3706:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:4221:186)\n    at Axios.request (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:5025:49)\n    at async getOwnerApplications (http://localhost:3000/_next/static/chunks/frontend_e4ce2d60._.js:844:17)\n    at async fetchApplications (http://localhost:3000/_next/static/chunks/frontend_e4ce2d60._.js:896:26)","status":403}
-[01:16:09.672] Browser ERROR   Failed to load owner applications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyNjkyOThmYTExOGYzMDk4OGQ1NCIsInJvbGUiOiJ0ZW5hbnQiLCJpYXQiOjE3NjcxMTQ3MDcsImV4cCI6MTc2NzcxOTUwN30.Wpz6M4EabVfU8P8DfPclWG5ftI2jzBbbZ24BAWf3Ums"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/owner","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 403","name":"AxiosError","stack":"AxiosError: Request failed with status code 403\n    at settle (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:3706:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:4221:186)\n    at Axios.request (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:5025:49)\n    at async getOwnerApplications (http://localhost:3000/_next/static/chunks/frontend_e4ce2d60._.js:844:17)\n    at async fetchApplications (http://localhost:3000/_next/static/chunks/frontend_e4ce2d60._.js:896:26)","status":403}
+[00:00:04.076] Server  LOG      ✓ Ready in 2.2s
+[00:00:28.376] Server  LOG      ○ Compiling / ...
+[00:00:41.967] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:00.206] Browser LOG     Attempting login with: {"email":"ayesha.mudassar@gmail.com","password":"ayesha@123"}
+[00:01:00.567] Browser LOG     Full login response: {"message":"Login successful.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzI0Mjc5MywiZXhwIjoxNzY3ODQ3NTkzfQ.pbOHdC3KUY5SQ-ut_-RQ7MQjpDgVUQbVEa25aUkdWWI","user":{"email":"ayesha.mudassar@gmail.com","id":"693f79d18174af176f9f5cc0","name":"Ayesha","role":"owner"}}
+[00:01:00.567] Browser LOG     User type from backend: owner
+[00:01:00.567] Browser LOG     Redirecting to: /owner/dashboard
+[00:03:54.855] Server  LOG      ✓ Compiled in 779ms
+[00:03:55.642] Browser ERROR   uncaughtError: ReferenceError: Header is not defined
+[00:04:30.294] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:30.307] Server  LOG      ✓ Compiled in 523ms
+[00:04:36.464] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:37.272] Browser ERROR   uncaughtError: ReferenceError: Header is not defined
+[00:05:13.013] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:05:13.018] Server  LOG      ✓ Compiled in 777ms
+[00:05:16.028] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:18.720] Server  LOG      ✓ Compiled in 1174ms
+[00:07:19.517] Server  LOG      ✓ Compiled in 803ms
+[00:09:13.633] Server  LOG      ✓ Compiled in 503ms
+[00:10:38.888] Server  LOG      ✓ Compiled in 811ms
+[00:11:26.566] Server  LOG      ✓ Compiled in 1352ms
+[00:12:49.126] Server  LOG      ✓ Compiled in 911ms
+[00:17:53.910] Server  LOG      ✓ Compiled in 893ms
+[00:18:48.747] Server  LOG      ✓ Compiled in 610ms
+[00:29:31.574] Server  LOG      ✓ Compiled in 693ms
+[00:30:15.248] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:38.460] Server  LOG      ✓ Compiled in 763ms
+[00:35:10.536] Server  LOG      ✓ Compiled in 644ms
+[00:35:46.749] Server  LOG      ✓ Compiled in 649ms
+[00:36:51.099] Server  LOG      ✓ Compiled in 945ms
+[00:37:40.342] Server  LOG      ✓ Compiled in 717ms
+[00:39:17.080] Server  LOG      ✓ Compiled in 502ms
+[00:39:49.247] Server  LOG      ✓ Compiled in 580ms
+[00:39:52.766] Server  LOG      ✓ Compiled in 453ms
+[00:39:54.634] Server  LOG      ✓ Compiled in 454ms
+[00:42:18.218] Server  LOG      ✓ Compiled in 651ms
+[00:43:43.163] Server  LOG      ✓ Compiled in 479ms
+[00:44:46.243] Server  LOG      ✓ Compiled in 777ms
+[00:45:05.039] Server  LOG      ✓ Compiled in 482ms
+[00:45:47.525] Server  LOG      ✓ Compiled in 600ms
+[00:46:09.142] Server  LOG      ✓ Compiled in 584ms
+[00:47:26.331] Server  LOG      ✓ Compiled in 711ms
+[00:47:27.230] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `ApplicationDetailPage`.
+[00:47:57.285] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.359] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.410] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.448] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.474] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.508] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.647] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.730] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.790] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.951] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:57.970] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.002] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.025] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.043] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.117] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.138] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.174] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.201] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.225] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.253] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.289] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.317] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.340] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.372] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.393] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.423] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.441] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.456] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.485] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.505] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.525] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.543] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.567] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.589] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.605] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.622] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.639] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.656] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.680] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.691] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.710] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.726] Server  ERROR    ⨯ ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:47:58.742] Server  LOG      ✓ Compiled in 1061ms
+[00:47:59.134] Browser ERROR   ./frontend/app/owner/applications/[id]/page.js:8:1
+Module not found: Can't resolve '../../../services/rentalApplicationService'
+   6 | import Header from "../Header";
+   7 | import Footer from "../../components/Footer";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   getOwnerApplications,
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 10 |   updateApplicationStatus
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 11 | } from "../../../services/rentalApplicationService";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function OwnerApplicationsPage() {
+  14 |   const router = useRouter();
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:47:59.134] Browser ERROR   ./frontend/app/owner/applications/[id]/page.js:7:1
+Module not found: Can't resolve '../../components/Footer'
+   5 | import Link from "next/link"; // Add this import
+   6 | import Header from "../Header";
+>  7 | import Footer from "../../components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import {
+   9 |   getOwnerApplications,
+  10 |   updateApplicationStatus
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:47:59.134] Browser ERROR   ./frontend/app/owner/applications/[id]/page.js:6:1
+Module not found: Can't resolve '../Header'
+  4 | import { useRouter } from "next/navigation";
+  5 | import Link from "next/link"; // Add this import
+> 6 | import Header from "../Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "../../components/Footer";
+  8 | import {
+  9 |   getOwnerApplications,
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component Browser]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/owner/applications/[id]/page.js [Client Component SSR]
+    ./frontend/app/owner/applications/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:49:11.632] Server  LOG      ✓ Compiled in 769ms
+[00:49:13.103] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\.next\dev\server\chunks\ssr\9e883_next_dist_ab384778._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:13.107] Server  ERROR   E:\CS-B23\Sem 05\FS Theory\Rentmate\frontend\.next\dev\server\chunks\ssr\frontend_0d20f882._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:13.128] Server  WARN    Error: Route "/owner/applications/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:49:13.188] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:13.188] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:49:13.188] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:49:13.188] Browser ERROR   Failed to load application: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzI0Mjc5MywiZXhwIjoxNzY3ODQ3NTkzfQ.pbOHdC3KUY5SQ-ut_-RQ7MQjpDgVUQbVEa25aUkdWWI"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/owner/undefined","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:3706:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:4221:186)\n    at Axios.request (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:5025:49)\n    at async getOwnerApplicationById (http://localhost:3000/_next/static/chunks/frontend_2ff7ff98._.js?id=%255Bproject%255D%252Ffrontend%252Fservices%252FrentalApplicationService.js+%255Bapp-client%255D+%2528ecmascript%2529:31:17)\n    at async fetchApplication (http://localhost:3000/_next/static/chunks/frontend_2ff7ff98._.js?id=%255Bproject%255D%252Ffrontend%252Fapp%252Fowner%252Fapplications%252F%255Bid%255D%252Fpage.js+%255Bapp-client%255D+%2528ecmascript%2529:38:26)","status":500}
+[00:49:13.188] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:49:13.188] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:49:17.561] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:18.155] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:49:18.155] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:49:18.351] Browser ERROR   Failed to load application: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2Y3OWQxODE3NGFmMTc2ZjlmNWNjMCIsInJvbGUiOiJvd25lciIsImlhdCI6MTc2NzI0Mjc5MywiZXhwIjoxNzY3ODQ3NTkzfQ.pbOHdC3KUY5SQ-ut_-RQ7MQjpDgVUQbVEa25aUkdWWI"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/owner/undefined","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:3706:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:4221:186)\n    at Axios.request (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:5025:49)\n    at async getOwnerApplicationById (http://localhost:3000/_next/static/chunks/frontend_2ff7ff98._.js:419:17)\n    at async fetchApplication (http://localhost:3000/_next/static/chunks/frontend_2ff7ff98._.js:469:26)","status":500}
+[00:49:18.351] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:49:18.351] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:49:35.598] Server  LOG      ✓ Compiled in 765ms
+[00:50:10.327] Server  LOG      ✓ Compiled in 523ms

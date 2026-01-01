@@ -1,8 +1,5 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Footer from '../../components/Footer';
-import Header from '../Header';
 import { getOwnerTenancies } from '../../../services/tenancyService';
 
 export default function Tenancies() {
@@ -45,8 +42,6 @@ export default function Tenancies() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex flex-col">
-      <Header />
-
       <main className="flex-grow container mx-auto px-4 py-8">
         {/* HEADER */}
         <div className="flex justify-between mb-8">
@@ -54,10 +49,6 @@ export default function Tenancies() {
             <h1 className="text-3xl font-bold">Your Tenancies</h1>
             <p className="text-gray-800">Manage your rental agreements</p>
           </div>
-
-          <Link href="/owner/dashboard" className="btn-secondary px-6 py-3 rounded-xl">
-            Back to Home
-          </Link>
         </div>
 
         {/* SEARCH */}
@@ -98,8 +89,6 @@ export default function Tenancies() {
           <div className="text-center mt-12">No tenancies found</div>
         )}
       </main>
-
-      <Footer />
     </div>
   );
 }

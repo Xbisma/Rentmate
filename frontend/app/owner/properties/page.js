@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Header from '../Header';
 import { getOwnerProperties } from '../../../services/propertyService';
 
 export default function Properties() {
@@ -57,16 +56,8 @@ export default function Properties() {
 
   return (
     <div className="page-container">
-      <Header />
 
       <main className="content-container">
-        {/* Back to Dashboard Button */}
-        <Link
-          href="/owner/dashboard"
-          className="btn-outline inline-flex items-center gap-2 mb-6"
-        >
-          ← Back to Dashboard
-        </Link>
 
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">My Properties</h1>

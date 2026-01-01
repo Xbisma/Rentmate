@@ -74,7 +74,7 @@ export default function SearchProperties() {
       <div className="content-container">
         {/* Back to Home Button */}
         <Link 
-          href="/tenant/dashboard" 
+          href="/" 
           className="btn-secondary inline-flex items-center gap-2 mb-6 animate-fade-in"
         >
           ← Back to Home

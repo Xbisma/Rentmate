@@ -1,20 +1,23 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Header from "../../Header";
-import Footer from "../../../components/Footer";
+import { useParams } from "next/navigation"; // Add this import
+import Link from "next/link";
 import { getOwnerApplicationById, updateApplicationStatus } from "../../../../services/rentalApplicationService";
 
-export default function ApplicationDetailPage({ params }) {
-  const { id } = params;
+export default function ApplicationDetailPage() { // Remove params prop
+  const params = useParams(); // Use useParams hook
+  const id = params.id; // Extract id from params
 
   const [application, setApplication] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchApplication();
-  }, [id]);
+    if (id) { // Check if id exists
+      fetchApplication();
+    }
+  }, [id]); // Add id as dependency
 
   const fetchApplication = async () => {
     try {
@@ -43,9 +46,15 @@ export default function ApplicationDetailPage({ params }) {
 
   return (
     <div className="page-container">
-      <Header />
 
       <div className="content-container py-8 max-w-4xl mx-auto">
+        <Link
+          href="/owner/applications"
+          className="btn-outline inline-flex items-center gap-2 mb-6"
+        >
+          ← Back to Applications
+        </Link>
+        
         {loading && <div className="text-center p-8">Loading...</div>}
 
         {!loading && error && (
@@ -105,19 +114,10 @@ export default function ApplicationDetailPage({ params }) {
                   </button>
                 </>
               )}
-
-              <button
-                onClick={() => window.history.back()}
-                className="px-4 py-2 rounded bg-gray-100"
-              >
-                Back
-              </button>
             </div>
           </div>
         )}
       </div>
-
-      <Footer />
     </div>
   );
 }
