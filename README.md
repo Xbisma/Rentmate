@@ -1,39 +1,64 @@
 # RentMate
 
-Property rental management system built using Next.js, Node.js, MongoDB.
+RentMate is a **full-stack property rental management system** designed to manage rental properties, tenants, and applications in a simple and structured way.  
+The project focuses on applying **full-stack development concepts** with a clean UI and scalable backend architecture.
 
+
+## Tech Stack
+
+### Frontend
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Framer Motion
+
+### Backend
+- Node.js
+- Express / Nest.js (API layer)
+
+### Database
+- MongoDB
+
+
+## Features
+
+### Owner Module
+- Add, update, and delete properties  
+- View all listed properties  
+- Manage tenant applications  
+- Dashboard overview for properties  
+
+### Tenant Module
+- Browse available properties  
+- View detailed property information  
+- Apply for rental properties  
+- Manage personal profile and applications  
+
+### General Features
+- Responsive and modern UI  
+- Modular project structure  
+- Backend-ready API architecture  
+
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Xbisma/Rentmate.git
+cd Rentmate
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+``` bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run Development Server
+Open http://localhost:3000 in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contribution
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is developed for academic and portfolio purposes.
+Suggestions and improvements are welcome. 
